@@ -11,3 +11,15 @@ C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop
 C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
 C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
 C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe.config
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.GenerateResource.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CoreCompileInputs.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.resources

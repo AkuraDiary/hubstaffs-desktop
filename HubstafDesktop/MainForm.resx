@@ -4799,15 +4799,23 @@
   <data name="guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+<<<<<<< HEAD:HubstafDesktop/form_main.resx
         EQAACxEBf2RfkQAAAJFJREFUSEvllNEJwCAMRB3P/Uewg9hUHgGpilcQ2vogH5cLBowx/Iecc7Q4LFok
+=======
+        EgAACxIB0t1+/AAAAJFJREFUSEvllNEJwCAMRB3P/Uewg9hUHgGpilcQ2vogH5cLBowx/Iecc7Q4LFok
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.resx
         i0ipVOtgjEiUSrUORkZWYLmHnKp1yO/TYPkMrlfUa9J9RQVkBVbTm4YzljZQ9uDRok3fK3rEfcgKHPKy
         eVlO+ewKyAqsZoPpe0XLDQrICiz3kBs2UGag74EllUXTP7uPEsIJuyRtojJWRsAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mainLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALkAAABHCAYAAABbNeY1AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+<<<<<<< HEAD:HubstafDesktop/form_main.resx
         wQAADsEBuJFr7QAADYFJREFUeF7tnAmYjuUax2csYabsM6EyM6Z06JAlWrTJGieiRJbSiFTEqJxSnbQo
+=======
+        wgAADsIBFShKgAAADYFJREFUeF7tnAmYjuUax2csYabsM6EyM6Z06JAlWrTJGieiRJbSiFTEqJxSnbQo
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.resx
         dZGlUyGltBnZi4MWLRJZOi2DsoQkQstpkU6dOb//0/2955uxlNK5qPt/Xb/r/b77ud/ne5f/+7z3u8wk
         uFwul8vlcrlcLpfL5XK5XC6Xy+VyuVwul8vlcrlcLpfL5XK5XC6Xy+VyuVwul8vlcrlcLpfL5XK5XAeh
         yp3UoeUhFz29sET7sfda6H/KyumU1GJASfvmch18Smo78v2E7Ny8GCl1/nKMNSUkN+vXGpNPhoWJXZ+c

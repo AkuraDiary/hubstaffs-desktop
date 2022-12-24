@@ -1,6 +1,6 @@
 ﻿namespace HubstafDesktop
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
+
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.mainNavigationPanel = new System.Windows.Forms.Panel();
+
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,9 +51,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
+=======
+            this.mainLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.mainNavigationPanel.SuspendLayout();
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
@@ -60,11 +68,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.mainLogo)).BeginInit();
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             this.SuspendLayout();
             // 
-            // panel1
+            // mainNavigationPanel
             // 
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
             this.panel1.Controls.Add(this.guna2PictureBox7);
             this.panel1.Controls.Add(this.label8);
@@ -90,6 +103,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 1080);
             this.panel1.TabIndex = 0;
+=======
+            this.mainNavigationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox7);
+            this.mainNavigationPanel.Controls.Add(this.label8);
+            this.mainNavigationPanel.Controls.Add(this.label7);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox10);
+            this.mainNavigationPanel.Controls.Add(this.label11);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox11);
+            this.mainNavigationPanel.Controls.Add(this.label12);
+            this.mainNavigationPanel.Controls.Add(this.label6);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox6);
+            this.mainNavigationPanel.Controls.Add(this.label5);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox5);
+            this.mainNavigationPanel.Controls.Add(this.label4);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox4);
+            this.mainNavigationPanel.Controls.Add(this.label3);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox3);
+            this.mainNavigationPanel.Controls.Add(this.label2);
+            this.mainNavigationPanel.Controls.Add(this.guna2PictureBox2);
+            this.mainNavigationPanel.Controls.Add(this.label1);
+            this.mainNavigationPanel.Controls.Add(this.mainLogo);
+            this.mainNavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mainNavigationPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainNavigationPanel.Name = "mainNavigationPanel";
+            this.mainNavigationPanel.Size = new System.Drawing.Size(200, 884);
+            this.mainNavigationPanel.TabIndex = 0;
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             // 
             // guna2PictureBox7
             // 
@@ -190,6 +230,7 @@
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox6.TabIndex = 10;
             this.guna2PictureBox6.TabStop = false;
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             // 
             // label5
             // 
@@ -305,20 +346,146 @@
             // 
             this.guna2Elipse1.BorderRadius = 40;
             this.guna2Elipse1.TargetControl = this;
+=======
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             // 
-            // Form1
+            // label5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(47, 354);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 25);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Dashboard           <";
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(24, 309);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox5.TabIndex = 8;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(47, 309);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Dashboard           <";
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(24, 264);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 6;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(47, 264);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Dashboard           <";
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(24, 219);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 4;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(47, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Dashboard           <";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(24, 173);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 2;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(47, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Dashboard           <";
+            // 
+            // mainLogo
+            // 
+            this.mainLogo.Image = ((System.Drawing.Image)(resources.GetObject("mainLogo.Image")));
+            this.mainLogo.ImageRotate = 0F;
+            this.mainLogo.Location = new System.Drawing.Point(-31, 0);
+            this.mainLogo.Name = "mainLogo";
+            this.mainLogo.Size = new System.Drawing.Size(247, 74);
+            this.mainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mainLogo.TabIndex = 0;
+            this.mainLogo.TabStop = false;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 40;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             this.ClientSize = new System.Drawing.Size(1940, 1080);
             this.Controls.Add(this.panel1);
+=======
+            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.Controls.Add(this.mainNavigationPanel);
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+=======
+            this.mainNavigationPanel.ResumeLayout(false);
+            this.mainNavigationPanel.PerformLayout();
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
@@ -327,15 +494,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+<<<<<<< HEAD:HubstafDesktop/form_main.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.mainLogo)).EndInit();
+>>>>>>> 5d758ef39f611772ed9efa4d7c55a0dcdaa485a6:HubstafDesktop/MainForm.Designer.cs
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Panel mainNavigationPanel;
+        private Guna.UI2.WinForms.Guna2PictureBox mainLogo;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label1;
