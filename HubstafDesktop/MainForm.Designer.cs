@@ -30,84 +30,31 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.mainLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblnavUsername = new System.Windows.Forms.Label();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.mainTabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.navDashboard = new System.Windows.Forms.TabPage();
             this.navTask = new System.Windows.Forms.TabPage();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.whiteTopPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.navigationImageList = new System.Windows.Forms.ImageList(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.mainLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.mainTabControl.SuspendLayout();
-            this.guna2CustomGradientPanel1.SuspendLayout();
-            this.whiteTopPanel.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnExit
-            // 
-            this.btnExit.BorderRadius = 20;
-            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1023, 4);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(88, 44);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "X";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // mainLogo
-            // 
-            this.mainLogo.Image = ((System.Drawing.Image)(resources.GetObject("mainLogo.Image")));
-            this.mainLogo.ImageRotate = 0F;
-            this.mainLogo.Location = new System.Drawing.Point(-2, 0);
-            this.mainLogo.Name = "mainLogo";
-            this.mainLogo.Size = new System.Drawing.Size(177, 56);
-            this.mainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.mainLogo.TabIndex = 0;
-            this.mainLogo.TabStop = false;
-            // 
-            // lblnavUsername
-            // 
-            this.lblnavUsername.AutoSize = true;
-            this.lblnavUsername.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
-            this.lblnavUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
-            this.lblnavUsername.Location = new System.Drawing.Point(66, 9);
-            this.lblnavUsername.Name = "lblnavUsername";
-            this.lblnavUsername.Size = new System.Drawing.Size(89, 25);
-            this.lblnavUsername.TabIndex = 23;
-            this.lblnavUsername.Text = "Mr Andrew";
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.BorderRadius = 20;
-            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(20, 4);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox7.TabIndex = 24;
-            this.guna2PictureBox7.TabStop = false;
             // 
             // mainTabControl
             // 
             this.mainTabControl.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.mainTabControl.Controls.Add(this.navDashboard);
             this.mainTabControl.Controls.Add(this.navTask);
+            this.mainTabControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.mainTabControl.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainTabControl.ImageList = this.navigationImageList;
             this.mainTabControl.ItemSize = new System.Drawing.Size(180, 40);
-            this.mainTabControl.Location = new System.Drawing.Point(-2, 50);
+            this.mainTabControl.Location = new System.Drawing.Point(0, 66);
             this.mainTabControl.Name = "mainTabControl";
             this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(1301, 708);
+            this.mainTabControl.Size = new System.Drawing.Size(1294, 690);
             this.mainTabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.mainTabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.mainTabControl.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -130,10 +77,11 @@
             // 
             // navDashboard
             // 
+            this.navDashboard.ForeColor = System.Drawing.Color.Transparent;
             this.navDashboard.Location = new System.Drawing.Point(184, 4);
             this.navDashboard.Name = "navDashboard";
             this.navDashboard.Padding = new System.Windows.Forms.Padding(3);
-            this.navDashboard.Size = new System.Drawing.Size(1113, 700);
+            this.navDashboard.Size = new System.Drawing.Size(1106, 682);
             this.navDashboard.TabIndex = 0;
             this.navDashboard.Text = "Dashboard";
             this.navDashboard.UseVisualStyleBackColor = true;
@@ -143,36 +91,10 @@
             this.navTask.Location = new System.Drawing.Point(184, 4);
             this.navTask.Name = "navTask";
             this.navTask.Padding = new System.Windows.Forms.Padding(3);
-            this.navTask.Size = new System.Drawing.Size(1113, 700);
+            this.navTask.Size = new System.Drawing.Size(1106, 682);
             this.navTask.TabIndex = 1;
             this.navTask.Text = "Task";
             this.navTask.UseVisualStyleBackColor = true;
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomGradientPanel1.Controls.Add(this.whiteTopPanel);
-            this.guna2CustomGradientPanel1.Controls.Add(this.mainLogo);
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1294, 56);
-            this.guna2CustomGradientPanel1.TabIndex = 31;
-            // 
-            // whiteTopPanel
-            // 
-            this.whiteTopPanel.BackColor = System.Drawing.Color.White;
-            this.whiteTopPanel.Controls.Add(this.lblnavUsername);
-            this.whiteTopPanel.Controls.Add(this.btnExit);
-            this.whiteTopPanel.Controls.Add(this.guna2PictureBox7);
-            this.whiteTopPanel.Location = new System.Drawing.Point(181, 0);
-            this.whiteTopPanel.Name = "whiteTopPanel";
-            this.whiteTopPanel.Size = new System.Drawing.Size(1118, 56);
-            this.whiteTopPanel.TabIndex = 2;
             // 
             // navigationImageList
             // 
@@ -180,38 +102,56 @@
             this.navigationImageList.TransparentColor = System.Drawing.Color.Transparent;
             this.navigationImageList.Images.SetKeyName(0, "edit.png");
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
+            this.guna2Panel1.Controls.Add(this.pictureBox1);
+            this.guna2Panel1.Location = new System.Drawing.Point(-1, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(181, 100);
+            this.guna2Panel1.TabIndex = 31;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(168, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1294, 756);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.mainTabControl);
+            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "a";
-            ((System.ComponentModel.ISupportInitialize)(this.mainLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             this.mainTabControl.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.whiteTopPanel.ResumeLayout(false);
-            this.whiteTopPanel.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnExit;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        private System.Windows.Forms.Label lblnavUsername;
-        private Guna.UI2.WinForms.Guna2PictureBox mainLogo;
         private Guna.UI2.WinForms.Guna2TabControl mainTabControl;
         private System.Windows.Forms.TabPage navDashboard;
         private System.Windows.Forms.TabPage navTask;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2Panel whiteTopPanel;
         private System.Windows.Forms.ImageList navigationImageList;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
 
