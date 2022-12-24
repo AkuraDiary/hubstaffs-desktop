@@ -1,0 +1,13 @@
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe.config
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.SuggestedBindingRedirects.cache
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.Form1.resources
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.GenerateResource.cache
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CoreCompileInputs.cache
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
+C:\Users\RPL\source\repos\HubstafDesktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
