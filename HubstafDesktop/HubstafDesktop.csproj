@@ -123,7 +123,7 @@
     <Compile Include="Ui\Layout\TaskListDetailItemLayout.Designer.cs">
       <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ui\Layout\TimerFragment.cs">
+    <Compile Include="Ui\Pages\TimerFragment.cs">
 
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,10 +172,11 @@
     <EmbeddedResource Include="Ui\Layout\TaskListDetailItemLayout.resx">
       <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ui\Layout\TimerFragment.resx">
 
+    <EmbeddedResource Include="Ui\Pages\TimerFragment.resx">
       <DependentUpon>TimerFragment.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Ui\Pages\DashboardFragment.resx">
       <DependentUpon>DashboardFragment.cs</DependentUpon>
     </EmbeddedResource>

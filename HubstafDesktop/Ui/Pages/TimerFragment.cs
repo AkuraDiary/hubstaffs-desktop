@@ -10,7 +10,7 @@ using System.Text;
 
 using System.Windows.Forms;
 
-namespace HubstafDesktop.Ui.Layout
+namespace HubstafDesktop.Ui.Pages
 {
     public partial class TimerFragment : UserControl
     {

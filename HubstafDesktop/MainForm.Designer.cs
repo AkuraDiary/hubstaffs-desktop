@@ -34,7 +34,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.mainTimer = new HubstafDesktop.Ui.Layout.TimerFragment();
+            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
             this.taskDescriptionFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
@@ -146,7 +146,7 @@
         private System.Windows.Forms.FlowLayoutPanel projectTaskDetailFragmentCOntainer;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentProjectName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaskName;
-        private Ui.Layout.TimerFragment mainTimer;
+        private Ui.Pages.TimerFragment mainTimer;
     }
 }
 

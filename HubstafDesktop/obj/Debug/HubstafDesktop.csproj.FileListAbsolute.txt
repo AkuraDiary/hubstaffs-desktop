@@ -3,7 +3,6 @@ D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.ProjectItemLayout.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskItemLayout.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TimerFragment.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.aa.resources
@@ -19,3 +18,6 @@ D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskListDetailItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TimerFragment.resources

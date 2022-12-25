@@ -1,7 +1,9 @@
 ﻿
-namespace HubstafDesktop.Ui.Layout
+using System.Windows.Forms;
+
+namespace HubstafDesktop.Ui.Pages
 {
-    partial class TimerFragment
+    partial class TimerFragment : UserControl
     {
         /// <summary> 
         /// Required designer variable.

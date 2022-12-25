@@ -28,16 +28,17 @@ namespace HubstafDesktop
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-           
+
             //Debug.WriteLine(DummyDataSource.dummyListProject.AsQueryable());
+            setTimer(120);
             setupProjectList(DummyDataSource.dummyListProject);
         }
 
 
         #region timer region
-        public void setTimer()
+        public void setTimer(int value)
         {
-            mainTimer.TimerCountdownValue = 120;
+            mainTimer.TimerCountdownValue = value;
         }
 
         #endregion
