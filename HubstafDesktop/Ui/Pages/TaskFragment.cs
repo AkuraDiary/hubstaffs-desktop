@@ -16,6 +16,8 @@ namespace HubstafDesktop.Ui.Pages
 
     public partial class TaskFragment : UserControl
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
         internal MainForm parentContext;
         private List<UserTask> listData = new List<UserTask>();
         public List<UserTask> ListtData
@@ -60,6 +62,11 @@ namespace HubstafDesktop.Ui.Pages
         private void TaskFragment_Load(object sender, EventArgs e)
         {
             bindData();
+        }
+
+        private void lblTaskName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

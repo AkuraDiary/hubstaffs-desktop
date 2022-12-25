@@ -33,21 +33,23 @@ namespace HubstafDesktop.Ui.Pages
             this.lblDateCreated = new System.Windows.Forms.Label();
             this.lblTaskDesc = new System.Windows.Forms.Label();
             this.lblTaskName = new System.Windows.Forms.Label();
+            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
             // 
             // detailedTaskListContainer
             // 
             this.detailedTaskListContainer.AutoScroll = true;
+            this.detailedTaskListContainer.BackColor = System.Drawing.Color.White;
             this.detailedTaskListContainer.Location = new System.Drawing.Point(3, 64);
             this.detailedTaskListContainer.Name = "detailedTaskListContainer";
-            this.detailedTaskListContainer.Size = new System.Drawing.Size(933, 429);
+            this.detailedTaskListContainer.Size = new System.Drawing.Size(936, 429);
             this.detailedTaskListContainer.TabIndex = 0;
             // 
             // lblDateCreated
             // 
-            this.lblDateCreated.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateCreated.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblDateCreated.Location = new System.Drawing.Point(762, 16);
+            this.lblDateCreated.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblDateCreated.ForeColor = System.Drawing.Color.Silver;
+            this.lblDateCreated.Location = new System.Drawing.Point(740, 16);
             this.lblDateCreated.Name = "lblDateCreated";
             this.lblDateCreated.Size = new System.Drawing.Size(144, 45);
             this.lblDateCreated.TabIndex = 8;
@@ -56,9 +58,9 @@ namespace HubstafDesktop.Ui.Pages
             // 
             // lblTaskDesc
             // 
-            this.lblTaskDesc.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskDesc.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblTaskDesc.Location = new System.Drawing.Point(341, 16);
+            this.lblTaskDesc.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTaskDesc.ForeColor = System.Drawing.Color.Silver;
+            this.lblTaskDesc.Location = new System.Drawing.Point(242, 16);
             this.lblTaskDesc.Name = "lblTaskDesc";
             this.lblTaskDesc.Size = new System.Drawing.Size(287, 45);
             this.lblTaskDesc.TabIndex = 7;
@@ -67,18 +69,30 @@ namespace HubstafDesktop.Ui.Pages
             // 
             // lblTaskName
             // 
-            this.lblTaskName.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskName.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblTaskName.Location = new System.Drawing.Point(6, 16);
+            this.lblTaskName.BackColor = System.Drawing.Color.White;
+            this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTaskName.ForeColor = System.Drawing.Color.Silver;
+            this.lblTaskName.Location = new System.Drawing.Point(42, 16);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(207, 45);
             this.lblTaskName.TabIndex = 6;
             this.lblTaskName.Text = "TASK";
             this.lblTaskName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
+            // 
+            // guna2Panel23
+            // 
+            this.guna2Panel23.BackColor = System.Drawing.Color.Gainsboro;
+            this.guna2Panel23.Location = new System.Drawing.Point(-2, 60);
+            this.guna2Panel23.Name = "guna2Panel23";
+            this.guna2Panel23.Size = new System.Drawing.Size(1135, 1);
+            this.guna2Panel23.TabIndex = 25;
             // 
             // TaskFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2Panel23);
             this.Controls.Add(this.lblDateCreated);
             this.Controls.Add(this.lblTaskDesc);
             this.Controls.Add(this.lblTaskName);
@@ -96,5 +110,6 @@ namespace HubstafDesktop.Ui.Pages
         private System.Windows.Forms.Label lblDateCreated;
         private System.Windows.Forms.Label lblTaskDesc;
         private System.Windows.Forms.Label lblTaskName;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
     }
 }
