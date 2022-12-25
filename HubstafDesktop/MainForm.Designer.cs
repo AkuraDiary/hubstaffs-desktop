@@ -41,8 +41,9 @@
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.taskDescriptionPanelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblSelectedTaskName = new System.Windows.Forms.Label();
             this.lblSelectedTaskDesc = new System.Windows.Forms.Label();
+            this.lblSelectedTaskName = new System.Windows.Forms.Label();
+            this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
             this.mainTimerFragmentContainer.SuspendLayout();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
@@ -127,23 +128,37 @@
             resources.ApplyResources(this.taskDescriptionPanelContainer, "taskDescriptionPanelContainer");
             this.taskDescriptionPanelContainer.Name = "taskDescriptionPanelContainer";
             // 
-            // lblSelectedTaskName
-            // 
-            resources.ApplyResources(this.lblSelectedTaskName, "lblSelectedTaskName");
-            this.lblSelectedTaskName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSelectedTaskName.Name = "lblSelectedTaskName";
-            // 
             // lblSelectedTaskDesc
             // 
             resources.ApplyResources(this.lblSelectedTaskDesc, "lblSelectedTaskDesc");
             this.lblSelectedTaskDesc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSelectedTaskDesc.Name = "lblSelectedTaskDesc";
             // 
+            // lblSelectedTaskName
+            // 
+            resources.ApplyResources(this.lblSelectedTaskName, "lblSelectedTaskName");
+            this.lblSelectedTaskName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSelectedTaskName.Name = "lblSelectedTaskName";
+            // 
+            // btnMinimze
+            // 
+            this.btnMinimze.BorderRadius = 4;
+            this.btnMinimze.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimze.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimze.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMinimze.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMinimze.FillColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnMinimze, "btnMinimze");
+            this.btnMinimze.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
+            this.btnMinimze.Name = "btnMinimze";
+            this.btnMinimze.Click += new System.EventHandler(this.btnMinimze_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.btnMinimze);
             this.Controls.Add(this.taskDescriptionPanelContainer);
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.lblCurrentProjectName);
@@ -177,6 +192,7 @@
         private Ui.Pages.TaskFragment taskFragment;
         private System.Windows.Forms.Label lblSelectedTaskName;
         private System.Windows.Forms.Label lblSelectedTaskDesc;
+        private Guna.UI2.WinForms.Guna2Button btnMinimze;
     }
 }
 

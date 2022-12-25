@@ -106,6 +106,7 @@ namespace HubstafDesktop
             projectTaskDetailFragmentCOntainer.Enabled = !state;
             projectListFragmentContainer.Enabled = !state;
             btnExit.Visible = !state;
+            btnMinimze.Visible = state;
             
         }
 
@@ -134,5 +135,10 @@ namespace HubstafDesktop
 
 
         #endregion
+
+        private void btnMinimze_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
