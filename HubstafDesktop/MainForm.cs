@@ -108,6 +108,23 @@ namespace HubstafDesktop
             projectListFragmentContainer.Enabled = !state;
             btnExit.Visible = !state;
             btnMinimze.Visible = state;
+            btnFormMode.PerformClick();
+            
+        }
+
+        int FormOriginalWidth = 1294;
+        bool isMini = false;
+        private void btnFormMode_Click(object sender, EventArgs e)
+        {
+            isMini = !isMini; // switch state
+            if (isMini)
+            {
+                this.Width = 340;
+            }
+            else
+            {
+                this.Width = FormOriginalWidth;
+            }
             
         }
 
@@ -151,5 +168,7 @@ namespace HubstafDesktop
         {
 
         }
+
+     
     }
 }

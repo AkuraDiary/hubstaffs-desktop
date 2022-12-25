@@ -46,9 +46,9 @@
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
-            this.mainTimerFragmentContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationImageList
@@ -146,7 +146,6 @@
             // mainTimerFragmentContainer
             // 
             this.mainTimerFragmentContainer.BackColor = System.Drawing.Color.White;
-            this.mainTimerFragmentContainer.Controls.Add(this.mainTimer);
             resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
             // 
@@ -171,11 +170,26 @@
             resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
             // 
+            // btnFormMode
+            // 
+            this.btnFormMode.BorderColor = System.Drawing.Color.Bisque;
+            this.btnFormMode.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFormMode.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFormMode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFormMode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFormMode.FillColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.btnFormMode, "btnFormMode");
+            this.btnFormMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnFormMode.Name = "btnFormMode";
+            this.btnFormMode.Click += new System.EventHandler(this.btnFormMode_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.mainTimer);
+            this.Controls.Add(this.btnFormMode);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.projectListFragmentContainer);
             this.Controls.Add(this.btnMinimze);
@@ -192,7 +206,6 @@
             this.projectTaskDetailFragmentCOntainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.PerformLayout();
-            this.mainTimerFragmentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -214,6 +227,7 @@
         private System.Windows.Forms.Label lblSelectedTaskDesc;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
+        private Guna.UI2.WinForms.Guna2Button btnFormMode;
     }
 }
 
