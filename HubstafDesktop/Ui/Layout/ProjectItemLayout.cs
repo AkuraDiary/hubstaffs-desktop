@@ -52,17 +52,19 @@ namespace HubstafDesktop.Ui.Layout
         {
             if (projectData.TaskList.Count > 0)
             {
-                setupTaskList();
+                setupTaskListPreview();
             }
         }
 
-        void setupTaskList()
+        void setupTaskListPreview()
         {
             projectTaskListContainer.Controls.Clear();
-            foreach (var taskItem in projectData.TaskList)
+            //foreach (var taskItem in projectData.TaskList)
+            for (int i = 0; i < 3; i++)
+            
             {
                 TaskItemLayout taskItemLayout = new TaskItemLayout(this);
-                taskItemLayout.TaskData = taskItem;
+                taskItemLayout.TaskData = projectData.TaskList[i];
 
                 projectTaskListContainer.Controls.Add(taskItemLayout);
             }

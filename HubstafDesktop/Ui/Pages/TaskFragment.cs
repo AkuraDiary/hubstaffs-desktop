@@ -20,8 +20,10 @@ namespace HubstafDesktop.Ui.Pages
 
         internal MainForm parentContext;
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+       
         private List<UserTask> listData = new List<UserTask>();
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<UserTask> ListtData
         {
             get => listData; set
