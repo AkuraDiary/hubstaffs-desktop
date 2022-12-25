@@ -116,7 +116,15 @@
     <Compile Include="Ui\Layout\TaskItemLayout.Designer.cs">
       <DependentUpon>TaskItemLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ui\Pages\TimerFragment.cs">
+
+    <Compile Include="Ui\Layout\TaskListDetailItemLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\Layout\TaskListDetailItemLayout.Designer.cs">
+      <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Layout\TimerFragment.cs">
+
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Ui\Pages\TimerFragment.Designer.cs">
@@ -160,7 +168,12 @@
     <EmbeddedResource Include="Ui\Layout\TaskItemLayout.resx">
       <DependentUpon>TaskItemLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ui\Pages\TimerFragment.resx">
+
+    <EmbeddedResource Include="Ui\Layout\TaskListDetailItemLayout.resx">
+      <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\Layout\TimerFragment.resx">
+
       <DependentUpon>TimerFragment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\Pages\DashboardFragment.resx">
