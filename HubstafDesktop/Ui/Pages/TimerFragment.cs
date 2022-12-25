@@ -77,9 +77,6 @@ namespace HubstafDesktop.Ui.Layout
 
         void bindSecondAndMinute()
         {
-            //int minutes = TimerUtil.getMinuteOf(timerCountdownValue);
-           // int second = TimerUtil.getSecondOf(timerCountdownValue);
-
             this.lblTimerCountDown.Text = TimerUtil.formatTime(timerCountdownValue);
         }
 

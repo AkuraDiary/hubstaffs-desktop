@@ -20,5 +20,18 @@ namespace HubstafDesktop.Data.Model
         public int TimeNeeded { get => timeNeeded; set => timeNeeded = value; }
         public DateTime DateCreated { get => dateCreated; set => dateCreated = value; }
 
+        public UserTask()
+        {
+
+        }
+
+        public UserTask( string name, string desc, int time, DateTime date)
+        {
+            taskName = name;
+            taskDesc = desc;
+            timeNeeded = time;
+            dateCreated = date;
+        }
+
     }
 }

@@ -15,5 +15,16 @@ namespace HubstafDesktop.Data.Model
         public string CompanyName { get => companyName; set => companyName = value; }
         public string ProjectName { get => projectName; set => projectName = value; }
         public List<UserTask> TaskList { get => taskList; set => taskList = value; }
+
+        public UserProject()
+        {
+
+        }
+
+        public UserProject(string name, List<UserTask> taskList)
+        {
+            ProjectName = name;
+            TaskList = taskList;
+        }
     }
 }

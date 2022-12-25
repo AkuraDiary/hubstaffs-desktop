@@ -114,7 +114,6 @@
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
             // 
             // MainForm
             // 

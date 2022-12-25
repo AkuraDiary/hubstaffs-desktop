@@ -102,6 +102,7 @@ namespace HubstafDesktop
             // 
             // edtUsername
             // 
+            this.edtUsername.BorderRadius = 10;
             this.edtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtUsername.DefaultText = "";
             this.edtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -169,6 +170,7 @@ namespace HubstafDesktop
             // 
             // edtPassword
             // 
+            this.edtPassword.BorderRadius = 10;
             this.edtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtPassword.DefaultText = "";
             this.edtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

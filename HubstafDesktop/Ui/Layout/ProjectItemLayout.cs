@@ -31,7 +31,7 @@ namespace HubstafDesktop.Ui.Layout
         public ProjectItemLayout(UserProject userProject)
         {
             InitializeComponent();
-            this.projectData = userProject;
+            ProjectData = userProject;
         }
         public ProjectItemLayout()
         {

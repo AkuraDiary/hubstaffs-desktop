@@ -30,7 +30,7 @@ namespace HubstafDesktop.Ui.Layout
         private void InitializeComponent()
         {
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTimeNeeded = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // lblTaskName
@@ -47,23 +47,23 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
             // 
-            // guna2HtmlLabel1
+            // lblTimeNeeded
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Poppins", 9F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(257, 7);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(43, 40);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "00:00";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTimeNeeded.AutoSize = false;
+            this.lblTimeNeeded.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeNeeded.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTimeNeeded.ForeColor = System.Drawing.Color.Black;
+            this.lblTimeNeeded.Location = new System.Drawing.Point(257, 7);
+            this.lblTimeNeeded.Name = "lblTimeNeeded";
+            this.lblTimeNeeded.Size = new System.Drawing.Size(43, 40);
+            this.lblTimeNeeded.TabIndex = 6;
+            this.lblTimeNeeded.Text = "00:00";
+            this.lblTimeNeeded.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TaskItemLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lblTimeNeeded);
             this.Controls.Add(this.lblTaskName);
             this.Name = "TaskItemLayout";
             this.Size = new System.Drawing.Size(309, 56);
@@ -74,6 +74,6 @@ namespace HubstafDesktop.Ui.Layout
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaskName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTimeNeeded;
     }
 }
