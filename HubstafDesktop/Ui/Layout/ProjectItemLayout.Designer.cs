@@ -30,40 +30,53 @@ namespace HubstafDesktop.Ui.Layout
         private void InitializeComponent()
         {
             this.projectTaskListContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnl_txt = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbl_task = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnl_txt.SuspendLayout();
             this.SuspendLayout();
             // 
             // projectTaskListContainer
             // 
             this.projectTaskListContainer.AutoScroll = true;
             this.projectTaskListContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.projectTaskListContainer.Location = new System.Drawing.Point(0, 73);
+            this.projectTaskListContainer.Location = new System.Drawing.Point(-1, 57);
             this.projectTaskListContainer.Name = "projectTaskListContainer";
-            this.projectTaskListContainer.Size = new System.Drawing.Size(310, 210);
+            this.projectTaskListContainer.Size = new System.Drawing.Size(309, 413);
             this.projectTaskListContainer.TabIndex = 0;
             this.projectTaskListContainer.WrapContents = false;
             // 
-            // lblProjectName
+            // pnl_txt
             // 
-            this.lblProjectName.AutoSize = false;
-            this.lblProjectName.BackColor = System.Drawing.Color.Transparent;
-            this.lblProjectName.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProjectName.ForeColor = System.Drawing.Color.Black;
-            this.lblProjectName.Location = new System.Drawing.Point(3, 3);
-            this.lblProjectName.Name = "lblProjectName";
-            this.lblProjectName.Size = new System.Drawing.Size(304, 44);
-            this.lblProjectName.TabIndex = 5;
-            this.lblProjectName.Text = "Fix Bug In Home Page";
-            this.lblProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnl_txt.Controls.Add(this.lbl_task);
+            this.pnl_txt.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_txt.Location = new System.Drawing.Point(0, 0);
+            this.pnl_txt.Name = "pnl_txt";
+            this.pnl_txt.Size = new System.Drawing.Size(308, 51);
+            this.pnl_txt.TabIndex = 1;
+            // 
+            // lbl_task
+            // 
+            this.lbl_task.AutoSize = false;
+            this.lbl_task.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_task.Font = new System.Drawing.Font("Poppins", 11F);
+            this.lbl_task.ForeColor = System.Drawing.Color.Black;
+            this.lbl_task.Location = new System.Drawing.Point(13, 6);
+            this.lbl_task.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.lbl_task.Name = "lbl_task";
+            this.lbl_task.Size = new System.Drawing.Size(239, 39);
+            this.lbl_task.TabIndex = 7;
+            this.lbl_task.Text = "Task Item Time";
+            this.lbl_task.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ProjectItemLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.lblProjectName);
+            this.Controls.Add(this.pnl_txt);
             this.Controls.Add(this.projectTaskListContainer);
             this.Name = "ProjectItemLayout";
-            this.Size = new System.Drawing.Size(310, 283);
+            this.Size = new System.Drawing.Size(308, 470);
             this.Load += new System.EventHandler(this.ProjectItemLayout_Load);
+            this.pnl_txt.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -71,6 +84,7 @@ namespace HubstafDesktop.Ui.Layout
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel projectTaskListContainer;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblProjectName;
+        private Guna.UI2.WinForms.Guna2Panel pnl_txt;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_task;
     }
 }

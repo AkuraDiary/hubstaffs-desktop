@@ -26,5 +26,10 @@ namespace HubstafDesktop
         {
             mainTimer.TimerCountdownValue = 120;
         }
+
+        private void lblTaskName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

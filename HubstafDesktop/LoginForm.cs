@@ -34,6 +34,11 @@ namespace HubstafDesktop
          //   this.password = edtUsername.Text;
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         void moveToHomePage()
         {
             MainForm mainForm = new MainForm();

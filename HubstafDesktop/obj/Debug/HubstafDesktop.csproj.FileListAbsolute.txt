@@ -50,3 +50,6 @@ D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TimerFragment.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
 >>>>>>> 7bdf3871c29cacee92be3fd005fe55a072326241
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.ProjectItemLayout.resources
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskItemLayout.resources
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TimerFragment.resources

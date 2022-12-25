@@ -87,7 +87,7 @@ namespace HubstafDesktop.Ui.Layout
         #region helper method
         void changePlayButtonState(bool isEnable)
         {
-            btnStartTimer.Enabled = isEnable;
+            //btnStartTimer.Enabled = isEnable;
         }
        
         #endregion

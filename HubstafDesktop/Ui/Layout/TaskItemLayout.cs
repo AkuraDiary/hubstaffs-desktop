@@ -21,11 +21,16 @@ namespace HubstafDesktop.Ui.Layout
                 lblTaskName.Text = value.TaskName;
 
 
-                lblTimeNeeded.Text = TimerUtil.formatTime(taskData.TimeNeeded);
+                //lblTimeNeeded.Text = TimerUtil.formatTime(taskData.TimeNeeded);
             } }
         public TaskItemLayout()
         {
             InitializeComponent();
+        }
+
+        private void lblTaskName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
