@@ -39,7 +39,7 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
-            this.lblTaskName.Location = new System.Drawing.Point(26, -2);
+            this.lblTaskName.Location = new System.Drawing.Point(3, -3);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(176, 39);
             this.lblTaskName.TabIndex = 5;
@@ -55,7 +55,7 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTimeNeeded.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeNeeded.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTimeNeeded.ForeColor = System.Drawing.Color.Black;
-            this.lblTimeNeeded.Location = new System.Drawing.Point(234, 0);
+            this.lblTimeNeeded.Location = new System.Drawing.Point(211, 0);
             this.lblTimeNeeded.Name = "lblTimeNeeded";
             this.lblTimeNeeded.Size = new System.Drawing.Size(61, 36);
             this.lblTimeNeeded.TabIndex = 6;
@@ -72,7 +72,7 @@ namespace HubstafDesktop.Ui.Layout
             this.Controls.Add(this.lblTimeNeeded);
             this.Controls.Add(this.lblTaskName);
             this.Name = "TaskItemLayout";
-            this.Size = new System.Drawing.Size(298, 36);
+            this.Size = new System.Drawing.Size(280, 36);
             this.Load += new System.EventHandler(this.TaskItemLayout_Load);
             this.Click += new System.EventHandler(this.TaskItemLayout_Click);
             this.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);

@@ -53,7 +53,7 @@ namespace HubstafDesktop.Ui.Pages
             this.timerPanelContainer.BackColor = System.Drawing.Color.Transparent;
             this.timerPanelContainer.BorderRadius = 5;
             this.timerPanelContainer.Controls.Add(this.lblTimerCountDown);
-            this.timerPanelContainer.FillColor = System.Drawing.Color.Black;
+            this.timerPanelContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.timerPanelContainer.Location = new System.Drawing.Point(87, 30);
             this.timerPanelContainer.Name = "timerPanelContainer";
             this.timerPanelContainer.Size = new System.Drawing.Size(174, 39);

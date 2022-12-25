@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.navigationImageList = new System.Windows.Forms.ImageList(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
             this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
+            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,7 +46,6 @@
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
             this.mainTimerFragmentContainer.SuspendLayout();
@@ -90,6 +89,12 @@
             resources.ApplyResources(this.taskFragment, "taskFragment");
             this.taskFragment.Name = "taskFragment";
             this.taskFragment.Load += new System.EventHandler(this.taskFragment_Load);
+            // 
+            // guna2Panel23
+            // 
+            this.guna2Panel23.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.guna2Panel23, "guna2Panel23");
+            this.guna2Panel23.Name = "guna2Panel23";
             // 
             // lblTaskName
             // 
@@ -165,12 +170,6 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
-            // 
-            // guna2Panel23
-            // 
-            this.guna2Panel23.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.guna2Panel23, "guna2Panel23");
-            this.guna2Panel23.Name = "guna2Panel23";
             // 
             // MainForm
             // 

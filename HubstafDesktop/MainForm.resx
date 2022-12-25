@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        CAAAAk1TRnQBSQFMAwEBAAFkAQEBZAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CAAAAk1TRnQBSQFMAwEBAAFsAQEBbAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
@@ -404,6 +404,27 @@
   <data name="&gt;&gt;taskFragment.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="guna2Panel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 505</value>
+  </data>
+  <data name="guna2Panel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1135, 1</value>
+  </data>
+  <data name="guna2Panel23.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
+    <value>guna2Panel23</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Parent" xml:space="preserve">
+    <value>projectTaskDetailFragmentCOntainer</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="lblTaskName.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -420,7 +441,7 @@
     <value>40</value>
   </data>
   <data name="lblTaskName.Text" xml:space="preserve">
-    <value>Website Design</value>
+    <value>No Task Currently Selected</value>
   </data>
   <data name="&gt;&gt;lblTaskName.Name" xml:space="preserve">
     <value>lblTaskName</value>
@@ -480,7 +501,7 @@
     <value>39</value>
   </data>
   <data name="lblCurrentProjectName.Text" xml:space="preserve">
-    <value>Tasks</value>
+    <value>Tasks List</value>
   </data>
   <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
     <value>lblCurrentProjectName</value>
@@ -703,26 +724,5 @@
   </data>
   <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="guna2Panel23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 505</value>
-  </data>
-  <data name="guna2Panel23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1135, 1</value>
-  </data>
-  <data name="guna2Panel23.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
-    <value>guna2Panel23</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Parent" xml:space="preserve">
-    <value>projectTaskDetailFragmentCOntainer</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
 </root>

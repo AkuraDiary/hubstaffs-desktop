@@ -16,9 +16,11 @@ namespace HubstafDesktop.Ui.Pages
 
     public partial class TaskFragment : UserControl
     {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+       
 
         internal MainForm parentContext;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         private List<UserTask> listData = new List<UserTask>();
         public List<UserTask> ListtData
         {
