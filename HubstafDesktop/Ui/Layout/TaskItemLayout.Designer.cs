@@ -55,12 +55,12 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTimeNeeded.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeNeeded.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTimeNeeded.ForeColor = System.Drawing.Color.Black;
-            this.lblTimeNeeded.Location = new System.Drawing.Point(252, 0);
+            this.lblTimeNeeded.Location = new System.Drawing.Point(234, 0);
             this.lblTimeNeeded.Name = "lblTimeNeeded";
-            this.lblTimeNeeded.Size = new System.Drawing.Size(43, 36);
+            this.lblTimeNeeded.Size = new System.Drawing.Size(61, 36);
             this.lblTimeNeeded.TabIndex = 6;
             this.lblTimeNeeded.Text = "00:00";
-            this.lblTimeNeeded.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTimeNeeded.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.lblTimeNeeded.Click += new System.EventHandler(this.TaskItemLayout_Click);
             this.lblTimeNeeded.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
             this.lblTimeNeeded.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
