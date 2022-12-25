@@ -28,75 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.guna2Panel20.SuspendLayout();
+            this.taskPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblDateCreated = new System.Windows.Forms.Label();
+            this.lblTaskDesc = new System.Windows.Forms.Label();
+            this.lblTaskName = new System.Windows.Forms.Label();
+            this.taskPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2Panel20
+            // taskPanel
             // 
-            this.guna2Panel20.BackColor = System.Drawing.Color.White;
-            this.guna2Panel20.Controls.Add(this.label44);
-            this.guna2Panel20.Controls.Add(this.label45);
-            this.guna2Panel20.Controls.Add(this.label46);
-            this.guna2Panel20.Location = new System.Drawing.Point(3, 3);
-            this.guna2Panel20.Name = "guna2Panel20";
-            this.guna2Panel20.Size = new System.Drawing.Size(1018, 45);
-            this.guna2Panel20.TabIndex = 13;
+            this.taskPanel.BackColor = System.Drawing.Color.White;
+            this.taskPanel.Controls.Add(this.lblDateCreated);
+            this.taskPanel.Controls.Add(this.lblTaskDesc);
+            this.taskPanel.Controls.Add(this.lblTaskName);
+            this.taskPanel.Location = new System.Drawing.Point(3, 3);
+            this.taskPanel.Name = "taskPanel";
+            this.taskPanel.Size = new System.Drawing.Size(894, 45);
+            this.taskPanel.TabIndex = 13;
             // 
-            // label44
+            // lblDateCreated
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Poppins", 9F);
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label44.Location = new System.Drawing.Point(872, 11);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(105, 22);
-            this.label44.TabIndex = 5;
-            this.label44.Text = "12 January 2022";
+            this.lblDateCreated.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblDateCreated.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblDateCreated.Location = new System.Drawing.Point(761, 0);
+            this.lblDateCreated.Name = "lblDateCreated";
+            this.lblDateCreated.Size = new System.Drawing.Size(130, 45);
+            this.lblDateCreated.TabIndex = 5;
+            this.lblDateCreated.Text = "12 January 2022";
+            this.lblDateCreated.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label45
+            // lblTaskDesc
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Poppins", 9F);
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label45.Location = new System.Drawing.Point(387, 11);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(248, 22);
-            this.label45.TabIndex = 4;
-            this.label45.Text = "Get owers in home more study and relax";
+            this.lblTaskDesc.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTaskDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTaskDesc.Location = new System.Drawing.Point(340, 0);
+            this.lblTaskDesc.Name = "lblTaskDesc";
+            this.lblTaskDesc.Size = new System.Drawing.Size(287, 45);
+            this.lblTaskDesc.TabIndex = 4;
+            this.lblTaskDesc.Text = "Get owers in home more study and relax";
+            this.lblTaskDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label46
+            // lblTaskName
             // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Poppins", 9F);
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label46.Location = new System.Drawing.Point(90, 11);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(120, 22);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "Custome Interview";
+            this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
+            this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTaskName.Location = new System.Drawing.Point(0, 0);
+            this.lblTaskName.Name = "lblTaskName";
+            this.lblTaskName.Size = new System.Drawing.Size(210, 45);
+            this.lblTaskName.TabIndex = 3;
+            this.lblTaskName.Text = "Custome Interview";
+            this.lblTaskName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TaskListDetailItemLayout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2Panel20);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.taskPanel);
             this.Name = "TaskListDetailItemLayout";
-            this.Size = new System.Drawing.Size(1023, 53);
-            this.guna2Panel20.ResumeLayout(false);
-            this.guna2Panel20.PerformLayout();
+            this.Size = new System.Drawing.Size(900, 53);
+            this.taskPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel20;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
+        private Guna.UI2.WinForms.Guna2Panel taskPanel;
+        private System.Windows.Forms.Label lblDateCreated;
+        private System.Windows.Forms.Label lblTaskDesc;
+        private System.Windows.Forms.Label lblTaskName;
     }
 }

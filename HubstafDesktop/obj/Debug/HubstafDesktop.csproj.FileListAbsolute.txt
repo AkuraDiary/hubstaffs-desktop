@@ -18,6 +18,5 @@ D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskListDetailItemLayout.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TimerFragment.resources

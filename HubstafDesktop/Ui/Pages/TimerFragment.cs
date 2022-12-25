@@ -14,6 +14,8 @@ namespace HubstafDesktop.Ui.Pages
 {
     public partial class TimerFragment : UserControl
     {
+        MainForm parentContext;
+
         private int timerCountdownValue = 0;
         private UserTask choosedTask;
         private string projectName = "";

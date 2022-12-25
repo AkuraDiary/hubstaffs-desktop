@@ -37,10 +37,15 @@
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.taskDescriptionFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.taskDescriptionPanelContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSelectedTaskName = new System.Windows.Forms.Label();
+            this.lblSelectedTaskDesc = new System.Windows.Forms.Label();
             this.mainTimerFragmentContainer.SuspendLayout();
+            this.projectTaskDetailFragmentCOntainer.SuspendLayout();
+            this.taskDescriptionPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationImageList
@@ -92,14 +97,14 @@
             // projectTaskDetailFragmentCOntainer
             // 
             this.projectTaskDetailFragmentCOntainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.projectTaskDetailFragmentCOntainer.Controls.Add(this.taskFragment);
             resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
             this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
             // 
-            // taskDescriptionFragmentContainer
+            // taskFragment
             // 
-            this.taskDescriptionFragmentContainer.BackColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.taskDescriptionFragmentContainer, "taskDescriptionFragmentContainer");
-            this.taskDescriptionFragmentContainer.Name = "taskDescriptionFragmentContainer";
+            resources.ApplyResources(this.taskFragment, "taskFragment");
+            this.taskFragment.Name = "taskFragment";
             // 
             // lblCurrentProjectName
             // 
@@ -115,14 +120,33 @@
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
             this.lblTaskName.Name = "lblTaskName";
             // 
+            // taskDescriptionPanelContainer
+            // 
+            this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskDesc);
+            this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskName);
+            resources.ApplyResources(this.taskDescriptionPanelContainer, "taskDescriptionPanelContainer");
+            this.taskDescriptionPanelContainer.Name = "taskDescriptionPanelContainer";
+            // 
+            // lblSelectedTaskName
+            // 
+            resources.ApplyResources(this.lblSelectedTaskName, "lblSelectedTaskName");
+            this.lblSelectedTaskName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSelectedTaskName.Name = "lblSelectedTaskName";
+            // 
+            // lblSelectedTaskDesc
+            // 
+            resources.ApplyResources(this.lblSelectedTaskDesc, "lblSelectedTaskDesc");
+            this.lblSelectedTaskDesc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSelectedTaskDesc.Name = "lblSelectedTaskDesc";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.taskDescriptionPanelContainer);
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.lblCurrentProjectName);
-            this.Controls.Add(this.taskDescriptionFragmentContainer);
             this.Controls.Add(this.projectTaskDetailFragmentCOntainer);
             this.Controls.Add(this.projectListFragmentContainer);
             this.Controls.Add(this.mainTimerFragmentContainer);
@@ -131,6 +155,8 @@
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.mainTimerFragmentContainer.ResumeLayout(false);
+            this.projectTaskDetailFragmentCOntainer.ResumeLayout(false);
+            this.taskDescriptionPanelContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -142,11 +168,14 @@
         
         private System.Windows.Forms.FlowLayoutPanel mainTimerFragmentContainer;
         private System.Windows.Forms.FlowLayoutPanel projectListFragmentContainer;
-        private System.Windows.Forms.FlowLayoutPanel taskDescriptionFragmentContainer;
         private System.Windows.Forms.FlowLayoutPanel projectTaskDetailFragmentCOntainer;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentProjectName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaskName;
         private Ui.Pages.TimerFragment mainTimer;
+        private Guna.UI2.WinForms.Guna2Panel taskDescriptionPanelContainer;
+        private Ui.Pages.TaskFragment taskFragment;
+        private System.Windows.Forms.Label lblSelectedTaskName;
+        private System.Windows.Forms.Label lblSelectedTaskDesc;
     }
 }
 

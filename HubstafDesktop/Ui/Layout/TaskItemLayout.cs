@@ -15,14 +15,24 @@ namespace HubstafDesktop.Ui.Layout
     public partial class TaskItemLayout : UserControl
     {
         private UserTask taskData;
+        private bool isSelected;
 
-        public UserTask TaskData { get => taskData; set {
+        public bool IsSelected { get => isSelected; set { 
+                isSelected = value;
+                setState(isSelected);
+            }}
+
+        public UserTask TaskData
+        {
+            get => taskData; set
+            {
                 taskData = value;
                 lblTaskName.Text = value.TaskName;
 
 
                 lblTimeNeeded.Text = TimerUtil.formatTime(taskData.TimeNeeded);
-            } }
+            }
+        }
 
         public TaskItemLayout()
         {
@@ -37,8 +47,8 @@ namespace HubstafDesktop.Ui.Layout
 
 
 
-        #region helper region
-        void setState(bool isActive)
+        #region appearance helper region
+        public void setState(bool isActive)
         {
             if (isActive)
             {
@@ -62,12 +72,16 @@ namespace HubstafDesktop.Ui.Layout
 
         private void TaskItemLayout_Click(object sender, EventArgs e)
         {
-
+            IsSelected = true;
         }
 
         private void TaskItemLayout_MouseLeave(object sender, EventArgs e)
         {
-            setState(false);
+            if (!IsSelected)
+            {
+                setState(false);
+            }
+            
         }
     }
 }
