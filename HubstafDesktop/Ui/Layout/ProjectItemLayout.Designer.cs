@@ -1,7 +1,7 @@
 ﻿
-namespace HubstafDesktop.Ui.Pages
+namespace HubstafDesktop.Ui.Layout
 {
-    partial class TaskFragment
+    partial class ProjectItemLayout
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,12 +31,12 @@ namespace HubstafDesktop.Ui.Pages
         {
             this.SuspendLayout();
             // 
-            // TaskFragment
+            // ProjectItemLayout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Name = "TaskFragment";
-            this.Size = new System.Drawing.Size(888, 622);
+            this.Name = "ProjectItemLayout";
+            this.Size = new System.Drawing.Size(265, 270);
             this.ResumeLayout(false);
 
         }

@@ -34,7 +34,7 @@ namespace HubstafDesktop.Ui.Pages
             // DashboardFragment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Name = "DashboardFragment";
             this.Size = new System.Drawing.Size(873, 595);
             this.ResumeLayout(false);

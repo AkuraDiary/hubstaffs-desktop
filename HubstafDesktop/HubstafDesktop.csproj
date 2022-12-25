@@ -102,6 +102,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ui\Layout\ProjectItemLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\Layout\ProjectItemLayout.Designer.cs">
+      <DependentUpon>ProjectItemLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Layout\TaskItemLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\Layout\TaskItemLayout.Designer.cs">
+      <DependentUpon>TaskItemLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Layout\TimerFragment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\Layout\TimerFragment.Designer.cs">
+      <DependentUpon>TimerFragment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ui\Pages\DashboardFragment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +147,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ui\Layout\ProjectItemLayout.resx">
+      <DependentUpon>ProjectItemLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\Layout\TaskItemLayout.resx">
+      <DependentUpon>TaskItemLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\Layout\TimerFragment.resx">
+      <DependentUpon>TimerFragment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ui\Pages\DashboardFragment.resx">
       <DependentUpon>DashboardFragment.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,7 +180,6 @@
     <Folder Include="Data\Model\Binding\" />
     <Folder Include="Data\Model\Response\" />
     <Folder Include="Data\Remote\" />
-    <Folder Include="Ui\Layout\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
