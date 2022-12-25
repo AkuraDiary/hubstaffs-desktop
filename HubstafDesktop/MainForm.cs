@@ -24,7 +24,7 @@ namespace HubstafDesktop
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //mainTimer.TimerCountdownValue = 120;
+            mainTimer.TimerCountdownValue = 120;
            // mainTimer.TimerCountdownValue = 120;
         }
 

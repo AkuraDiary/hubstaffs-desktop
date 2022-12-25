@@ -37,7 +37,7 @@ namespace HubstafDesktop.Ui.Layout
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.circle_play = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnStartTimer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.timerPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,27 +102,28 @@ namespace HubstafDesktop.Ui.Layout
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "play-128.png");
             // 
-            // circle_play
+            // btnStartTimer
             // 
-            this.circle_play.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.circle_play.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.circle_play.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.circle_play.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.circle_play.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.circle_play.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.circle_play.ForeColor = System.Drawing.Color.White;
-            this.circle_play.Image = ((System.Drawing.Image)(resources.GetObject("circle_play.Image")));
-            this.circle_play.Location = new System.Drawing.Point(120, 169);
-            this.circle_play.Name = "circle_play";
-            this.circle_play.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.circle_play.Size = new System.Drawing.Size(60, 60);
-            this.circle_play.TabIndex = 6;
+            this.btnStartTimer.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnStartTimer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStartTimer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStartTimer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStartTimer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStartTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStartTimer.ForeColor = System.Drawing.Color.White;
+            this.btnStartTimer.Image = ((System.Drawing.Image)(resources.GetObject("btnStartTimer.Image")));
+            this.btnStartTimer.Location = new System.Drawing.Point(120, 169);
+            this.btnStartTimer.Name = "btnStartTimer";
+            this.btnStartTimer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnStartTimer.Size = new System.Drawing.Size(60, 60);
+            this.btnStartTimer.TabIndex = 6;
+            this.btnStartTimer.Click += new System.EventHandler(this.startTimerButton_Click);
             // 
             // TimerFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.circle_play);
+            this.Controls.Add(this.btnStartTimer);
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.lblCurrentProjectName);
             this.Controls.Add(this.timerPanelContainer);
@@ -142,6 +143,6 @@ namespace HubstafDesktop.Ui.Layout
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaskName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTimerCountDown;
         private System.Windows.Forms.ImageList imageList1;
-        private Guna.UI2.WinForms.Guna2CircleButton circle_play;
+        private Guna.UI2.WinForms.Guna2CircleButton btnStartTimer;
     }
 }
