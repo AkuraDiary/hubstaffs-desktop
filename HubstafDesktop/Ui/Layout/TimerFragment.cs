@@ -16,7 +16,7 @@ namespace HubstafDesktop.Ui.Layout
     {
         private int timerCountdownValue = 0;
         private UserTask choosedTask;
-        private string projectName;
+        private string projectName = "";
 
         //        private UserTask choosedTask;
 
@@ -31,11 +31,16 @@ namespace HubstafDesktop.Ui.Layout
 
         public UserTask ChoosedTask { get => choosedTask; set { 
                 choosedTask = value;
-                lblTaskName.Text = value.TaskName;
+                if (choosedTask != null)
+                {
+                    lblTaskName.Text = choosedTask.TaskName;
+                }
+                
             } }
 
         public string ProjectName { get => projectName; set { 
                 projectName = value;
+                
                 lblCurrentProjectName.Text = value;
             } }
 

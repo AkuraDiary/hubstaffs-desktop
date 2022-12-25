@@ -21,17 +21,21 @@ namespace HubstafDesktop
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //TODO DO Login Here
+            if (validateLoginForm())
+            {
+                //todo do login here
+                moveToHomePage();
+            }
         }
 
         private void edtPassword_TextChanged(object sender, EventArgs e)
         {
-          //  this.password = edtPassword.Text;
+          this.password = edtPassword.Text;
         }
 
         private void edtUsername_TextChanged(object sender, EventArgs e)
         {
-         //   this.password = edtUsername.Text;
+         this.password = edtUsername.Text;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -46,19 +50,27 @@ namespace HubstafDesktop
             this.Hide();
         }
 
-        //private bool validateLoginForm()
-        //{
-        //    //if (string.IsNullOrEmpty(edtUsername.Text))
-        //    //{
-        //    //    return false;
-        //    //}else if (string.IsNullOrEmpty(edtUsername.Text))
-        //    //{
-        //    //    return false;
-        //    //}
-        //    //else
-        //    //{
-        //    //    return true;
-        //    //}
-        //}
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private bool validateLoginForm()
+        {
+            if (string.IsNullOrEmpty(edtUsername.Text))
+            {
+                MessageBox.Show("Username Can't be empty");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(edtPassword.Text))
+            {
+                MessageBox.Show("Password Can't be empty");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
