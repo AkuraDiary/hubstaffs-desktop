@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace HubstafDesktop
 {
+
     public partial class MainForm : Form
     {
 
@@ -139,6 +140,16 @@ namespace HubstafDesktop
         private void btnMinimze_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void projectListFragmentContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void taskFragment_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

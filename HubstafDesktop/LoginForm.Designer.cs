@@ -53,7 +53,7 @@ namespace HubstafDesktop
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -115,7 +115,7 @@ namespace HubstafDesktop
             this.edtUsername.Location = new System.Drawing.Point(611, 297);
             this.edtUsername.Name = "edtUsername";
             this.edtUsername.PasswordChar = '\0';
-            this.edtUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
+            this.edtUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtUsername.PlaceholderText = "Username";
             this.edtUsername.SelectedText = "";
             this.edtUsername.Size = new System.Drawing.Size(335, 40);
@@ -183,7 +183,7 @@ namespace HubstafDesktop
             this.edtPassword.Location = new System.Drawing.Point(611, 358);
             this.edtPassword.Name = "edtPassword";
             this.edtPassword.PasswordChar = '●';
-            this.edtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
+            this.edtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtPassword.PlaceholderText = "Password";
             this.edtPassword.SelectedText = "";
             this.edtPassword.Size = new System.Drawing.Size(335, 40);
@@ -197,7 +197,6 @@ namespace HubstafDesktop
             this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
             this.btnLogin.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(611, 416);
@@ -216,8 +215,8 @@ namespace HubstafDesktop
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExit.FillColor = System.Drawing.Color.Transparent;
             this.btnExit.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
-            this.btnExit.Location = new System.Drawing.Point(1009, 0);
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnExit.Location = new System.Drawing.Point(1007, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(51, 28);
             this.btnExit.TabIndex = 10;

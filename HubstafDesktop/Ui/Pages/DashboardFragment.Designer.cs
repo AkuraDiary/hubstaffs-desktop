@@ -34,6 +34,7 @@ namespace HubstafDesktop.Ui.Pages
             // DashboardFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.Name = "DashboardFragment";
             this.Size = new System.Drawing.Size(605, 309);
             this.ResumeLayout(false);

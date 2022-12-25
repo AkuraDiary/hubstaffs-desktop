@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        CAAAAk1TRnQBSQFMAwEBAAH8AQAB/AEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CAAAAk1TRnQBSQFMAwEBAAFkAQEBZAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
@@ -173,78 +173,21 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>79</value>
   </metadata>
-  <metadata name="taskDescriptionPanelContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="projectListFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="mainTimerFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1294, 756</value>
   </data>
-  <data name="&gt;&gt;btnMinimze.Name" xml:space="preserve">
-    <value>btnMinimze</value>
+  <data name="&gt;&gt;guna2Panel1.Name" xml:space="preserve">
+    <value>guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;btnMinimze.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;btnMinimze.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;taskDescriptionPanelContainer.Name" xml:space="preserve">
-    <value>taskDescriptionPanelContainer</value>
-  </data>
-  <data name="&gt;&gt;taskDescriptionPanelContainer.Type" xml:space="preserve">
+  <data name="&gt;&gt;guna2Panel1.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;taskDescriptionPanelContainer.Parent" xml:space="preserve">
+  <data name="&gt;&gt;guna2Panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;taskDescriptionPanelContainer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblTaskName.Name" xml:space="preserve">
-    <value>lblTaskName</value>
-  </data>
-  <data name="&gt;&gt;lblTaskName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;lblTaskName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblTaskName.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
-    <value>lblCurrentProjectName</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Name" xml:space="preserve">
-    <value>projectTaskDetailFragmentCOntainer</value>
-  </data>
-  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;projectListFragmentContainer.Name" xml:space="preserve">
     <value>projectListFragmentContainer</value>
@@ -256,7 +199,67 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;projectListFragmentContainer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Name" xml:space="preserve">
+    <value>btnMinimze</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionPanelContainer.Name" xml:space="preserve">
+    <value>taskDescriptionPanelContainer</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionPanelContainer.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionPanelContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionPanelContainer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Name" xml:space="preserve">
+    <value>lblTaskName</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
+    <value>lblCurrentProjectName</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Name" xml:space="preserve">
+    <value>projectTaskDetailFragmentCOntainer</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;mainTimerFragmentContainer.Name" xml:space="preserve">
     <value>mainTimerFragmentContainer</value>
@@ -268,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mainTimerFragmentContainer.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
     <value>btnExit</value>
@@ -280,7 +283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
@@ -333,94 +336,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="mainTimerFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
-    <value>mainTimer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
-    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
-    <value>mainTimerFragmentContainer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mainTimerFragmentContainer.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="mainTimerFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 10</value>
-  </data>
-  <data name="mainTimerFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 279</value>
-  </data>
-  <data name="mainTimerFragmentContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;mainTimerFragmentContainer.Name" xml:space="preserve">
-    <value>mainTimerFragmentContainer</value>
-  </data>
-  <data name="&gt;&gt;mainTimerFragmentContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainTimerFragmentContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainTimerFragmentContainer.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 279</value>
-  </data>
-  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
-    <value>mainTimer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
-    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
-    <value>mainTimerFragmentContainer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="projectListFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="projectListFragmentContainer.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="projectListFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 303</value>
-  </data>
-  <data name="projectListFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 441</value>
-  </data>
-  <data name="projectListFragmentContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;projectListFragmentContainer.Name" xml:space="preserve">
-    <value>projectListFragmentContainer</value>
-  </data>
-  <data name="&gt;&gt;projectListFragmentContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;projectListFragmentContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;projectListFragmentContainer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;taskFragment.Name" xml:space="preserve">
     <value>taskFragment</value>
@@ -433,6 +349,18 @@
   </data>
   <data name="&gt;&gt;taskFragment.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
+    <value>guna2Panel23</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Parent" xml:space="preserve">
+    <value>projectTaskDetailFragmentCOntainer</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="projectTaskDetailFragmentCOntainer.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 62</value>
@@ -453,7 +381,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="taskFragment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -476,36 +404,6 @@
   <data name="&gt;&gt;taskFragment.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblCurrentProjectName.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lblCurrentProjectName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 11pt, style=Bold</value>
-  </data>
-  <data name="lblCurrentProjectName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 10</value>
-  </data>
-  <data name="lblCurrentProjectName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 21</value>
-  </data>
-  <data name="lblCurrentProjectName.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="lblCurrentProjectName.Text" xml:space="preserve">
-    <value>Tasks</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
-    <value>lblCurrentProjectName</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="lblTaskName.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -513,7 +411,7 @@
     <value>Poppins, 9pt</value>
   </data>
   <data name="lblTaskName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 30</value>
+    <value>363, 33</value>
   </data>
   <data name="lblTaskName.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 26</value>
@@ -534,11 +432,104 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTaskName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnMinimze.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt, style=Bold</value>
+  </data>
+  <data name="btnMinimze.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1237, -3</value>
+  </data>
+  <data name="btnMinimze.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 34</value>
+  </data>
+  <data name="btnMinimze.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="btnMinimze.Text" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="btnMinimze.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Name" xml:space="preserve">
+    <value>btnMinimze</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="taskDescriptionPanelContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="lblCurrentProjectName.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblCurrentProjectName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 11pt, style=Bold</value>
+  </data>
+  <data name="lblCurrentProjectName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 11</value>
+  </data>
+  <data name="lblCurrentProjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 21</value>
+  </data>
+  <data name="lblCurrentProjectName.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="lblCurrentProjectName.Text" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
+    <value>lblCurrentProjectName</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblSelectedTaskName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="lblSelectedTaskName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt, style=Bold</value>
+  </data>
+  <data name="lblSelectedTaskName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSelectedTaskName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 0</value>
+  </data>
+  <data name="lblSelectedTaskName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="lblSelectedTaskName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblSelectedTaskName.Text" xml:space="preserve">
+    <value>SELECTED TASK DETAIL</value>
+  </data>
+  <data name="lblSelectedTaskName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedTaskName.Name" xml:space="preserve">
+    <value>lblSelectedTaskName</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedTaskName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedTaskName.Parent" xml:space="preserve">
+    <value>taskDescriptionPanelContainer</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedTaskName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;lblSelectedTaskDesc.Name" xml:space="preserve">
     <value>lblSelectedTaskDesc</value>
   </data>
@@ -582,7 +573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;taskDescriptionPanelContainer.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblSelectedTaskDesc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9pt</value>
@@ -591,10 +582,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblSelectedTaskDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 45</value>
+    <value>9, 22</value>
   </data>
   <data name="lblSelectedTaskDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>908, 112</value>
+    <value>898, 112</value>
   </data>
   <data name="lblSelectedTaskDesc.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -611,64 +602,127 @@
   <data name="&gt;&gt;lblSelectedTaskDesc.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblSelectedTaskName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 9pt, style=Bold</value>
+  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
+    <value>mainTimer</value>
   </data>
-  <data name="lblSelectedTaskName.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
+    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainTimerFragmentContainer.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="mainTimerFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="lblSelectedTaskName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 45</value>
+  <data name="mainTimerFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 286</value>
   </data>
-  <data name="lblSelectedTaskName.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="mainTimerFragmentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
-  <data name="lblSelectedTaskName.Text" xml:space="preserve">
-    <value>SELECTED TASK DETAIL</value>
+  <data name="&gt;&gt;mainTimerFragmentContainer.Name" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
   </data>
-  <data name="lblSelectedTaskName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;mainTimerFragmentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Name" xml:space="preserve">
-    <value>lblSelectedTaskName</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Parent" xml:space="preserve">
-    <value>taskDescriptionPanelContainer</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnMinimze.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9pt, style=Bold</value>
-  </data>
-  <data name="btnMinimze.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1237, -3</value>
-  </data>
-  <data name="btnMinimze.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 34</value>
-  </data>
-  <data name="btnMinimze.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="btnMinimze.Text" xml:space="preserve">
-    <value>_</value>
-  </data>
-  <data name="btnMinimze.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnMinimze.Name" xml:space="preserve">
-    <value>btnMinimze</value>
-  </data>
-  <data name="&gt;&gt;btnMinimze.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;btnMinimze.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mainTimerFragmentContainer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mainTimerFragmentContainer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 283</value>
+  </data>
+  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
+    <value>mainTimer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
+    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="projectListFragmentContainer.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="projectListFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 292</value>
+  </data>
+  <data name="projectListFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 463</value>
+  </data>
+  <data name="projectListFragmentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Name" xml:space="preserve">
+    <value>projectListFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, -47</value>
+  </data>
+  <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 850</value>
+  </data>
+  <data name="guna2Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Name" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="guna2Panel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 505</value>
+  </data>
+  <data name="guna2Panel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1135, 1</value>
+  </data>
+  <data name="guna2Panel23.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
+    <value>guna2Panel23</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.Parent" xml:space="preserve">
+    <value>projectTaskDetailFragmentCOntainer</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel23.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
 </root>

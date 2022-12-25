@@ -88,5 +88,10 @@ namespace HubstafDesktop.Ui.Layout
             }
             
         }
+
+        private void TaskItemLayout_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

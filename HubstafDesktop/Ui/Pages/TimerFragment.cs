@@ -14,6 +14,7 @@ namespace HubstafDesktop.Ui.Pages
 {
     public partial class TimerFragment : UserControl
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public MainForm parentContext;
 
         private int timerCountdownValue = 0;
@@ -97,7 +98,22 @@ namespace HubstafDesktop.Ui.Pages
         {
             btnStartTimer.Enabled = isEnable;
         }
-       
+
         #endregion
+
+        private void timerPanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTimerCountDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTaskName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
