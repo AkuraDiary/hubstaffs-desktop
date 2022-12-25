@@ -36,3 +36,7 @@ C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\De
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\bin\Debug\Simple.ImageResizer.dll
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.LoginForm.resources
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
+C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources

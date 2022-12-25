@@ -26,12 +26,12 @@ namespace HubstafDesktop
 
         private void edtPassword_TextChanged(object sender, EventArgs e)
         {
-            this.password = edtPassword.Text;
+          //  this.password = edtPassword.Text;
         }
 
         private void edtUsername_TextChanged(object sender, EventArgs e)
         {
-            this.password = edtUsername.Text;
+         //   this.password = edtUsername.Text;
         }
 
         void moveToHomePage()
@@ -40,19 +40,20 @@ namespace HubstafDesktop
             mainForm.Show();
             this.Hide();
         }
-        private bool validateLoginForm()
-        {
-            if (string.IsNullOrEmpty(edtUsername.Text))
-            {
-                return false;
-            }else if (string.IsNullOrEmpty(edtUsername.Text))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+
+        //private bool validateLoginForm()
+        //{
+        //    //if (string.IsNullOrEmpty(edtUsername.Text))
+        //    //{
+        //    //    return false;
+        //    //}else if (string.IsNullOrEmpty(edtUsername.Text))
+        //    //{
+        //    //    return false;
+        //    //}
+        //    //else
+        //    //{
+        //    //    return true;
+        //    //}
+        //}
     }
 }
