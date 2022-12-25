@@ -37,7 +37,10 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.mainTimer = new HubstafDesktop.Ui.Layout.TimerFragment();
             this.mainTabControl.SuspendLayout();
+            this.navDashboard.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +80,7 @@
             // 
             // navDashboard
             // 
+            this.navDashboard.Controls.Add(this.mainTimer);
             this.navDashboard.ForeColor = System.Drawing.Color.Transparent;
             this.navDashboard.Location = new System.Drawing.Point(184, 4);
             this.navDashboard.Name = "navDashboard";
@@ -126,18 +130,51 @@
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // btnExit
+            // 
+            this.btnExit.BorderRadius = 2;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.Crimson;
+            this.btnExit.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(1239, -1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(64, 29);
+            this.btnExit.TabIndex = 32;
+            this.btnExit.Text = "X";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // mainTimer
+            // 
+            this.mainTimer.BackColor = System.Drawing.Color.White;
+            this.mainTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainTimer.ChoosedTask = null;
+            this.mainTimer.Location = new System.Drawing.Point(6, 8);
+            this.mainTimer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = null;
+            this.mainTimer.Size = new System.Drawing.Size(284, 277);
+            this.mainTimer.TabIndex = 0;
+            this.mainTimer.TimerCountdownValue = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1294, 756);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.mainTabControl);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "a";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.mainTabControl.ResumeLayout(false);
+            this.navDashboard.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -152,6 +189,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
+        private Ui.Layout.TimerFragment mainTimer;
     }
 }
 

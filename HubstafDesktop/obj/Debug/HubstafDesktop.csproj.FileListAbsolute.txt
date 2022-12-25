@@ -15,7 +15,6 @@ D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.GenerateResource.cache
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CoreCompileInputs.cache
@@ -36,7 +35,18 @@ C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\De
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+<<<<<<< HEAD
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\bin\Debug\Simple.ImageResizer.dll
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.LoginForm.resources
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources
+=======
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Simple.ImageResizer.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.LoginForm.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.ProjectItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TimerFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+>>>>>>> 7bdf3871c29cacee92be3fd005fe55a072326241

@@ -241,6 +241,7 @@ namespace HubstafDesktop
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+<<<<<<< HEAD
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1055, 577);
@@ -252,6 +253,12 @@ namespace HubstafDesktop
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.panel1);
+=======
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(49)))), ((int)(((byte)(90)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.formLoginPanel);
+>>>>>>> 7bdf3871c29cacee92be3fd005fe55a072326241
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

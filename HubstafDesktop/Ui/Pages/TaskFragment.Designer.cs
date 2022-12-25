@@ -34,7 +34,7 @@ namespace HubstafDesktop.Ui.Pages
             // TaskFragment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Name = "TaskFragment";
             this.Size = new System.Drawing.Size(888, 622);
             this.ResumeLayout(false);
