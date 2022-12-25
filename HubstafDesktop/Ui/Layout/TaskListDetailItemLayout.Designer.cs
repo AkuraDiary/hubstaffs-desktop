@@ -45,6 +45,9 @@
             this.taskPanel.Name = "taskPanel";
             this.taskPanel.Size = new System.Drawing.Size(894, 45);
             this.taskPanel.TabIndex = 13;
+            this.taskPanel.Click += new System.EventHandler(this.TaskItemLayout_Click);
+            this.taskPanel.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.taskPanel.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // lblDateCreated
             // 
@@ -56,6 +59,9 @@
             this.lblDateCreated.TabIndex = 5;
             this.lblDateCreated.Text = "12 January 2022";
             this.lblDateCreated.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDateCreated.Click += new System.EventHandler(this.TaskItemLayout_Click);
+            this.lblDateCreated.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.lblDateCreated.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // lblTaskDesc
             // 
@@ -66,7 +72,10 @@
             this.lblTaskDesc.Size = new System.Drawing.Size(287, 45);
             this.lblTaskDesc.TabIndex = 4;
             this.lblTaskDesc.Text = "Get owers in home more study and relax";
-            this.lblTaskDesc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTaskDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTaskDesc.Click += new System.EventHandler(this.TaskItemLayout_Click);
+            this.lblTaskDesc.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.lblTaskDesc.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // lblTaskName
             // 
@@ -78,6 +87,9 @@
             this.lblTaskName.TabIndex = 3;
             this.lblTaskName.Text = "Custome Interview";
             this.lblTaskName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTaskName.Click += new System.EventHandler(this.TaskItemLayout_Click);
+            this.lblTaskName.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.lblTaskName.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // TaskListDetailItemLayout
             // 

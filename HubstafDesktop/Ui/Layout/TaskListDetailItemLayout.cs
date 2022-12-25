@@ -1,4 +1,5 @@
 ﻿using HubstafDesktop.Data.Model;
+using HubstafDesktop.Ui.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace HubstafDesktop.Ui.Layout
 
         private UserTask taskData;
         private bool isSelected;
+        private TaskFragment parentContext;
 
         public bool IsSelected
         {
@@ -31,17 +33,17 @@ namespace HubstafDesktop.Ui.Layout
             get => taskData; set
             {
                 taskData = value;
-                //lblTaskName.Text = value.TaskName;
-
-
-                //lblTimeNeeded.Text = TimerUtil.formatTime(taskData.TimeNeeded);
+                lblTaskName.Text = value.TaskName;
+                lblTaskDesc.Text = value.TaskDesc;
+                lblDateCreated.Text = value.DateCreated.ToString("dd-MMM-yyyy");
             }
         }
 
 
-        public TaskListDetailItemLayout()
+        public TaskListDetailItemLayout(TaskFragment parentContext)
         {
             InitializeComponent();
+            this.parentContext = parentContext;
         }
 
 
@@ -52,14 +54,20 @@ namespace HubstafDesktop.Ui.Layout
             if (isActive)
             {
                 BackColor = Color.DodgerBlue;
+                taskPanel.BackColor = Color.DodgerBlue;
+
                 lblTaskName.ForeColor = Color.White;
-                //lblTimeNeeded.ForeColor = Color.White;
+                lblTaskDesc.ForeColor = Color.White;
+                lblDateCreated.ForeColor = Color.White;
             }
             else
             {
                 BackColor = Color.White;
+                taskPanel.BackColor = Color.White;
+
                 lblTaskName.ForeColor = Color.Black;
-                //lblTimeNeeded.ForeColor = Color.Black;
+                lblTaskDesc.ForeColor = Color.Black;
+                lblDateCreated.ForeColor = Color.Black;
             }
         }
         #endregion
@@ -71,7 +79,8 @@ namespace HubstafDesktop.Ui.Layout
 
         private void TaskItemLayout_Click(object sender, EventArgs e)
         {
-            IsSelected = true;
+            //IsSelected = true;
+            parentContext.parentContext.SelectedTask = taskData;
         }
 
         private void TaskItemLayout_MouseLeave(object sender, EventArgs e)

@@ -14,7 +14,7 @@ namespace HubstafDesktop.Ui.Pages
 {
     public partial class TimerFragment : UserControl
     {
-        MainForm parentContext;
+        public MainForm parentContext;
 
         private int timerCountdownValue = 0;
         private UserTask choosedTask;
@@ -36,6 +36,8 @@ namespace HubstafDesktop.Ui.Pages
                 if (choosedTask != null)
                 {
                     lblTaskName.Text = choosedTask.TaskName;
+                    timerCountdownValue = choosedTask.TimeNeeded;
+                    bindSecondAndMinute();
                 }
                 
             } }
@@ -54,6 +56,7 @@ namespace HubstafDesktop.Ui.Pages
         private void startTimerButton_Click(object sender, EventArgs e)
         {
             startTimerCountdown();
+            parentContext.focusMode(true);
         }
 
         void startTimerCountdown()
@@ -73,6 +76,7 @@ namespace HubstafDesktop.Ui.Pages
             {
                 countdownTimer.Stop();
                 changePlayButtonState(true);
+                parentContext.focusMode(false);
                 MessageBox.Show("Time's Up");
             }
         }

@@ -154,6 +154,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.mainTimerFragmentContainer.ResumeLayout(false);
             this.projectTaskDetailFragmentCOntainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.ResumeLayout(false);

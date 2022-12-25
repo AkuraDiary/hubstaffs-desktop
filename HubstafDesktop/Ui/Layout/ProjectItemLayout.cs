@@ -14,7 +14,7 @@ namespace HubstafDesktop.Ui.Layout
     public partial class ProjectItemLayout : UserControl
     {
         private UserProject projectData;
-
+        internal MainForm parentContext;
         public UserProject ProjectData
         {
             get => projectData; set
@@ -28,10 +28,11 @@ namespace HubstafDesktop.Ui.Layout
             }
         }
 
-        public ProjectItemLayout(UserProject userProject)
+        public ProjectItemLayout(MainForm parentContext, UserProject userProject)
         {
             InitializeComponent();
             ProjectData = userProject;
+            this.parentContext = parentContext;
         }
         public ProjectItemLayout()
         {
@@ -60,11 +61,18 @@ namespace HubstafDesktop.Ui.Layout
             projectTaskListContainer.Controls.Clear();
             foreach (var taskItem in projectData.TaskList)
             {
-                TaskItemLayout taskItemLayout = new TaskItemLayout();
+                TaskItemLayout taskItemLayout = new TaskItemLayout(this);
                 taskItemLayout.TaskData = taskItem;
 
                 projectTaskListContainer.Controls.Add(taskItemLayout);
             }
+        }
+
+
+        internal void ProjectItemLayout_Click(object sender, EventArgs e)
+        {
+            //send data into main form
+            parentContext.SelectedProject = projectData;
         }
     }
 }

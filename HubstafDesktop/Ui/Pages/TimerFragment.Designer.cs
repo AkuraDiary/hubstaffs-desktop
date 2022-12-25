@@ -82,7 +82,6 @@ namespace HubstafDesktop.Ui.Pages
             this.lblCurrentProjectName.Name = "lblCurrentProjectName";
             this.lblCurrentProjectName.Size = new System.Drawing.Size(284, 36);
             this.lblCurrentProjectName.TabIndex = 3;
-            this.lblCurrentProjectName.Text = "Marketing";
             this.lblCurrentProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTaskName
@@ -95,7 +94,6 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(284, 33);
             this.lblTaskName.TabIndex = 4;
-            this.lblTaskName.Text = "Customer Grows Vergies Bugs";
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // imageList1

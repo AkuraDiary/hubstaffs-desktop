@@ -15,6 +15,7 @@ namespace HubstafDesktop.Ui.Layout
     public partial class TaskItemLayout : UserControl
     {
         private UserTask taskData;
+        private ProjectItemLayout parentContext;
         private bool isSelected;
 
         public bool IsSelected { get => isSelected; set { 
@@ -34,14 +35,16 @@ namespace HubstafDesktop.Ui.Layout
             }
         }
 
-        public TaskItemLayout()
+        public TaskItemLayout(ProjectItemLayout parentContext)
         {
             InitializeComponent();
+            this.parentContext = parentContext;
         }
         public TaskItemLayout(UserTask taskData)
         {
             InitializeComponent();
             this.TaskData = taskData;
+          
         }
 
 
@@ -72,7 +75,9 @@ namespace HubstafDesktop.Ui.Layout
 
         private void TaskItemLayout_Click(object sender, EventArgs e)
         {
-            IsSelected = true;
+            //IsSelected = true;
+            parentContext.ProjectItemLayout_Click(sender, e);
+            parentContext.parentContext.SelectedTask = taskData;
         }
 
         private void TaskItemLayout_MouseLeave(object sender, EventArgs e)

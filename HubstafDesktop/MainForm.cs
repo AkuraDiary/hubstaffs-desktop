@@ -16,9 +16,50 @@ namespace HubstafDesktop
 {
     public partial class MainForm : Form
     {
+
+        #region prop region
+        private UserProject selectedProject;
+        private UserTask selectedTask;
+
+        public UserProject SelectedProject { 
+            get => selectedProject;
+            set { 
+                selectedProject = value;
+                if (selectedProject != null)
+                {
+                    taskFragment.ListtData = selectedProject.TaskList;
+                    lblCurrentProjectName.Text = selectedProject.ProjectName;
+                }
+                
+            }
+        }
+
+        public UserTask SelectedTask
+        {
+            get => selectedTask;
+            set
+            {
+                selectedTask = value;
+                if (selectedTask != null)
+                {
+                    mainTimer.ChoosedTask = selectedTask;
+
+                    lblSelectedTaskName.Text = selectedTask.TaskName;
+                    lblSelectedTaskDesc.Text = selectedTask.TaskDesc;
+                    mainTimer.ProjectName = selectedProject.ProjectName;
+                    lblTaskName.Text = selectedTask.TaskName;
+                }
+
+            }
+        }
+        #endregion
+
+
         public MainForm()
         {
             InitializeComponent();
+            mainTimer.parentContext = this;
+            taskFragment.parentContext = this;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -30,8 +71,9 @@ namespace HubstafDesktop
         {
 
             //Debug.WriteLine(DummyDataSource.dummyListProject.AsQueryable());
-            setTimer(120);
+           // setTimer(120);
             setupProjectList(DummyDataSource.dummyListProject);
+
         }
 
 
@@ -50,7 +92,7 @@ namespace HubstafDesktop
             projectListFragmentContainer.Controls.Clear();
             foreach (var projectItem in projectData)
             {
-                ProjectItemLayout item = new ProjectItemLayout(projectItem);
+                ProjectItemLayout item = new ProjectItemLayout(this, projectItem);
 
                 projectListFragmentContainer.Controls.Add(item);
             }
@@ -58,8 +100,39 @@ namespace HubstafDesktop
 
         #endregion
 
+        #region misceleannous
+        internal void focusMode(bool state)
+        {
+            projectTaskDetailFragmentCOntainer.Enabled = !state;
+            projectListFragmentContainer.Enabled = !state;
+            btnExit.Visible = !state;
+            
+        }
 
 
+        #endregion
 
+        #region formSetting
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+
+        #endregion
     }
 }
