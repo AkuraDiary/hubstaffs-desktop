@@ -87,6 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Dummy\DummyDataSource.cs" />
+    <Compile Include="Data\Model\UserProject.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -120,6 +122,7 @@
     <Compile Include="Ui\Layout\TimerFragment.Designer.cs">
       <DependentUpon>TimerFragment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Model\UserTask.cs" />
     <Compile Include="Ui\Pages\DashboardFragment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +135,7 @@
     <Compile Include="Ui\Pages\TaskFragment.Designer.cs">
       <DependentUpon>TaskFragment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\TimerUtil.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

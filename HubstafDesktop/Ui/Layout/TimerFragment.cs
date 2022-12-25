@@ -1,11 +1,13 @@
-﻿using System;
+﻿using HubstafDesktop.Data.Model;
+using HubstafDesktop.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace HubstafDesktop.Ui.Layout
@@ -13,11 +15,30 @@ namespace HubstafDesktop.Ui.Layout
     public partial class TimerFragment : UserControl
     {
         private int timerCountdownValue = 0;
+        private UserTask choosedTask;
+        private string projectName;
 
-        public int TimerCountdownValue { get => timerCountdownValue; set { 
-                timerCountdownValue = value; 
-                bindSecondAndMinute(); 
+        //        private UserTask choosedTask;
+
+        public int TimerCountdownValue
+        {
+            get => timerCountdownValue; set
+            {
+                timerCountdownValue = value;
+                bindSecondAndMinute();
+            }
+        }
+
+        public UserTask ChoosedTask { get => choosedTask; set { 
+                choosedTask = value;
+                lblTaskName.Text = value.TaskName;
             } }
+
+        public string ProjectName { get => projectName; set { 
+                projectName = value;
+                lblCurrentProjectName.Text = value;
+            } }
+
         public TimerFragment()
         {
             InitializeComponent();
@@ -36,7 +57,7 @@ namespace HubstafDesktop.Ui.Layout
 
         private void countdownTimer_Tick(object sender, EventArgs e)
         {
-            if(timerCountdownValue > 0)
+            if (timerCountdownValue > 0)
             {
                 timerCountdownValue--;
                 bindSecondAndMinute();
@@ -51,15 +72,15 @@ namespace HubstafDesktop.Ui.Layout
 
         void bindSecondAndMinute()
         {
-            int minutes = getMinuteOf(timerCountdownValue);
-            int second = getSecondOf(timerCountdownValue);
+            //int minutes = TimerUtil.getMinuteOf(timerCountdownValue);
+           // int second = TimerUtil.getSecondOf(timerCountdownValue);
 
-            this.lblTimerCountDown.Text = minutes.ToString() + " : " + second.ToString();
+            this.lblTimerCountDown.Text = TimerUtil.formatTime(timerCountdownValue);
         }
 
         private void TimerFragment_Load(object sender, EventArgs e)
         {
-           
+
         }
 
 
@@ -68,14 +89,7 @@ namespace HubstafDesktop.Ui.Layout
         {
             btnStartTimer.Enabled = isEnable;
         }
-        int getMinuteOf(int value)
-        {
-            return value / 60;
-        }
-        int getSecondOf(int value)
-        {
-            return value - (getMinuteOf(value) * 60);
-        }
+       
         #endregion
     }
 }

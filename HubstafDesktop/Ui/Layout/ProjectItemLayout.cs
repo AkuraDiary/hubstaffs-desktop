@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HubstafDesktop.Data.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,37 @@ namespace HubstafDesktop.Ui.Layout
 {
     public partial class ProjectItemLayout : UserControl
     {
-        public ProjectItemLayout()
+        private UserProject projectData;
+
+        public UserProject ProjectData { get => projectData; set {
+                projectData = value;
+                lblProjectName.Text = value.ProjectName;
+            } }
+
+        public ProjectItemLayout(UserProject userProject)
         {
             InitializeComponent();
+            this.projectData = userProject;
+        }
+
+        private void ProjectItemLayout_Load(object sender, EventArgs e)
+        {
+            if (projectData.TaskList.Count > 0)
+            {
+                setupTaskList();
+            }
+        }
+
+        void setupTaskList()
+        {
+            projectTaskListContainer.Controls.Clear();
+            foreach (var taskItem in projectData.TaskList)
+            {
+                TaskItemLayout taskItemLayout = new TaskItemLayout();
+                taskItemLayout.TaskData = taskItem;
+
+                projectTaskListContainer.Controls.Add(taskItemLayout);
+            }
         }
     }
 }

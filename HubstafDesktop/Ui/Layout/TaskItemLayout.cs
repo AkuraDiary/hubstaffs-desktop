@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HubstafDesktop.Data.Model;
+using HubstafDesktop.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,15 @@ namespace HubstafDesktop.Ui.Layout
 {
     public partial class TaskItemLayout : UserControl
     {
+        private UserTask taskData;
+
+        public UserTask TaskData { get => taskData; set {
+                taskData = value;
+                lblTaskName.Text = value.TaskName;
+
+
+                lblTimeNeeded.Text = TimerUtil.formatTime(taskData.TimeNeeded);
+            } }
         public TaskItemLayout()
         {
             InitializeComponent();

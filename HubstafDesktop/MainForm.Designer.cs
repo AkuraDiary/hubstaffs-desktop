@@ -150,9 +150,12 @@
             // mainTimer
             // 
             this.mainTimer.BackColor = System.Drawing.Color.White;
-            this.mainTimer.Location = new System.Drawing.Point(188, 22);
+            this.mainTimer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainTimer.ChoosedTask = null;
+            this.mainTimer.Location = new System.Drawing.Point(6, 8);
             this.mainTimer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = null;
             this.mainTimer.Size = new System.Drawing.Size(284, 277);
             this.mainTimer.TabIndex = 0;
             this.mainTimer.TimerCountdownValue = 0;
