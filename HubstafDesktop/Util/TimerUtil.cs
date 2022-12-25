@@ -21,7 +21,18 @@ namespace HubstafDesktop.Util
         {
             int minute = getMinuteOf(timeValue);
             int second = getSecondOf(timeValue);
-            return minute.ToString() + " : " + second.ToString();
+
+            string mMinute = minute.ToString();
+            string mSecond = second.ToString();
+            if (minute < 10) {
+                mMinute = "0" + mMinute;
+            }
+            if (second < 10)
+            {
+                mSecond = "0" + mSecond;
+            }
+
+            return mMinute + " : " + mSecond;
         }
     }
 }
