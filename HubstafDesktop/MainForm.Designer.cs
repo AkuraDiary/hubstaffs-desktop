@@ -33,7 +33,7 @@
             this.navigationImageList = new System.Windows.Forms.ImageList(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -69,13 +69,13 @@
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // flowLayoutPanel1
+            // mainTimerFragmentContainer
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(308, 279);
-            this.flowLayoutPanel1.TabIndex = 33;
+            this.mainTimerFragmentContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.mainTimerFragmentContainer.Location = new System.Drawing.Point(5, 0);
+            this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
+            this.mainTimerFragmentContainer.Size = new System.Drawing.Size(308, 279);
+            this.mainTimerFragmentContainer.TabIndex = 33;
             // 
             // flowLayoutPanel3
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.flowLayoutPanel5);
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.mainTimerFragmentContainer);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
@@ -151,8 +151,8 @@
         private System.Windows.Forms.ImageList navigationImageList;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
-        private Ui.Layout.TimerFragment mainTimer;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        
+        private System.Windows.Forms.FlowLayoutPanel mainTimerFragmentContainer;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;

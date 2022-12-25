@@ -32,13 +32,9 @@ namespace HubstafDesktop
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-            this.label7 = new System.Windows.Forms.Label();
+
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-=======
-            this.label6 = new System.Windows.Forms.Label();
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -48,14 +44,11 @@ namespace HubstafDesktop
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-=======
+
             this.edtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -74,33 +67,9 @@ namespace HubstafDesktop
             this.panel1.Size = new System.Drawing.Size(457, 577);
             this.panel1.TabIndex = 1;
             // 
-<<<<<<< HEAD
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 8F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(186, 493);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 19);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "We survived";
-            // 
+
             // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 8F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(169, 477);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 19);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "We Recruit in teams";
-            // 
-            // label5
-=======
-            // label6
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             // 
             this.label6.Font = new System.Drawing.Font("Poppins", 8F);
             this.label6.ForeColor = System.Drawing.Color.White;
@@ -139,24 +108,6 @@ namespace HubstafDesktop
             // 
             // edtUsername
             // 
-<<<<<<< HEAD
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Username";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(581, 297);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(378, 40);
-            this.guna2TextBox1.TabIndex = 2;
-=======
             this.edtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtUsername.DefaultText = "";
             this.edtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -174,7 +125,7 @@ namespace HubstafDesktop
             this.edtUsername.SelectedText = "";
             this.edtUsername.Size = new System.Drawing.Size(335, 40);
             this.edtUsername.TabIndex = 2;
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             // 
             // guna2Panel1
             // 
@@ -212,21 +163,7 @@ namespace HubstafDesktop
             this.label1.TabIndex = 5;
             this.label1.Text = "Hello Again!";
             // 
-<<<<<<< HEAD
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 8F);
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(577, 214);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Hubstaff is a remote company that creates workforce management";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-=======
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Poppins", 8F);
@@ -238,42 +175,7 @@ namespace HubstafDesktop
             this.label3.Text = "Your Most Productive Works Session Starts Here";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-<<<<<<< HEAD
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "Password";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(581, 358);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(378, 40);
-            this.guna2TextBox2.TabIndex = 8;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(611, 416);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(335, 40);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "LOGIN";
-=======
+
             // edtPassword
             // 
             this.edtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -328,7 +230,7 @@ namespace HubstafDesktop
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
->>>>>>> cba99c9b08a62e0263e41dfc0c047ad3cb6accad
+
             // 
             // LoginForm
             // 

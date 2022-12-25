@@ -31,7 +31,7 @@ namespace HubstafDesktop.Ui.Layout
         {
             this.projectTaskListContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_txt = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbl_task = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnl_txt.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,26 +47,26 @@ namespace HubstafDesktop.Ui.Layout
             // 
             // pnl_txt
             // 
-            this.pnl_txt.Controls.Add(this.lbl_task);
+            this.pnl_txt.Controls.Add(this.lblProjectName);
             this.pnl_txt.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_txt.Location = new System.Drawing.Point(0, 0);
             this.pnl_txt.Name = "pnl_txt";
             this.pnl_txt.Size = new System.Drawing.Size(308, 51);
             this.pnl_txt.TabIndex = 1;
             // 
-            // lbl_task
+            // lblProjectName
             // 
-            this.lbl_task.AutoSize = false;
-            this.lbl_task.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_task.Font = new System.Drawing.Font("Poppins", 11F);
-            this.lbl_task.ForeColor = System.Drawing.Color.Black;
-            this.lbl_task.Location = new System.Drawing.Point(13, 6);
-            this.lbl_task.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.lbl_task.Name = "lbl_task";
-            this.lbl_task.Size = new System.Drawing.Size(239, 39);
-            this.lbl_task.TabIndex = 7;
-            this.lbl_task.Text = "Task Item Time";
-            this.lbl_task.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblProjectName.AutoSize = false;
+            this.lblProjectName.BackColor = System.Drawing.Color.Transparent;
+            this.lblProjectName.Font = new System.Drawing.Font("Poppins", 11F);
+            this.lblProjectName.ForeColor = System.Drawing.Color.Black;
+            this.lblProjectName.Location = new System.Drawing.Point(13, 6);
+            this.lblProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
+            this.lblProjectName.Name = "lblProjectName";
+            this.lblProjectName.Size = new System.Drawing.Size(239, 39);
+            this.lblProjectName.TabIndex = 7;
+            this.lblProjectName.Text = "Task Item Time";
+            this.lblProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ProjectItemLayout
             // 
@@ -85,6 +85,6 @@ namespace HubstafDesktop.Ui.Layout
 
         private System.Windows.Forms.FlowLayoutPanel projectTaskListContainer;
         private Guna.UI2.WinForms.Guna2Panel pnl_txt;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_task;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblProjectName;
     }
 }
