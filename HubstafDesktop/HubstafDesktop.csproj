@@ -116,6 +116,7 @@
     <Compile Include="Ui\Layout\TaskItemLayout.Designer.cs">
       <DependentUpon>TaskItemLayout.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Ui\Layout\TaskListDetailItemLayout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,9 +124,12 @@
       <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Ui\Layout\TimerFragment.cs">
+=======
+    <Compile Include="Ui\Pages\TimerFragment.cs">
+>>>>>>> 1109b25ef653fbacf64c68f317429c1af0193a35
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ui\Layout\TimerFragment.Designer.cs">
+    <Compile Include="Ui\Pages\TimerFragment.Designer.cs">
       <DependentUpon>TimerFragment.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Model\UserTask.cs" />
@@ -145,6 +149,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.aa.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,10 +170,14 @@
     <EmbeddedResource Include="Ui\Layout\TaskItemLayout.resx">
       <DependentUpon>TaskItemLayout.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Ui\Layout\TaskListDetailItemLayout.resx">
       <DependentUpon>TaskListDetailItemLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\Layout\TimerFragment.resx">
+=======
+    <EmbeddedResource Include="Ui\Pages\TimerFragment.resx">
+>>>>>>> 1109b25ef653fbacf64c68f317429c1af0193a35
       <DependentUpon>TimerFragment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\Pages\DashboardFragment.resx">

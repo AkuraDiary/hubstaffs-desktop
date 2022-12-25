@@ -41,7 +41,7 @@ namespace HubstafDesktop.Ui.Layout
             this.projectTaskListContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.projectTaskListContainer.Location = new System.Drawing.Point(-1, 57);
             this.projectTaskListContainer.Name = "projectTaskListContainer";
-            this.projectTaskListContainer.Size = new System.Drawing.Size(309, 413);
+            this.projectTaskListContainer.Size = new System.Drawing.Size(309, 274);
             this.projectTaskListContainer.TabIndex = 0;
             this.projectTaskListContainer.WrapContents = false;
             // 
@@ -74,7 +74,7 @@ namespace HubstafDesktop.Ui.Layout
             this.Controls.Add(this.pnl_txt);
             this.Controls.Add(this.projectTaskListContainer);
             this.Name = "ProjectItemLayout";
-            this.Size = new System.Drawing.Size(308, 470);
+            this.Size = new System.Drawing.Size(308, 331);
             this.Load += new System.EventHandler(this.ProjectItemLayout_Load);
             this.pnl_txt.ResumeLayout(false);
             this.ResumeLayout(false);

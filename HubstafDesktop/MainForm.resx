@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        CAAAAk1TRnQBSQFMAwEBAAGoAQABqAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CAAAAk1TRnQBSQFMAwEBAAHEAQABxAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
@@ -167,7 +167,247 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>178, 3</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>79</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1294, 756</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTaskName.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblTaskName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt</value>
+  </data>
+  <data name="lblTaskName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 30</value>
+  </data>
+  <data name="lblTaskName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 26</value>
+  </data>
+  <data name="lblTaskName.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="lblTaskName.Text" xml:space="preserve">
+    <value>Website Design</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Name" xml:space="preserve">
+    <value>lblTaskName</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTaskName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCurrentProjectName.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblCurrentProjectName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 11pt, style=Bold</value>
+  </data>
+  <data name="lblCurrentProjectName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 10</value>
+  </data>
+  <data name="lblCurrentProjectName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="lblCurrentProjectName.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="lblCurrentProjectName.Text" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Name" xml:space="preserve">
+    <value>lblCurrentProjectName</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="taskDescriptionFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="taskDescriptionFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 564</value>
+  </data>
+  <data name="taskDescriptionFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>939, 191</value>
+  </data>
+  <data name="taskDescriptionFragmentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionFragmentContainer.Name" xml:space="preserve">
+    <value>taskDescriptionFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionFragmentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionFragmentContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;taskDescriptionFragmentContainer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="projectTaskDetailFragmentCOntainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 139</value>
+  </data>
+  <data name="projectTaskDetailFragmentCOntainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>939, 419</value>
+  </data>
+  <data name="projectTaskDetailFragmentCOntainer.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Name" xml:space="preserve">
+    <value>projectTaskDetailFragmentCOntainer</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="projectListFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="projectListFragmentContainer.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="projectListFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 303</value>
+  </data>
+  <data name="projectListFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 452</value>
+  </data>
+  <data name="projectListFragmentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Name" xml:space="preserve">
+    <value>projectListFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;projectListFragmentContainer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="mainTimerFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 279</value>
+  </data>
+  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
+    <value>mainTimer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
+    <value>HubstafDesktop.Ui.Layout.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainTimerFragmentContainer.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="mainTimerFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 10</value>
+  </data>
+  <data name="mainTimerFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 279</value>
+  </data>
+  <data name="mainTimerFragmentContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;mainTimerFragmentContainer.Name" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;mainTimerFragmentContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainTimerFragmentContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainTimerFragmentContainer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt, style=Bold</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1237, -3</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 34</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="&gt;&gt;navigationImageList.Name" xml:space="preserve">
+    <value>navigationImageList</value>
+  </data>
+  <data name="&gt;&gt;navigationImageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guna2Elipse1.Name" xml:space="preserve">
+    <value>guna2Elipse1</value>
+  </data>
+  <data name="&gt;&gt;guna2Elipse1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Elipse, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

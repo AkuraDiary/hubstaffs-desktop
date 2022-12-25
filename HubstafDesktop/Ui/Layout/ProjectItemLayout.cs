@@ -15,18 +15,39 @@ namespace HubstafDesktop.Ui.Layout
     {
         private UserProject projectData;
 
-        public UserProject ProjectData { get => projectData; set {
+        public UserProject ProjectData
+        {
+            get => projectData; set
+            {
                 projectData = value;
-                lblProjectName.Text = value.ProjectName;
-            } }
+                if (projectData != null)
+                {
+                    lblProjectName.Text = value.ProjectName;
+                }
+
+            }
+        }
 
         public ProjectItemLayout(UserProject userProject)
         {
             InitializeComponent();
             this.projectData = userProject;
         }
+        public ProjectItemLayout()
+        {
+            InitializeComponent();
+        }
 
         private void ProjectItemLayout_Load(object sender, EventArgs e)
+        {
+            if (projectData != null)
+            {
+                bindData();
+            }
+        }
+
+
+        void bindData()
         {
             if (projectData.TaskList.Count > 0)
             {

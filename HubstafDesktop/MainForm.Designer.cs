@@ -34,11 +34,13 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.mainTimer = new HubstafDesktop.Ui.Layout.TimerFragment();
+            this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.taskDescriptionFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.mainTimerFragmentContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationImageList
@@ -54,95 +56,82 @@
             // 
             // btnExit
             // 
-            this.btnExit.BorderRadius = 2;
+            this.btnExit.BorderRadius = 4;
             this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExit.FillColor = System.Drawing.Color.Crimson;
-            this.btnExit.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1239, -1);
+            this.btnExit.FillColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.ForeColor = System.Drawing.Color.Crimson;
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(64, 29);
-            this.btnExit.TabIndex = 32;
-            this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // mainTimerFragmentContainer
             // 
             this.mainTimerFragmentContainer.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mainTimerFragmentContainer.Location = new System.Drawing.Point(5, 0);
+            this.mainTimerFragmentContainer.Controls.Add(this.mainTimer);
+            resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
-            this.mainTimerFragmentContainer.Size = new System.Drawing.Size(308, 279);
-            this.mainTimerFragmentContainer.TabIndex = 33;
             // 
-            // flowLayoutPanel3
+            // mainTimer
             // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(5, 285);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(308, 470);
-            this.flowLayoutPanel3.TabIndex = 35;
+            this.mainTimer.BackColor = System.Drawing.Color.White;
+            this.mainTimer.ChoosedTask = null;
+            resources.ApplyResources(this.mainTimer, "mainTimer");
+            this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = "";
+            this.mainTimer.TimerCountdownValue = 0;
             // 
-            // flowLayoutPanel4
+            // projectListFragmentContainer
             // 
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(319, 92);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(970, 466);
-            this.flowLayoutPanel4.TabIndex = 37;
+            resources.ApplyResources(this.projectListFragmentContainer, "projectListFragmentContainer");
+            this.projectListFragmentContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.projectListFragmentContainer.Name = "projectListFragmentContainer";
             // 
-            // flowLayoutPanel5
+            // projectTaskDetailFragmentCOntainer
             // 
-            this.flowLayoutPanel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(319, 564);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(970, 191);
-            this.flowLayoutPanel5.TabIndex = 38;
+            this.projectTaskDetailFragmentCOntainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
+            this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
+            // 
+            // taskDescriptionFragmentContainer
+            // 
+            this.taskDescriptionFragmentContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.taskDescriptionFragmentContainer, "taskDescriptionFragmentContainer");
+            this.taskDescriptionFragmentContainer.Name = "taskDescriptionFragmentContainer";
             // 
             // lblCurrentProjectName
             // 
-            this.lblCurrentProjectName.AutoSize = false;
+            resources.ApplyResources(this.lblCurrentProjectName, "lblCurrentProjectName");
             this.lblCurrentProjectName.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrentProjectName.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Bold);
             this.lblCurrentProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCurrentProjectName.Location = new System.Drawing.Point(323, 10);
             this.lblCurrentProjectName.Name = "lblCurrentProjectName";
-            this.lblCurrentProjectName.Size = new System.Drawing.Size(45, 21);
-            this.lblCurrentProjectName.TabIndex = 39;
-            this.lblCurrentProjectName.Text = "Tasks";
             // 
             // lblTaskName
             // 
-            this.lblTaskName.AutoSize = false;
+            resources.ApplyResources(this.lblTaskName, "lblTaskName");
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
-            this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
-            this.lblTaskName.Location = new System.Drawing.Point(323, 30);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(96, 26);
-            this.lblTaskName.TabIndex = 40;
-            this.lblTaskName.Text = "Website Design";
             this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1294, 756);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.lblCurrentProjectName);
-            this.Controls.Add(this.flowLayoutPanel5);
-            this.Controls.Add(this.flowLayoutPanel4);
-            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.taskDescriptionFragmentContainer);
+            this.Controls.Add(this.projectTaskDetailFragmentCOntainer);
+            this.Controls.Add(this.projectListFragmentContainer);
             this.Controls.Add(this.mainTimerFragmentContainer);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "a";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.mainTimerFragmentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -153,11 +142,12 @@
         private Guna.UI2.WinForms.Guna2Button btnExit;
         
         private System.Windows.Forms.FlowLayoutPanel mainTimerFragmentContainer;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel projectListFragmentContainer;
+        private System.Windows.Forms.FlowLayoutPanel taskDescriptionFragmentContainer;
+        private System.Windows.Forms.FlowLayoutPanel projectTaskDetailFragmentCOntainer;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentProjectName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaskName;
+        private Ui.Layout.TimerFragment mainTimer;
     }
 }
 
