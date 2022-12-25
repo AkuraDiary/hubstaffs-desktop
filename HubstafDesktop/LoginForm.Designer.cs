@@ -44,6 +44,7 @@ namespace HubstafDesktop
             this.label3 = new System.Windows.Forms.Label();
             this.edtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -87,9 +88,9 @@ namespace HubstafDesktop
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 112);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 77);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 277);
+            this.pictureBox1.Size = new System.Drawing.Size(416, 312);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -110,13 +111,13 @@ namespace HubstafDesktop
             this.edtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.edtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.edtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.edtUsername.Location = new System.Drawing.Point(581, 297);
+            this.edtUsername.Location = new System.Drawing.Point(611, 297);
             this.edtUsername.Name = "edtUsername";
             this.edtUsername.PasswordChar = '\0';
             this.edtUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
             this.edtUsername.PlaceholderText = "Username";
             this.edtUsername.SelectedText = "";
-            this.edtUsername.Size = new System.Drawing.Size(378, 40);
+            this.edtUsername.Size = new System.Drawing.Size(335, 40);
             this.edtUsername.TabIndex = 2;
             // 
             // guna2Panel1
@@ -177,14 +178,15 @@ namespace HubstafDesktop
             this.edtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.edtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.edtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.edtPassword.Location = new System.Drawing.Point(581, 358);
+            this.edtPassword.Location = new System.Drawing.Point(611, 358);
             this.edtPassword.Name = "edtPassword";
-            this.edtPassword.PasswordChar = '\0';
+            this.edtPassword.PasswordChar = '●';
             this.edtPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
             this.edtPassword.PlaceholderText = "Password";
             this.edtPassword.SelectedText = "";
-            this.edtPassword.Size = new System.Drawing.Size(378, 40);
+            this.edtPassword.Size = new System.Drawing.Size(335, 40);
             this.edtPassword.TabIndex = 8;
+            this.edtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -203,12 +205,30 @@ namespace HubstafDesktop
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BorderRadius = 2;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.Transparent;
+            this.btnExit.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(191)))));
+            this.btnExit.Location = new System.Drawing.Point(1008, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(51, 25);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "X";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1055, 577);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.edtPassword);
             this.Controls.Add(this.label3);
@@ -244,5 +264,6 @@ namespace HubstafDesktop
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2TextBox edtPassword;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

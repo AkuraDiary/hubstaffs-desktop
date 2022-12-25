@@ -45,6 +45,11 @@ namespace HubstafDesktop
             this.Hide();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private bool validateLoginForm()
         {
             if (string.IsNullOrEmpty(edtUsername.Text))
