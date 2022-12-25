@@ -1,6 +1,7 @@
 ﻿using HubstafDesktop.Data.Dummy;
 using HubstafDesktop.Data.Model;
 using HubstafDesktop.Ui.Layout;
+using HubstafDesktop.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,17 +22,26 @@ namespace HubstafDesktop
         #region prop region
         private UserProject selectedProject;
         private UserTask selectedTask;
-
-        public UserProject SelectedProject { 
-            get => selectedProject;
+        private int totalTimeSpent = 0;
+        public int TotalTimeSpent { get => totalTimeSpent; 
             set { 
+                totalTimeSpent = value;
+                lblTotalTimeSpent.Text = TimerUtil.formatTime(totalTimeSpent);
+            } 
+        }
+
+        public UserProject SelectedProject
+        {
+            get => selectedProject;
+            set
+            {
                 selectedProject = value;
                 if (selectedProject != null)
                 {
                     taskFragment.ListtData = selectedProject.TaskList;
                     lblCurrentProjectName.Text = selectedProject.ProjectName;
                 }
-                
+
             }
         }
 
@@ -72,7 +82,7 @@ namespace HubstafDesktop
         {
 
             //Debug.WriteLine(DummyDataSource.dummyListProject.AsQueryable());
-           // setTimer(120);
+            // setTimer(120);
             setupProjectList(DummyDataSource.dummyListProject);
 
         }
@@ -83,6 +93,7 @@ namespace HubstafDesktop
         {
             mainTimer.TimerCountdownValue = value;
         }
+
 
         #endregion
 
@@ -109,11 +120,14 @@ namespace HubstafDesktop
             btnExit.Visible = !state;
             btnMinimze.Visible = state;
             btnFormMode.PerformClick();
-            
+
         }
 
         int FormOriginalWidth = 1294;
+        int FormOriginalHeight = 775;
         bool isMini = false;
+        
+
         private void btnFormMode_Click(object sender, EventArgs e)
         {
             isMini = !isMini; // switch state
@@ -125,7 +139,7 @@ namespace HubstafDesktop
             {
                 this.Width = FormOriginalWidth;
             }
-            
+
         }
 
 
@@ -169,6 +183,6 @@ namespace HubstafDesktop
 
         }
 
-     
+
     }
 }

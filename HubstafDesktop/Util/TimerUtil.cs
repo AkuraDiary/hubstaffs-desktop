@@ -8,6 +8,11 @@ namespace HubstafDesktop.Util
 {
    public static class TimerUtil
     {
+
+        public static int getHourOf(int value)
+        {
+            return value / 3600;
+        }
         public static int getMinuteOf(int value)
         {
             return value / 60;
@@ -19,11 +24,20 @@ namespace HubstafDesktop.Util
 
         public static string formatTime(int timeValue)
         {
+            int hour = getHourOf(timeValue);
             int minute = getMinuteOf(timeValue);
             int second = getSecondOf(timeValue);
 
+
+            string mHour = hour.ToString();
             string mMinute = minute.ToString();
             string mSecond = second.ToString();
+
+            if (hour < 10)
+            {
+                mHour = "0" + mHour;
+            }
+
             if (minute < 10) {
                 mMinute = "0" + mMinute;
             }
@@ -32,7 +46,7 @@ namespace HubstafDesktop.Util
                 mSecond = "0" + mSecond;
             }
 
-            return mMinute + " : " + mSecond;
+            return mHour + " : " + mMinute + " : " + mSecond;
         }
     }
 }
