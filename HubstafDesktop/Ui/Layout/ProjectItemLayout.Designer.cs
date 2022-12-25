@@ -47,11 +47,12 @@ namespace HubstafDesktop.Ui.Layout
             // 
             // pnl_txt
             // 
+            this.pnl_txt.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pnl_txt.Controls.Add(this.lblProjectName);
             this.pnl_txt.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_txt.Location = new System.Drawing.Point(0, 0);
             this.pnl_txt.Name = "pnl_txt";
-            this.pnl_txt.Size = new System.Drawing.Size(315, 51);
+            this.pnl_txt.Size = new System.Drawing.Size(313, 51);
             this.pnl_txt.TabIndex = 1;
             // 
             // lblProjectName
@@ -71,10 +72,11 @@ namespace HubstafDesktop.Ui.Layout
             // ProjectItemLayout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.pnl_txt);
             this.Controls.Add(this.projectTaskListContainer);
             this.Name = "ProjectItemLayout";
-            this.Size = new System.Drawing.Size(315, 300);
+            this.Size = new System.Drawing.Size(313, 298);
             this.Load += new System.EventHandler(this.ProjectItemLayout_Load);
             this.pnl_txt.ResumeLayout(false);
             this.ResumeLayout(false);

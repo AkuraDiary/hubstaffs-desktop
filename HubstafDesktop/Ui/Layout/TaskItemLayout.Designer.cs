@@ -45,7 +45,8 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTaskName.TabIndex = 5;
             this.lblTaskName.Text = "Customer Grows Vergies Bugs";
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
+            this.lblTaskName.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.lblTaskName.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // lblTimeNeeded
             // 
@@ -59,6 +60,8 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTimeNeeded.TabIndex = 6;
             this.lblTimeNeeded.Text = "00:00";
             this.lblTimeNeeded.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTimeNeeded.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.lblTimeNeeded.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             // 
             // TaskItemLayout
             // 
@@ -67,6 +70,9 @@ namespace HubstafDesktop.Ui.Layout
             this.Controls.Add(this.lblTaskName);
             this.Name = "TaskItemLayout";
             this.Size = new System.Drawing.Size(309, 56);
+            this.Click += new System.EventHandler(this.TaskItemLayout_Click);
+            this.MouseEnter += new System.EventHandler(this.TaskItemLayout_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.TaskItemLayout_MouseLeave);
             this.ResumeLayout(false);
 
         }

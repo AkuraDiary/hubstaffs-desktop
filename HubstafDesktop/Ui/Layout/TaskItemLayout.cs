@@ -34,9 +34,40 @@ namespace HubstafDesktop.Ui.Layout
             this.TaskData = taskData;
         }
 
-        private void lblTaskName_Click(object sender, EventArgs e)
+
+
+
+        #region helper region
+        void setState(bool isActive)
+        {
+            if (isActive)
+            {
+                BackColor = Color.DodgerBlue;
+                lblTaskName.ForeColor = Color.White;
+                lblTimeNeeded.ForeColor = Color.White;
+            }
+            else
+            {
+                BackColor = Color.White;
+                lblTaskName.ForeColor = Color.Black;
+                lblTimeNeeded.ForeColor = Color.Black;
+            }
+        }
+        #endregion
+
+        private void TaskItemLayout_MouseEnter(object sender, EventArgs e)
+        {
+            setState(true);
+        }
+
+        private void TaskItemLayout_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TaskItemLayout_MouseLeave(object sender, EventArgs e)
+        {
+            setState(false);
         }
     }
 }
