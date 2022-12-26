@@ -127,7 +127,7 @@ namespace HubstafDesktop
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
             setupProjectList(DummyDataSource.dummyListProject);
 
         }
@@ -153,6 +153,7 @@ namespace HubstafDesktop
 
                 projectListFragmentContainer.Controls.Add(item);
             }
+            SelectedProject = null;
         }
 
         #endregion
