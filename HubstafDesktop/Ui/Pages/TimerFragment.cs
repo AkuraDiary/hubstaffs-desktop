@@ -116,6 +116,9 @@ namespace HubstafDesktop.Ui.Pages
         {
             //todo update task status
             choosedTask.Status = "done";
+            var now = DateTime.Now;
+            MessageBox.Show("DONE at : " + now);
+            choosedTask.FinishedTime = now;
             parentContext.SelectedTask = choosedTask;
             parentContext.syncSelectedTask(choosedTask); // sync
 

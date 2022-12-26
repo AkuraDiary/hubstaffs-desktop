@@ -63,8 +63,6 @@ namespace HubstafDesktop.Data.Remote
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
-
-            MessageBox.Show(resultArray);
           
 
             if (resultArray != null)
@@ -89,7 +87,7 @@ namespace HubstafDesktop.Data.Remote
         }
 
 
-        #region how to fuckin do request
+        #region [notes] how to do fuckin request
 
         //public static async Task<List<HasilModel>> getAllHasilDataAsync()
         //{
@@ -122,8 +120,7 @@ namespace HubstafDesktop.Data.Remote
 
         #endregion
 
-
-        #region how to call it from fragment
+        #region [notes] how to call it from fragment
         //private List<HasilBindingModel> listDataHasil;
 
         //public ListHasilFragment()
@@ -163,7 +160,7 @@ namespace HubstafDesktop.Data.Remote
         //}
         #endregion
 
-        #region get method
+        #region [notes]  get method
         //public static async Task<List<HasilModel>> getAllHasilDataAsync()
         //{
 
