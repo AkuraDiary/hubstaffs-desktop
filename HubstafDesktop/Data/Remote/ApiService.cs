@@ -1,5 +1,8 @@
-﻿using System;
+﻿using HubstafDesktop.Data.Model.Response;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -12,7 +15,7 @@ namespace HubstafDesktop.Data.Remote
     {
 
         #region config
-        public static string base_url = "http://localhost/pildunpildun/api/";
+        public static string base_url = "http://localhost:8000/api/";
         private static HttpClient api_client = new HttpClient
         {
             BaseAddress = new Uri(base_url)
@@ -27,27 +30,47 @@ namespace HubstafDesktop.Data.Remote
         #endregion
 
         #region endpoints region
-        public static string timListEndpoint = $"tim";
-        public static string jadwalListEndpoint = $"jadwal";
-        public static string hasilListEndpoint = $"hasil";
+        public static string loginEndpoint = $"login";
 
-        public static string timByIdEndpoint = "tim/{0}";
-        public static string jadwalByIdEndpoint = "jadwal/{0}";
-        public static string hasilByIdEndpoint = "hasil/{0}";
+        //public static string jadwalByIdEndpoint = "jadwal/{0}";
+        //public static string hasilByIdEndpoint = "hasil/{0}";
         #endregion
 
-        public static async Task<List<HasilModel>> loginUser()
+        public static async Task<UserAuthResponse> loginUserAsync(string mUsername, string mPassword)
         {
 
+            // Create a login request object
+            var request = new
+            {
+                username = mUsername,
+                password = mPassword,
+            };
+
+            // Convert the request object to a JSON string
+            var requestJson = JsonConvert.SerializeObject(request);
+
+            // Create a StringContent object with the request JSON string
+            var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
+
+
             // make and api call and receive HttpResponseMessage
-            var responseMessage = await getclient().GetAsync(ApiService.hasilListEndpoint, HttpCompletionOption.ResponseContentRead);
+
+            var client = getclient();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
+
+            var responseMessage = await client.PostAsync(ApiService.loginEndpoint, content);
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
 
-            var listHasilData = JsonConvert.DeserializeObject<List<HasilModel>>(resultArray);
-            //Debug.WriteLine("hasildata list " + listHasilData.Count);
-            return listHasilData;
+            // Deserialize the response content into a login response object
+            var loginResponse = JsonConvert.DeserializeObject<UserAuthResponse>(resultArray);
+
+            // var listHasilData = JsonConvert.DeserializeObject<List<HasilModel>>(resultArray);
+            
+            Debug.WriteLine("user login response : " + resultArray);
+
+            return loginResponse;
         }
 
 

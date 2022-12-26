@@ -65,6 +65,7 @@ namespace HubstafDesktop.Ui.Pages
             {
                 startTimerCountdown();
                 parentContext.miniMode();
+                parentContext.focusMode(true);
             }
             else
             {

@@ -1,4 +1,5 @@
-﻿using HubstafDesktop.Data.Dummy;
+﻿using HubstafDesktop.Data;
+using HubstafDesktop.Data.Dummy;
 using HubstafDesktop.Data.Images;
 using HubstafDesktop.Data.Model;
 using HubstafDesktop.Ui.Layout;
@@ -147,7 +148,7 @@ namespace HubstafDesktop
 
             Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
             setupProjectList(DummyDataSource.dummyListProject);
-
+            lblCurrentUser.Text = Repository.loggedInUser.Name;
         }
 
 
@@ -199,7 +200,7 @@ namespace HubstafDesktop
             btnExit.Visible = !state;
             btnMinimze.Visible = state;
             btnFormMode.PerformClick();
-
+            this.BringToFront();
         }
 
         int FormOriginalWidth = 1294;
@@ -231,7 +232,7 @@ namespace HubstafDesktop
             {
                 this.Width = 340;
                 //this.Height = 340;
-                this.BringToFront();
+                
 
             }
             else

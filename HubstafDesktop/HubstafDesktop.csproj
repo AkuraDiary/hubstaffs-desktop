@@ -124,6 +124,7 @@
     <Compile Include="Data\Images\SsForm.Designer.cs">
       <DependentUpon>SsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Model\Response\UserAuthResponse.cs" />
     <Compile Include="Data\Model\UserProject.cs" />
     <Compile Include="Data\Remote\ApiService.cs" />
     <Compile Include="Data\Repository.cs" />
@@ -235,7 +236,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\Model\Binding\" />
-    <Folder Include="Data\Model\Response\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

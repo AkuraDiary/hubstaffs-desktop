@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HubstafDesktop.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,32 +14,28 @@ namespace HubstafDesktop
     public partial class LoginForm : Form
     {
 
-        private string username, password;
+        
         public LoginForm()
         {
             InitializeComponent();
             this.KeyPreview = true;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             if (validateLoginForm())
             {
+               
                 //todo do login here
+                await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
+
+                MessageBox.Show("Succes Login!");
                 moveToHomePage();
             }
         }
 
         #region form validation and data region
-        private void edtPassword_TextChanged(object sender, EventArgs e)
-        {
-          this.password = edtPassword.Text;
-        }
-
-        private void edtUsername_TextChanged(object sender, EventArgs e)
-        {
-         this.password = edtUsername.Text;
-        }
+ 
         private bool validateLoginForm()
         {
             if (string.IsNullOrEmpty(edtUsername.Text))
