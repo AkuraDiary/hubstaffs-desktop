@@ -31,8 +31,9 @@ namespace HubstafDesktop.Ui.Pages
             get => timerCountdownValue; set
             {
                 timerCountdownValue = value;
-               
                 bindSecondAndMinute();
+                
+           
             }
         }
 
@@ -60,8 +61,16 @@ namespace HubstafDesktop.Ui.Pages
 
         private void startTimerButton_Click(object sender, EventArgs e)
         {
-            startTimerCountdown();
-            parentContext.miniMode();
+            if(choosedTask != null)
+            {
+                startTimerCountdown();
+                parentContext.miniMode();
+            }
+            else
+            {
+                MessageBox.Show("You haven't choosed any task MF");
+            }
+            
         }
 
         void startTimerCountdown()
@@ -108,6 +117,8 @@ namespace HubstafDesktop.Ui.Pages
             choosedTask.Status = "done";
             parentContext.SelectedTask = choosedTask;
             parentContext.syncSelectedTask(choosedTask); // sync
+
+
             //parentContext.; //TODO UPDATE TASK STATUS HERE
         }
 
@@ -115,7 +126,7 @@ namespace HubstafDesktop.Ui.Pages
 
         private void TimerFragment_Load(object sender, EventArgs e)
         {
-     
+            
         }
 
 

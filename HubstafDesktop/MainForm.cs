@@ -142,7 +142,10 @@ namespace HubstafDesktop
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            FormOriginalHeight = this.ClientSize.Height;
+            FormOriginalWidth = this.ClientSize.Width;
+
+            Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
             setupProjectList(DummyDataSource.dummyListProject);
 
         }
@@ -180,6 +183,7 @@ namespace HubstafDesktop
         public void takeAndShowScreenshot()
         {
             bringBackTheFuckingOriginalSizeOfForm();
+            Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
             var ss = ImagesUtil.takeScreenshoot();
             ImagesUtil.ShowSsResult(ss);
            
