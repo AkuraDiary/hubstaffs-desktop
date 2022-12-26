@@ -138,5 +138,10 @@ namespace HubstafDesktop.Ui.Pages
         {
             parentContext.miniMode();
         }
+
+        private void lblCurrentProjectName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
