@@ -40,7 +40,12 @@ namespace HubstafDesktop.Ui.Layout
                 if (TaskData.Status.Equals("done"))
                 {
                     BackColor = Color.PaleGreen;
-                    taskPanel.BackColor = Color.PaleGreen;
+                    //taskPanel.BackColor = Color.PaleGreen;
+
+                    lblTaskName.ForeColor = Color.Black;
+                    lblTaskDesc.ForeColor = Color.Black;
+                    lblDateCreated.ForeColor = Color.Black;
+                    Enabled = false;
                 }
             }
         }
@@ -77,8 +82,6 @@ namespace HubstafDesktop.Ui.Layout
             }
         }
 
-        #endregion
-
         private void TaskItemLayout_MouseEnter(object sender, EventArgs e)
         {
             if (!TaskData.Status.Equals("done"))
@@ -106,5 +109,7 @@ namespace HubstafDesktop.Ui.Layout
             }
 
         }
+
+        #endregion
     }
 }
