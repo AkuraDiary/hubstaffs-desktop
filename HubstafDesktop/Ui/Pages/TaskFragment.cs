@@ -60,7 +60,7 @@ namespace HubstafDesktop.Ui.Pages
 
     }
 
-        void setupTaskList()
+        public void setupTaskList()
         {
             detailedTaskListContainer.Controls.Clear();
             foreach (var taskItem in listData)

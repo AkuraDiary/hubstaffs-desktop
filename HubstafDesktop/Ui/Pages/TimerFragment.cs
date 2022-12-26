@@ -78,14 +78,21 @@ namespace HubstafDesktop.Ui.Pages
                 countdownTimer.Stop();
                 changePlayButtonState(true);
                 parentContext.focusMode(false);
-                MessageBox.Show("Time's Up");
+                onFinishedTimer();
+                //MessageBox.Show("Time's Up");
             }
         }
 
-        void bindSecondAndMinute()
+        void onFinishedTimer()
         {
-            this.lblTimerCountDown.Text = TimerUtil.formatTime(timerCountdownValue);
+            //todo update task status
+            choosedTask.Status = "done";
+            parentContext.SelectedTask = choosedTask;
+            parentContext.syncSelectedTask(choosedTask); // sync
+            //parentContext.; //TODO UPDATE TASK STATUS HERE
         }
+
+       
 
         private void TimerFragment_Load(object sender, EventArgs e)
         {
@@ -97,6 +104,11 @@ namespace HubstafDesktop.Ui.Pages
         void changePlayButtonState(bool isEnable)
         {
             btnStartTimer.Enabled = isEnable;
+        }
+
+        void bindSecondAndMinute()
+        {
+            this.lblTimerCountDown.Text = TimerUtil.formatTime(timerCountdownValue);
         }
 
         #endregion

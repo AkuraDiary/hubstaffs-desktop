@@ -3,6 +3,7 @@ using HubstafDesktop.Data.Model;
 using HubstafDesktop.Ui.Layout;
 using HubstafDesktop.Util;
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +42,7 @@ namespace HubstafDesktop
                     taskFragment.ListtData = selectedProject.TaskList;
                     lblCurrentProjectName.Text = selectedProject.ProjectName;
                     int totalTime = 0;
+
                     foreach (var item in selectedProject.TaskList)
                     {
                         if (item.Status.Equals("done"))
@@ -60,6 +62,7 @@ namespace HubstafDesktop
             set
             {
                 selectedTask = value;
+
                 if (selectedTask != null)
                 {
                     mainTimer.ChoosedTask = selectedTask;
@@ -69,8 +72,42 @@ namespace HubstafDesktop
                     mainTimer.ProjectName = selectedProject.ProjectName;
                     lblTaskName.Text = selectedTask.TaskName;
                     lblSelectedTaskStatus.Text = selectedTask.Status;
-                }
 
+                    //syncSelectedTask(selectedTask);
+                }
+            }
+        }
+
+
+        public void syncSelectedTask(UserTask newTaskData)
+        {
+            //var result = from r in list where r.ProductID == 2 select r;
+
+            //result.First().ProductName = “Chan”;
+            if (SelectedProject.TaskList.Exists(it => it.IdTask == newTaskData.IdTask))
+            {
+                int index = SelectedProject.TaskList.FindIndex(it => it.IdTask == newTaskData.IdTask);
+                SelectedProject.TaskList.RemoveAt(index); 
+                SelectedProject.TaskList.Insert(index, newTaskData);
+                refreshMainPage();
+                
+            }
+        }
+
+        public void refreshMainPage()
+        {
+            updateDataInDataSource();
+            taskFragment.setupTaskList();
+        }
+
+        public void updateDataInDataSource()
+        {
+            if (DummyDataSource.dummyListProject.Exists(it => it.IdProject == selectedProject.IdProject))
+            {
+                int index = DummyDataSource.dummyListProject.FindIndex(it => it.IdProject== selectedProject.IdProject);
+                DummyDataSource.dummyListProject.RemoveAt(index);
+                DummyDataSource.dummyListProject.Insert(index, selectedProject);
+                setupProjectList(DummyDataSource.dummyListProject); // refresh
             }
         }
         #endregion
@@ -91,8 +128,6 @@ namespace HubstafDesktop
         private void MainForm_Load(object sender, EventArgs e)
         {
 
-            //Debug.WriteLine(DummyDataSource.dummyListProject.AsQueryable());
-            // setTimer(120);
             setupProjectList(DummyDataSource.dummyListProject);
 
         }
@@ -148,6 +183,8 @@ namespace HubstafDesktop
             else
             {
                 this.Width = FormOriginalWidth;
+                
+                //this.StartPosition = FormStartPosition.CenterScreen;
             }
 
         }
