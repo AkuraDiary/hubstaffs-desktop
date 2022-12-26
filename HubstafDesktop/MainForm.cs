@@ -81,8 +81,9 @@ namespace HubstafDesktop
                 }
             }
         }
+        #endregion
 
-
+        #region state region
         public void syncSelectedTask(UserTask newTaskData)
         {
             //var result = from r in list where r.ProductID == 2 select r;
@@ -136,21 +137,44 @@ namespace HubstafDesktop
             taskFragment.parentContext = this;
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        
         private void MainForm_Load(object sender, EventArgs e)
         {
             FormOriginalHeight = this.ClientSize.Height;
             FormOriginalWidth = this.ClientSize.Width;
 
             Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
-            setupProjectList(DummyDataSource.dummyListProject);
+
+            fetchProjectData();
+
             lblCurrentUser.Text = Repository.loggedInUser.Name;
         }
 
+        #region api call region
+
+        async void fetchProjectData()
+        {
+            await Task.Run(() => Repository.getAllProject());
+            
+            setupProjectList(DummyDataSource.dummyListProject); //update the project list here
+        }
+        //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
+        //await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
+
+        #endregion
+
+        #region click even region
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimze_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        #endregion
 
         #region timer region
         public void setTimer(int value)
@@ -160,7 +184,6 @@ namespace HubstafDesktop
 
 
         #endregion
-
 
         #region project list region
         public void setupProjectList(List<UserProject> projectData)
@@ -273,14 +296,6 @@ namespace HubstafDesktop
 
 
         #endregion
-
-        private void btnMinimze_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-    
-
 
     }
 }

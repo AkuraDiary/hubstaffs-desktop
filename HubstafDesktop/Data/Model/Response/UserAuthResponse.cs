@@ -13,7 +13,7 @@ namespace HubstafDesktop.Data.Model.Response
         private string name;
         private string email;
         private string username;
-        private DateTime email_verified_at;
+       // private DateTime email_verified_at;
         private DateTime created_at;
         private DateTime updated_at;
 
@@ -29,8 +29,8 @@ namespace HubstafDesktop.Data.Model.Response
         [JsonProperty("username")]
         public string Username { get => username; set => username = value; }
         
-        [JsonProperty("email_verified_at")]
-        public DateTime Email_verified_at { get => email_verified_at; set => email_verified_at = value; }
+       // [JsonProperty("email_verified_at")]
+       // public DateTime Email_verified_at { get => email_verified_at; set => email_verified_at = value; }
        
         [JsonProperty("created_at")]
         public DateTime Created_at { get => created_at; set => created_at = value; }

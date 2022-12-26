@@ -32,6 +32,9 @@ namespace HubstafDesktop.Data.Remote
 
         #region endpoints region
         public static string loginEndpoint = $"login";
+        public static string organizationEndpoint = $"organizations";
+        public static string projectEndpoint = $"projects";
+        public static string taskEndpoint = $"tasks";
 
         //public static string jadwalByIdEndpoint = "jadwal/{0}";
         //public static string hasilByIdEndpoint = "hasil/{0}";
@@ -55,11 +58,7 @@ namespace HubstafDesktop.Data.Remote
 
 
             // make and api call and receive HttpResponseMessage
-
-            var client = getclient();
-          //  client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
-
-            var responseMessage = await client.PostAsync(ApiService.loginEndpoint, content);
+            var responseMessage = await getclient().PostAsync(ApiService.loginEndpoint, content);
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
@@ -84,6 +83,20 @@ namespace HubstafDesktop.Data.Remote
             }
 
             
+        }
+
+        public static async Task<List<ProjectResponse>> getAllProjectAsync()
+        {
+
+            // make and api call and receive HttpResponseMessage
+            var responseMessage = await getclient().GetAsync(ApiService.projectEndpoint, HttpCompletionOption.ResponseContentRead);
+
+            //convert response message into string
+            var resultArray = await responseMessage.Content.ReadAsStringAsync();
+
+            var listData = JsonConvert.DeserializeObject<List<ProjectResponse>>(resultArray);
+            Debug.WriteLine("project list " + listData.Count);
+            return listData;
         }
 
 

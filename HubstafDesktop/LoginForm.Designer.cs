@@ -104,7 +104,7 @@ namespace HubstafDesktop
             // 
             this.edtUsername.BorderRadius = 10;
             this.edtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edtUsername.DefaultText = "super_admin";
+            this.edtUsername.DefaultText = "ms-jude-lakin-sr";
             this.edtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.edtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.edtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -120,7 +120,6 @@ namespace HubstafDesktop
             this.edtUsername.SelectedText = "";
             this.edtUsername.Size = new System.Drawing.Size(335, 40);
             this.edtUsername.TabIndex = 2;
-
             // 
             // guna2Panel1
             // 
@@ -190,7 +189,6 @@ namespace HubstafDesktop
             this.edtPassword.Size = new System.Drawing.Size(335, 40);
             this.edtPassword.TabIndex = 8;
             this.edtPassword.UseSystemPasswordChar = true;
-
             // 
             // btnLogin
             // 

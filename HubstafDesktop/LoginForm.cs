@@ -34,7 +34,6 @@ namespace HubstafDesktop
                 await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
                 
 
-
                 if (Repository.loggedInUser != null)
                 {
                     Debug.WriteLine("user login response : " + Repository.loggedInUser.Name);
