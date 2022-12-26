@@ -18,7 +18,7 @@ namespace HubstafDesktop.Data.Dummy
 
             new UserTask(3, "wanjay", "Anjay ingfo", 120, "2022-12-22", "done"),
 
-            new UserTask(4, "add revisi design", "Lorem ipsum dolor sit amet hasbadlasdaljsd", 3, "2022-12-27", "todo"),
+            new UserTask(4, "add revisi design", "Lorem ipsum dolor sit amet hasbadlasdaljsd", 30, "2022-12-27", "todo"),
 
             new UserTask(5, "some kinda long task name", "aisdalksdalwdad", 3, "2022-12-29", "todo"),
         };

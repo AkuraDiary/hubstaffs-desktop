@@ -194,8 +194,8 @@ namespace HubstafDesktop
 
        public void miniMode() {
 
-            isSmall = isMini = !isMini; // switch state
-           
+            isMini = !isMini; // switch state
+            btnFormMode.PerformClick();
             if (isMini)
             {
                 this.Width = 340;
@@ -203,7 +203,7 @@ namespace HubstafDesktop
             }
             else
             {
-                //this.Width = FormOriginalWidth;
+                this.Width = FormOriginalWidth;
                 this.Height = FormOriginalHeight;
                 //this.StartPosition = FormStartPosition.CenterScreen;
             }
@@ -211,7 +211,7 @@ namespace HubstafDesktop
 
         private void btnFormMode_Click(object sender, EventArgs e)
         {
-           
+            isSmall = !isSmall; // switch state
             if (isSmall)
             {
                 this.Width = 340;
@@ -225,7 +225,7 @@ namespace HubstafDesktop
                 this.Height = FormOriginalHeight;
                 //this.StartPosition = FormStartPosition.CenterScreen;
             }
-            isSmall = !isSmall; // switch state
+           
 
         }
 

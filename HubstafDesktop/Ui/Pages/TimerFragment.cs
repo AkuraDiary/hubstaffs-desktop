@@ -1,4 +1,5 @@
-﻿using HubstafDesktop.Data.Model;
+﻿using HubstafDesktop.Data.Images;
+using HubstafDesktop.Data.Model;
 using HubstafDesktop.Util;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace HubstafDesktop.Ui.Pages
         private UserTask choosedTask;
         private string projectName = "";
 
+        private int halfTheTime = 0;
+
         //        private UserTask choosedTask;
 
         public int TimerCountdownValue
@@ -28,6 +31,7 @@ namespace HubstafDesktop.Ui.Pages
             get => timerCountdownValue; set
             {
                 timerCountdownValue = value;
+               
                 bindSecondAndMinute();
             }
         }
@@ -57,12 +61,13 @@ namespace HubstafDesktop.Ui.Pages
         private void startTimerButton_Click(object sender, EventArgs e)
         {
             startTimerCountdown();
-            parentContext.focusMode(true);
+            parentContext.miniMode();
         }
 
         void startTimerCountdown()
         {
             countdownTimer.Enabled = true;
+            halfTheTime = timerCountdownValue / 2;
             changePlayButtonState(false);
         }
 
@@ -70,7 +75,15 @@ namespace HubstafDesktop.Ui.Pages
         {
             if (timerCountdownValue > 0)
             {
+                //decrement the value
                 timerCountdownValue--;
+
+                if(timerCountdownValue == this.halfTheTime)
+                {
+                    takeAndShowScreenshot();
+                }
+
+                //update the stopwatch
                 bindSecondAndMinute();
             }
             else
@@ -81,6 +94,12 @@ namespace HubstafDesktop.Ui.Pages
                 onFinishedTimer();
                 //MessageBox.Show("Time's Up");
             }
+        }
+
+        void takeAndShowScreenshot()
+        {
+            var ss = ImagesUtil.takeScreenshoot();
+            ImagesUtil.ShowSsResult(ss);
         }
 
         void onFinishedTimer()

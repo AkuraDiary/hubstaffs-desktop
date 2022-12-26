@@ -41,6 +41,7 @@ namespace HubstafDesktop.Ui.Pages
             this.btnStartTimer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
+            this.fuck = new Guna.UI2.WinForms.Guna2Panel();
             this.timerPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,6 +143,15 @@ namespace HubstafDesktop.Ui.Pages
             this.btnFormMode.Text = "=";
             this.btnFormMode.Click += new System.EventHandler(this.btnFormMode_Click);
             // 
+            // fuck
+            // 
+            this.fuck.BackColor = System.Drawing.Color.DimGray;
+            this.fuck.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.fuck.Location = new System.Drawing.Point(51, 179);
+            this.fuck.Name = "fuck";
+            this.fuck.Size = new System.Drawing.Size(210, 2);
+            this.fuck.TabIndex = 48;
+            // 
             // TimerFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -149,6 +159,7 @@ namespace HubstafDesktop.Ui.Pages
             this.Controls.Add(this.btnFormMode);
             this.Controls.Add(this.lblCurrentProjectName);
             this.Controls.Add(this.btnStartTimer);
+            this.Controls.Add(this.fuck);
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.timerPanelContainer);
             this.Name = "TimerFragment";
@@ -169,5 +180,6 @@ namespace HubstafDesktop.Ui.Pages
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentProjectName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTimerCountDown;
         private Guna.UI2.WinForms.Guna2Button btnFormMode;
+        private Guna.UI2.WinForms.Guna2Panel fuck;
     }
 }

@@ -44,4 +44,7 @@ C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\De
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\GI.Screenshot.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\System.Drawing.Common.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\System.Drawing.Common.xml
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Data.Images.SsForm.resources
