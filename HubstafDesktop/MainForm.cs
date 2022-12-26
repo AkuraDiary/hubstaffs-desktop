@@ -238,15 +238,7 @@ namespace HubstafDesktop
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void projectListFragmentContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void taskFragment_Load(object sender, EventArgs e)
-        {
-
-        }
+    
 
 
     }

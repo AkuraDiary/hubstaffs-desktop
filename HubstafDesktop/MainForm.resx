@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACk
-        CAAAAk1TRnQBSQFMAwEBAAGcAQEBnAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        CAAAAk1TRnQBSQFMAwEBAAGsAQEBrAEBARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
         AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
         AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
         AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
@@ -241,27 +241,6 @@
   <data name="&gt;&gt;guna2HtmlLabel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 25</value>
-  </data>
-  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 261</value>
-  </data>
-  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
-    <value>mainTimer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
-    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="btnFormMode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 8.25pt, style=Bold</value>
   </data>
@@ -287,7 +266,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFormMode.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, -47</value>
@@ -308,7 +287,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="projectListFragmentContainer.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -332,7 +311,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;projectListFragmentContainer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="btnMinimze.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9pt, style=Bold</value>
@@ -362,7 +341,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="lblSelectedTaskStatus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9pt, style=Bold</value>
@@ -480,7 +459,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;taskDescriptionPanelContainer.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="lblTaskName.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -510,7 +489,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTaskName.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="lblCurrentProjectName.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -540,7 +519,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="taskFragment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -603,16 +582,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;projectTaskDetailFragmentCOntainer.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
+  </data>
+  <metadata name="mainTimerFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 274</value>
+  </data>
+  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
+    <value>mainTimer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
+    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
+    <value>mainTimerFragmentContainer</value>
+  </data>
+  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="mainTimerFragmentContainer.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
     <value>TopDown</value>
   </data>
   <data name="mainTimerFragmentContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 33</value>
+    <value>12, 12</value>
   </data>
   <data name="mainTimerFragmentContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 253</value>
+    <value>332, 274</value>
   </data>
   <data name="mainTimerFragmentContainer.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -627,7 +630,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mainTimerFragmentContainer.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9pt, style=Bold</value>
@@ -654,7 +657,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

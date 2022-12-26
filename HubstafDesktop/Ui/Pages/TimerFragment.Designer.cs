@@ -51,12 +51,12 @@ namespace HubstafDesktop.Ui.Pages
             // timerPanelContainer
             // 
             this.timerPanelContainer.BackColor = System.Drawing.Color.Transparent;
-            this.timerPanelContainer.BorderRadius = 5;
+            this.timerPanelContainer.BorderRadius = 10;
             this.timerPanelContainer.Controls.Add(this.lblTimerCountDown);
-            this.timerPanelContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.timerPanelContainer.Location = new System.Drawing.Point(87, 30);
+            this.timerPanelContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.timerPanelContainer.Location = new System.Drawing.Point(62, 27);
             this.timerPanelContainer.Name = "timerPanelContainer";
-            this.timerPanelContainer.Size = new System.Drawing.Size(174, 39);
+            this.timerPanelContainer.Size = new System.Drawing.Size(210, 39);
             this.timerPanelContainer.TabIndex = 2;
             this.timerPanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.timerPanelContainer_Paint);
             // 
@@ -68,7 +68,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTimerCountDown.ForeColor = System.Drawing.Color.White;
             this.lblTimerCountDown.Location = new System.Drawing.Point(3, 0);
             this.lblTimerCountDown.Name = "lblTimerCountDown";
-            this.lblTimerCountDown.Size = new System.Drawing.Size(168, 39);
+            this.lblTimerCountDown.Size = new System.Drawing.Size(207, 39);
             this.lblTimerCountDown.TabIndex = 6;
             this.lblTimerCountDown.Text = "00:00:00";
             this.lblTimerCountDown.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,9 +79,9 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTaskName.Location = new System.Drawing.Point(31, 118);
+            this.lblTaskName.Location = new System.Drawing.Point(3, 148);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(284, 33);
+            this.lblTaskName.Size = new System.Drawing.Size(326, 33);
             this.lblTaskName.TabIndex = 4;
             this.lblTaskName.Text = null;
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +103,7 @@ namespace HubstafDesktop.Ui.Pages
             this.btnStartTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStartTimer.ForeColor = System.Drawing.Color.White;
             this.btnStartTimer.Image = ((System.Drawing.Image)(resources.GetObject("btnStartTimer.Image")));
-            this.btnStartTimer.Location = new System.Drawing.Point(141, 169);
+            this.btnStartTimer.Location = new System.Drawing.Point(134, 199);
             this.btnStartTimer.Name = "btnStartTimer";
             this.btnStartTimer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnStartTimer.Size = new System.Drawing.Size(60, 60);
@@ -116,9 +116,9 @@ namespace HubstafDesktop.Ui.Pages
             this.lblCurrentProjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentProjectName.Font = new System.Drawing.Font("Poppins", 13F, System.Drawing.FontStyle.Bold);
             this.lblCurrentProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCurrentProjectName.Location = new System.Drawing.Point(31, 94);
+            this.lblCurrentProjectName.Location = new System.Drawing.Point(3, 106);
             this.lblCurrentProjectName.Name = "lblCurrentProjectName";
-            this.lblCurrentProjectName.Size = new System.Drawing.Size(284, 36);
+            this.lblCurrentProjectName.Size = new System.Drawing.Size(326, 36);
             this.lblCurrentProjectName.TabIndex = 7;
             this.lblCurrentProjectName.Text = null;
             this.lblCurrentProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,7 +132,7 @@ namespace HubstafDesktop.Ui.Pages
             this.Controls.Add(this.lblTaskName);
             this.Controls.Add(this.timerPanelContainer);
             this.Name = "TimerFragment";
-            this.Size = new System.Drawing.Size(344, 268);
+            this.Size = new System.Drawing.Size(332, 274);
             this.Load += new System.EventHandler(this.TimerFragment_Load);
             this.timerPanelContainer.ResumeLayout(false);
             this.ResumeLayout(false);

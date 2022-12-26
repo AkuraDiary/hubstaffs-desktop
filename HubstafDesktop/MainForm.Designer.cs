@@ -34,7 +34,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
@@ -49,9 +48,11 @@
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalTimeSpent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
+            this.mainTimerFragmentContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationImageList
@@ -85,14 +86,6 @@
             this.projectTaskDetailFragmentCOntainer.Controls.Add(this.guna2Panel23);
             resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
             this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
-            // 
-            // taskFragment
-            // 
-            this.taskFragment.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.taskFragment, "taskFragment");
-            this.taskFragment.Name = "taskFragment";
-            this.taskFragment.ShowDone = false;
-            this.taskFragment.Load += new System.EventHandler(this.taskFragment_Load);
             // 
             // guna2Panel23
             // 
@@ -157,6 +150,7 @@
             // mainTimerFragmentContainer
             // 
             this.mainTimerFragmentContainer.BackColor = System.Drawing.Color.White;
+            this.mainTimerFragmentContainer.Controls.Add(this.mainTimer);
             resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
             // 
@@ -199,6 +193,13 @@
             this.lblTotalTimeSpent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTotalTimeSpent.Name = "lblTotalTimeSpent";
             // 
+            // taskFragment
+            // 
+            this.taskFragment.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.taskFragment, "taskFragment");
+            this.taskFragment.Name = "taskFragment";
+            this.taskFragment.ShowDone = false;
+            // 
             // mainTimer
             // 
             this.mainTimer.BackColor = System.Drawing.Color.White;
@@ -215,7 +216,6 @@
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.lblTotalTimeSpent);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.mainTimer);
             this.Controls.Add(this.btnFormMode);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.projectListFragmentContainer);
@@ -233,6 +233,7 @@
             this.projectTaskDetailFragmentCOntainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.PerformLayout();
+            this.mainTimerFragmentContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -250,7 +251,6 @@
         private System.Windows.Forms.Label lblSelectedTaskName;
         private System.Windows.Forms.FlowLayoutPanel mainTimerFragmentContainer;
         private System.Windows.Forms.FlowLayoutPanel projectListFragmentContainer;
-        private Ui.Pages.TimerFragment mainTimer;
         private System.Windows.Forms.Label lblSelectedTaskDesc;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
@@ -258,6 +258,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalTimeSpent;
         private System.Windows.Forms.Label lblSelectedTaskStatus;
+        private Ui.Pages.TimerFragment mainTimer;
     }
 }
 
