@@ -57,6 +57,9 @@
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="Simple.ImageResizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Simple.ImageResizer.2.1.0\lib\net40\Simple.ImageResizer.dll</HintPath>
@@ -122,6 +125,7 @@
       <DependentUpon>SsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Model\UserProject.cs" />
+    <Compile Include="Data\Remote\ApiService.cs" />
     <Compile Include="Data\Repository.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -232,7 +236,6 @@
   <ItemGroup>
     <Folder Include="Data\Model\Binding\" />
     <Folder Include="Data\Model\Response\" />
-    <Folder Include="Data\Remote\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
