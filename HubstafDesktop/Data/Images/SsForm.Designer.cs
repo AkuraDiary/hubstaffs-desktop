@@ -39,6 +39,7 @@ namespace HubstafDesktop.Data.Images
             this.picBoxSsContainer.Location = new System.Drawing.Point(12, 12);
             this.picBoxSsContainer.Name = "picBoxSsContainer";
             this.picBoxSsContainer.Size = new System.Drawing.Size(1556, 884);
+            this.picBoxSsContainer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSsContainer.TabIndex = 0;
             this.picBoxSsContainer.TabStop = false;
             // 

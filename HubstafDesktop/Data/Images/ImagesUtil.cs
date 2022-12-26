@@ -9,6 +9,7 @@ using static System.Windows.Forms.MessageBox;
 using System.Windows.Media.Imaging;
 using System.Drawing;
 using System.Diagnostics;
+using Simple.ImageResizer;
 
 namespace HubstafDesktop.Data.Images
 {

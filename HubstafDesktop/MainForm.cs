@@ -1,4 +1,5 @@
 ﻿using HubstafDesktop.Data.Dummy;
+using HubstafDesktop.Data.Images;
 using HubstafDesktop.Data.Model;
 using HubstafDesktop.Ui.Layout;
 using HubstafDesktop.Util;
@@ -171,8 +172,19 @@ namespace HubstafDesktop
         
         }
 
-        
 
+
+        #endregion
+
+        #region photo and ss region
+        public void takeAndShowScreenshot()
+        {
+            bringBackTheFuckingOriginalSizeOfForm();
+            var ss = ImagesUtil.takeScreenshoot();
+            ImagesUtil.ShowSsResult(ss);
+           
+
+        }
         #endregion
 
         #region misceleannous
@@ -203,8 +215,7 @@ namespace HubstafDesktop
             }
             else
             {
-                this.Width = FormOriginalWidth;
-                this.Height = FormOriginalHeight;
+                bringBackTheFuckingOriginalSizeOfForm();
                 //this.StartPosition = FormStartPosition.CenterScreen;
             }
         }
@@ -221,12 +232,15 @@ namespace HubstafDesktop
             }
             else
             {
-                this.Width = FormOriginalWidth;
-                this.Height = FormOriginalHeight;
+                bringBackTheFuckingOriginalSizeOfForm();
                 //this.StartPosition = FormStartPosition.CenterScreen;
             }
-           
+        }
 
+        public void bringBackTheFuckingOriginalSizeOfForm()
+        {
+            this.Width = FormOriginalWidth;
+            this.Height = FormOriginalHeight;
         }
 
 

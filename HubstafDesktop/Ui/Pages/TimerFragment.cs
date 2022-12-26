@@ -80,7 +80,7 @@ namespace HubstafDesktop.Ui.Pages
 
                 if(timerCountdownValue == this.halfTheTime)
                 {
-                    takeAndShowScreenshot();
+                    parentContext.takeAndShowScreenshot();//takeAndShowScreenshot();
                 }
 
                 //update the stopwatch
@@ -96,11 +96,11 @@ namespace HubstafDesktop.Ui.Pages
             }
         }
 
-        void takeAndShowScreenshot()
-        {
-            var ss = ImagesUtil.takeScreenshoot();
-            ImagesUtil.ShowSsResult(ss);
-        }
+        //void takeAndShowScreenshot()
+        //{
+        //    var ss = ImagesUtil.takeScreenshoot();
+        //    ImagesUtil.ShowSsResult(ss);
+        //}
 
         void onFinishedTimer()
         {
