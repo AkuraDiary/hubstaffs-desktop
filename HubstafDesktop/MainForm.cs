@@ -69,7 +69,9 @@ namespace HubstafDesktop
 
                     lblSelectedTaskName.Text = selectedTask.TaskName;
                     lblSelectedTaskDesc.Text = selectedTask.TaskDesc;
+
                     mainTimer.ProjectName = selectedProject.ProjectName;
+
                     lblTaskName.Text = selectedTask.TaskName;
                     lblSelectedTaskStatus.Text = selectedTask.Status;
 
@@ -98,6 +100,18 @@ namespace HubstafDesktop
         {
             updateDataInDataSource();
             taskFragment.setupTaskList();
+            mainTimer.clearBinding();
+            setTimer(0);
+            clearSelectedTaskBinding();
+            //SelectedTask = null;
+        }
+
+        void clearSelectedTaskBinding()
+        {
+            lblSelectedTaskDesc.Text = "";
+            lblCurrentProjectName.Text = "";
+            lblSelectedTaskStatus.Text = "";
+            lblSelectedTaskName.Text = "";
         }
 
         public void updateDataInDataSource()
@@ -147,14 +161,17 @@ namespace HubstafDesktop
         public void setupProjectList(List<UserProject> projectData)
         {
             projectListFragmentContainer.Controls.Clear();
-            foreach (var projectItem in projectData)
+            foreach (UserProject projectItem in projectData)
             {
                 ProjectItemLayout item = new ProjectItemLayout(this, projectItem);
-
                 projectListFragmentContainer.Controls.Add(item);
             }
-            SelectedProject = null;
+            //SelectedProject = null;
+            
+        
         }
+
+        
 
         #endregion
 

@@ -118,6 +118,12 @@ namespace HubstafDesktop.Ui.Pages
 
         }
 
+        internal void clearBinding()
+        {
+            lblCurrentProjectName.Text = "";
+            lblTaskName.Text = "";
+        }
+
         private void lblTimerCountDown_Click(object sender, EventArgs e)
         {
 
