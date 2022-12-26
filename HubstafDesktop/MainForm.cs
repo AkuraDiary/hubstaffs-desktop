@@ -145,7 +145,7 @@ namespace HubstafDesktop
 
             Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
 
-            fetchProjectData();
+           // fetchProjectData();
 
             lblCurrentUser.Text = Repository.loggedInUser.Name;
         }

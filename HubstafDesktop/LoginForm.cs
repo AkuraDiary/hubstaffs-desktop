@@ -31,8 +31,12 @@ namespace HubstafDesktop
                 //todo do login here
 
                 //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
-                await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
+                btnLogin.Enabled =  false;
                 
+                await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
+
+                btnLogin.Enabled = true;
+
 
                 if (Repository.loggedInUser != null)
                 {
