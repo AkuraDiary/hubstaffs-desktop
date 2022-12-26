@@ -1,8 +1,10 @@
 ﻿using HubstafDesktop.Data;
+using HubstafDesktop.Data.Remote;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,14 +27,25 @@ namespace HubstafDesktop
         {
             if (validateLoginForm())
             {
-               
-                //todo do login here
-                await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
 
-                MessageBox.Show("Succes Login!");
-                moveToHomePage();
+                //todo do login here
+
+                //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
+                await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
+                
+
+
+                if (Repository.loggedInUser != null)
+                {
+                    Debug.WriteLine("user login response : " + Repository.loggedInUser.Name);
+                    MessageBox.Show("Succes Login!");
+                    moveToHomePage();
+                }
+
             }
         }
+
+    
 
         #region form validation and data region
  
@@ -55,7 +68,7 @@ namespace HubstafDesktop
         }
         #endregion
 
-        void moveToHomePage()
+        public void moveToHomePage()
         {
             MainForm mainForm = new MainForm();
             mainForm.Show();

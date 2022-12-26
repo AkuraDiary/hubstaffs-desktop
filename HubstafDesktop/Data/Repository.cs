@@ -18,7 +18,7 @@ namespace HubstafDesktop.Data
         {
             try
             {
-                loggedInUser = Task.Run(() => ApiService.loginUserAsync(username, password)).Result;//.getAllHasilDataAsync()).Result;
+                loggedInUser = Task.Run(() => ApiService.loginUserAsync(username, password)).Result;
             }
             catch (Exception ex)
             {

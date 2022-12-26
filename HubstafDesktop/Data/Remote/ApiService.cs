@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HubstafDesktop.Data.Remote
 {
@@ -56,21 +57,35 @@ namespace HubstafDesktop.Data.Remote
             // make and api call and receive HttpResponseMessage
 
             var client = getclient();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
+          //  client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("multipart/form-data"));
 
             var responseMessage = await client.PostAsync(ApiService.loginEndpoint, content);
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
 
-            // Deserialize the response content into a login response object
-            var loginResponse = JsonConvert.DeserializeObject<UserAuthResponse>(resultArray);
+            MessageBox.Show(resultArray);
+          
 
-            // var listHasilData = JsonConvert.DeserializeObject<List<HasilModel>>(resultArray);
+            if (resultArray != null)
+            {
+                // Deserialize the response content into a login response object
+                var loginResponse = JsonConvert.DeserializeObject<UserAuthResponse>(resultArray);
+
+                // var listHasilData = JsonConvert.DeserializeObject<List<HasilModel>>(resultArray);
+
+                Debug.WriteLine("user login response : " + resultArray);
+
+                return loginResponse;
+            }
+            else
+            {
+                MessageBox.Show("Not Found");
+                return null;
+                //user login response: { "message":"Wrong username or password","status":404}
+            }
+
             
-            Debug.WriteLine("user login response : " + resultArray);
-
-            return loginResponse;
         }
 
 
