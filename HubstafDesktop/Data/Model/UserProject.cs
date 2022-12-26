@@ -8,11 +8,12 @@ namespace HubstafDesktop.Data.Model
 {
     public class UserProject
     {
+        private int idProject;
         private string projectName;
         private List<UserTask> taskList;
         private string companyName;
         private int timeSpan = 0;
-        private int idProject;
+      
 
         public int IdProject { get => idProject; set => idProject = value; }
         public string CompanyName { get => companyName; set => companyName = value; }
@@ -30,7 +31,17 @@ namespace HubstafDesktop.Data.Model
             TaskList = taskList;
         }
 
-        public UserProject(int id,string name, List<UserTask> taskList)
+        public UserProject(int id,string name, List<UserTask> taskList, string companyName, int timeSpan)
+        {
+            IdProject = id;
+            ProjectName = name;
+            TaskList = taskList;
+            CompanyName = companyName;
+            TimeSpan = timeSpan;
+        }
+        
+        //full constructor
+        public UserProject(int id, string name, List<UserTask> taskList)
         {
             IdProject = id;
             ProjectName = name;

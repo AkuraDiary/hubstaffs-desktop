@@ -34,6 +34,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTaskDesc = new System.Windows.Forms.Label();
             this.lblTaskName = new System.Windows.Forms.Label();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
+            this.checkBoxShowDone = new Guna.UI2.WinForms.Guna2CheckBox();
             this.SuspendLayout();
             // 
             // detailedTaskListContainer
@@ -88,10 +89,31 @@ namespace HubstafDesktop.Ui.Pages
             this.guna2Panel23.Size = new System.Drawing.Size(1135, 1);
             this.guna2Panel23.TabIndex = 25;
             // 
+            // checkBoxShowDone
+            // 
+            this.checkBoxShowDone.AutoSize = true;
+            this.checkBoxShowDone.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxShowDone.CheckedState.BorderRadius = 0;
+            this.checkBoxShowDone.CheckedState.BorderThickness = 0;
+            this.checkBoxShowDone.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxShowDone.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxShowDone.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.checkBoxShowDone.Location = new System.Drawing.Point(13, 3);
+            this.checkBoxShowDone.Name = "checkBoxShowDone";
+            this.checkBoxShowDone.Size = new System.Drawing.Size(89, 23);
+            this.checkBoxShowDone.TabIndex = 26;
+            this.checkBoxShowDone.Text = "Show Done";
+            this.checkBoxShowDone.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBoxShowDone.UncheckedState.BorderRadius = 0;
+            this.checkBoxShowDone.UncheckedState.BorderThickness = 0;
+            this.checkBoxShowDone.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBoxShowDone.CheckedChanged += new System.EventHandler(this.checkBoxShowDone_CheckedChanged);
+            // 
             // TaskFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.checkBoxShowDone);
             this.Controls.Add(this.guna2Panel23);
             this.Controls.Add(this.lblDateCreated);
             this.Controls.Add(this.lblTaskDesc);
@@ -101,6 +123,7 @@ namespace HubstafDesktop.Ui.Pages
             this.Size = new System.Drawing.Size(939, 496);
             this.Load += new System.EventHandler(this.TaskFragment_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,5 +134,6 @@ namespace HubstafDesktop.Ui.Pages
         private System.Windows.Forms.Label lblTaskDesc;
         private System.Windows.Forms.Label lblTaskName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
+        private Guna.UI2.WinForms.Guna2CheckBox checkBoxShowDone;
     }
 }

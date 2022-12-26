@@ -12,15 +12,15 @@ namespace HubstafDesktop.Data.Dummy
         
         public static List<UserTask> dummyTaskList = new List<UserTask>()
         {
-            new UserTask("ingfo", "ingfokan ingfo", 120, DateTime.Parse("2022-12-21")),
+            new UserTask(1,"ingfo", "ingfokan ingfo", 120, "2022-12-21", "done"),
 
-            new UserTask("ingfo lagi", "mengingfokan ingfo lagi ingfo", 300, DateTime.Parse("2022-12-25")),
+            new UserTask(2, "ingfo lagi", "mengingfokan ingfo lagi ingfo", 300, "2022-12-25", "done"),
 
-            new UserTask("wanjay", "Anjay ingfo", 120, DateTime.Parse("2022-12-22")),
+            new UserTask(3, "wanjay", "Anjay ingfo", 120, "2022-12-22", "done"),
 
-            new UserTask("add revisi design", "Lorem ipsum dolor sit amet hasbadlasdaljsd", 30, DateTime.Parse("2022-12-27")),
+            new UserTask(4, "add revisi design", "Lorem ipsum dolor sit amet hasbadlasdaljsd", 30, "2022-12-27", "todo"),
 
-            new UserTask("some kinda long task name", "aisdalksdalwdad", 30, DateTime.Parse("2022-12-29")),
+            new UserTask(5, "some kinda long task name", "aisdalksdalwdad", 30, "2022-12-29", "todo"),
         };
 
         public static List<UserProject> dummyListProject = new List<UserProject>() {

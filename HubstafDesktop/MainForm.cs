@@ -40,6 +40,15 @@ namespace HubstafDesktop
                 {
                     taskFragment.ListtData = selectedProject.TaskList;
                     lblCurrentProjectName.Text = selectedProject.ProjectName;
+                    int totalTime = 0;
+                    foreach (var item in selectedProject.TaskList)
+                    {
+                        if (item.Status.Equals("done"))
+                        {
+                            totalTime += item.TimeNeeded;
+                        }
+                    }
+                    TotalTimeSpent = totalTime;
                 }
 
             }
@@ -59,6 +68,7 @@ namespace HubstafDesktop
                     lblSelectedTaskDesc.Text = selectedTask.TaskDesc;
                     mainTimer.ProjectName = selectedProject.ProjectName;
                     lblTaskName.Text = selectedTask.TaskName;
+                    lblSelectedTaskStatus.Text = selectedTask.Status;
                 }
 
             }

@@ -34,21 +34,22 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSelectedTaskName = new System.Windows.Forms.Label();
             this.taskDescriptionPanelContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSelectedTaskStatus = new System.Windows.Forms.Label();
             this.lblSelectedTaskDesc = new System.Windows.Forms.Label();
             this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
-            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
-            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalTimeSpent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,14 @@
             this.projectTaskDetailFragmentCOntainer.Controls.Add(this.guna2Panel23);
             resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
             this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
+            // 
+            // taskFragment
+            // 
+            this.taskFragment.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.taskFragment, "taskFragment");
+            this.taskFragment.Name = "taskFragment";
+            this.taskFragment.ShowDone = false;
+            this.taskFragment.Load += new System.EventHandler(this.taskFragment_Load);
             // 
             // guna2Panel23
             // 
@@ -127,10 +136,17 @@
             // taskDescriptionPanelContainer
             // 
             this.taskDescriptionPanelContainer.BackColor = System.Drawing.Color.White;
+            this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskStatus);
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskDesc);
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskName);
             resources.ApplyResources(this.taskDescriptionPanelContainer, "taskDescriptionPanelContainer");
             this.taskDescriptionPanelContainer.Name = "taskDescriptionPanelContainer";
+            // 
+            // lblSelectedTaskStatus
+            // 
+            resources.ApplyResources(this.lblSelectedTaskStatus, "lblSelectedTaskStatus");
+            this.lblSelectedTaskStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSelectedTaskStatus.Name = "lblSelectedTaskStatus";
             // 
             // lblSelectedTaskDesc
             // 
@@ -169,22 +185,6 @@
             this.btnFormMode.Name = "btnFormMode";
             this.btnFormMode.Click += new System.EventHandler(this.btnFormMode_Click);
             // 
-            // mainTimer
-            // 
-            this.mainTimer.BackColor = System.Drawing.Color.White;
-            this.mainTimer.ChoosedTask = null;
-            resources.ApplyResources(this.mainTimer, "mainTimer");
-            this.mainTimer.Name = "mainTimer";
-            this.mainTimer.ProjectName = "";
-            this.mainTimer.TimerCountdownValue = 0;
-            // 
-            // taskFragment
-            // 
-            this.taskFragment.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.taskFragment, "taskFragment");
-            this.taskFragment.Name = "taskFragment";
-            this.taskFragment.Load += new System.EventHandler(this.taskFragment_Load);
-            // 
             // guna2HtmlLabel1
             // 
             resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
@@ -198,6 +198,15 @@
             this.lblTotalTimeSpent.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalTimeSpent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTotalTimeSpent.Name = "lblTotalTimeSpent";
+            // 
+            // mainTimer
+            // 
+            this.mainTimer.BackColor = System.Drawing.Color.White;
+            this.mainTimer.ChoosedTask = null;
+            resources.ApplyResources(this.mainTimer, "mainTimer");
+            this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = "";
+            this.mainTimer.TimerCountdownValue = 0;
             // 
             // MainForm
             // 
@@ -248,6 +257,7 @@
         private Guna.UI2.WinForms.Guna2Button btnFormMode;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalTimeSpent;
+        private System.Windows.Forms.Label lblSelectedTaskStatus;
     }
 }
 

@@ -35,7 +35,13 @@ namespace HubstafDesktop.Ui.Layout
                 taskData = value;
                 lblTaskName.Text = value.TaskName;
                 lblTaskDesc.Text = value.TaskDesc;
-                lblDateCreated.Text = value.DateCreated.ToString("dd-MMM-yyyy");
+                lblDateCreated.Text = value.DateCreated;
+
+                if (TaskData.Status.Equals("done"))
+                {
+                    BackColor = Color.PaleGreen;
+                    taskPanel.BackColor = Color.PaleGreen;
+                }
             }
         }
 
@@ -70,11 +76,16 @@ namespace HubstafDesktop.Ui.Layout
                 lblDateCreated.ForeColor = Color.Black;
             }
         }
+
         #endregion
 
         private void TaskItemLayout_MouseEnter(object sender, EventArgs e)
         {
-            setState(true);
+            if (!TaskData.Status.Equals("done"))
+            {
+                setState(true);
+            }
+                
         }
 
         private void TaskItemLayout_Click(object sender, EventArgs e)
@@ -85,9 +96,13 @@ namespace HubstafDesktop.Ui.Layout
 
         private void TaskItemLayout_MouseLeave(object sender, EventArgs e)
         {
-            if (!IsSelected)
+
+            if (!TaskData.Status.Equals("done"))
             {
-                setState(false);
+                if (!IsSelected)
+                {
+                    setState(false);
+                }
             }
 
         }

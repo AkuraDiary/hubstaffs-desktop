@@ -16,12 +16,11 @@ namespace HubstafDesktop.Ui.Pages
 
     public partial class TaskFragment : UserControl
     {
-       
+
 
         internal MainForm parentContext;
-
-       
         private List<UserTask> listData = new List<UserTask>();
+        
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<UserTask> ListtData
@@ -51,15 +50,40 @@ namespace HubstafDesktop.Ui.Pages
             }
         }
 
+
+        private bool showDone = false;
+
+        public bool ShowDone { get => showDone; set {
+                showDone = value;
+                setupTaskList();
+            }
+
+    }
+
         void setupTaskList()
         {
             detailedTaskListContainer.Controls.Clear();
             foreach (var taskItem in listData)
             {
-                TaskListDetailItemLayout taskItemLayout = new TaskListDetailItemLayout(this);
-                taskItemLayout.TaskData = taskItem;
+                if (ShowDone)
+                {
+                    TaskListDetailItemLayout taskItemLayout = new TaskListDetailItemLayout(this);
+                    taskItemLayout.TaskData = taskItem;
 
-                detailedTaskListContainer.Controls.Add(taskItemLayout);
+                    detailedTaskListContainer.Controls.Add(taskItemLayout);
+                }
+                else
+                {
+                    if (!taskItem.Status.Equals("done"))
+                    {
+                        TaskListDetailItemLayout taskItemLayout = new TaskListDetailItemLayout(this);
+                        taskItemLayout.TaskData = taskItem;
+
+                        detailedTaskListContainer.Controls.Add(taskItemLayout);
+                    }
+                }
+                
+
             }
         }
 
@@ -71,6 +95,11 @@ namespace HubstafDesktop.Ui.Pages
         private void lblTaskName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBoxShowDone_CheckedChanged(object sender, EventArgs e)
+        {
+            ShowDone = checkBoxShowDone.Checked;
         }
     }
 }

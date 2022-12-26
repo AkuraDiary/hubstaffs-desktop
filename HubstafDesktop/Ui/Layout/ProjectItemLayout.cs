@@ -58,15 +58,24 @@ namespace HubstafDesktop.Ui.Layout
 
         void setupTaskListPreview()
         {
+            //show 3 todo task
             projectTaskListContainer.Controls.Clear();
-            //foreach (var taskItem in projectData.TaskList)
-            for (int i = 0; i < 3; i++)
-            
+            int counter = 0;
+            foreach (var taskItem in projectData.TaskList)
             {
-                TaskItemLayout taskItemLayout = new TaskItemLayout(this);
-                taskItemLayout.TaskData = projectData.TaskList[i];
+                if (counter == 3)
+                {
+                    break;
+                }
 
-                projectTaskListContainer.Controls.Add(taskItemLayout);
+                if (!taskItem.Status.Equals("done"))
+                {
+                    TaskItemLayout taskItemLayout = new TaskItemLayout(this);
+                    taskItemLayout.TaskData = taskItem;
+
+                    projectTaskListContainer.Controls.Add(taskItemLayout);
+                    counter++;
+                }
             }
         }
 
