@@ -133,5 +133,10 @@ namespace HubstafDesktop.Ui.Pages
         {
 
         }
+
+        private void btnFormMode_Click(object sender, EventArgs e)
+        {
+            parentContext.miniMode();
+        }
     }
 }

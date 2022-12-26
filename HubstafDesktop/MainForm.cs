@@ -189,21 +189,43 @@ namespace HubstafDesktop
         int FormOriginalWidth = 1294;
         int FormOriginalHeight = 775;
         bool isMini = false;
-        
+        bool isSmall = true;
 
-        private void btnFormMode_Click(object sender, EventArgs e)
-        {
-            isMini = !isMini; // switch state
+
+       public void miniMode() {
+
+            isSmall = isMini = !isMini; // switch state
+           
             if (isMini)
             {
                 this.Width = 340;
+                this.Height = 300;
+            }
+            else
+            {
+                //this.Width = FormOriginalWidth;
+                this.Height = FormOriginalHeight;
+                //this.StartPosition = FormStartPosition.CenterScreen;
+            }
+        }
+
+        private void btnFormMode_Click(object sender, EventArgs e)
+        {
+           
+            if (isSmall)
+            {
+                this.Width = 340;
+                //this.Height = 340;
+                this.BringToFront();
+
             }
             else
             {
                 this.Width = FormOriginalWidth;
-                
+                this.Height = FormOriginalHeight;
                 //this.StartPosition = FormStartPosition.CenterScreen;
             }
+            isSmall = !isSmall; // switch state
 
         }
 

@@ -40,6 +40,7 @@ namespace HubstafDesktop.Ui.Pages
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnStartTimer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.timerPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,10 +124,28 @@ namespace HubstafDesktop.Ui.Pages
             this.lblCurrentProjectName.Text = null;
             this.lblCurrentProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnFormMode
+            // 
+            this.btnFormMode.BorderColor = System.Drawing.Color.Bisque;
+            this.btnFormMode.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFormMode.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFormMode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFormMode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFormMode.FillColor = System.Drawing.Color.Empty;
+            this.btnFormMode.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnFormMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFormMode.Location = new System.Drawing.Point(288, 246);
+            this.btnFormMode.Name = "btnFormMode";
+            this.btnFormMode.Size = new System.Drawing.Size(30, 25);
+            this.btnFormMode.TabIndex = 47;
+            this.btnFormMode.Text = "=";
+            this.btnFormMode.Click += new System.EventHandler(this.btnFormMode_Click);
+            // 
             // TimerFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnFormMode);
             this.Controls.Add(this.lblCurrentProjectName);
             this.Controls.Add(this.btnStartTimer);
             this.Controls.Add(this.lblTaskName);
@@ -148,5 +167,6 @@ namespace HubstafDesktop.Ui.Pages
         private Guna.UI2.WinForms.Guna2CircleButton btnStartTimer;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentProjectName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTimerCountDown;
+        private Guna.UI2.WinForms.Guna2Button btnFormMode;
     }
 }
