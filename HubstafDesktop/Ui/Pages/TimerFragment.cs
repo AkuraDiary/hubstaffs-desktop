@@ -33,7 +33,6 @@ namespace HubstafDesktop.Ui.Pages
                 timerCountdownValue = value;
                 bindSecondAndMinute();
                 
-           
             }
         }
 
@@ -43,7 +42,9 @@ namespace HubstafDesktop.Ui.Pages
                 {
                     lblTaskName.Text = choosedTask.TaskName;
                     timerCountdownValue = choosedTask.TimeNeeded;
+
                     screenshootTimeMF = timerCountdownValue/2;
+
                     bindSecondAndMinute();
                 }
                 
@@ -85,7 +86,6 @@ namespace HubstafDesktop.Ui.Pages
                 btnPause.Visible = true; //enable pause when time needed is or more than 1 hour
             }
 
-            //halfTheTime = timerCountdownValue / 2;
             changePlayButtonState(false);
         }
 
@@ -143,12 +143,7 @@ namespace HubstafDesktop.Ui.Pages
             //parentContext.; //TODO UPDATE TASK STATUS HERE
         }
 
-       
 
-        private void TimerFragment_Load(object sender, EventArgs e)
-        {
-            
-        }
 
 
         #region helper method
@@ -164,10 +159,6 @@ namespace HubstafDesktop.Ui.Pages
 
         #endregion
 
-        private void timerPanelContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         internal void clearBinding()
         {
@@ -175,25 +166,14 @@ namespace HubstafDesktop.Ui.Pages
             lblTaskName.Text = "";
         }
 
-        private void lblTimerCountDown_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lblTaskName_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnFormMode_Click(object sender, EventArgs e)
         {
             parentContext.miniMode();
         }
 
-        private void lblCurrentProjectName_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void btnPause_Click(object sender, EventArgs e)
         {

@@ -61,7 +61,7 @@ namespace HubstafDesktop.Ui.Pages
             this.timerPanelContainer.Name = "timerPanelContainer";
             this.timerPanelContainer.Size = new System.Drawing.Size(210, 39);
             this.timerPanelContainer.TabIndex = 2;
-            this.timerPanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.timerPanelContainer_Paint);
+            
             // 
             // lblTimerCountDown
             // 
@@ -88,7 +88,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTaskName.TabIndex = 4;
             this.lblTaskName.Text = null;
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblTaskName.Click += new System.EventHandler(this.lblTaskName_Click);
+            
             // 
             // imageList1
             // 
@@ -125,7 +125,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblCurrentProjectName.TabIndex = 7;
             this.lblCurrentProjectName.Text = null;
             this.lblCurrentProjectName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCurrentProjectName.Click += new System.EventHandler(this.lblCurrentProjectName_Click);
+            
             // 
             // btnFormMode
             // 
@@ -185,7 +185,7 @@ namespace HubstafDesktop.Ui.Pages
             this.Controls.Add(this.timerPanelContainer);
             this.Name = "TimerFragment";
             this.Size = new System.Drawing.Size(332, 274);
-            this.Load += new System.EventHandler(this.TimerFragment_Load);
+            
             this.timerPanelContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
