@@ -37,5 +37,8 @@ namespace HubstafDesktop.Data.Model.Response
         [JsonProperty("organization", NullValueHandling = NullValueHandling.Ignore)]
         public object Organization;
 
+        [JsonProperty("token", NullValueHandling = NullValueHandling.Ignore)]
+        public string Token;
+
     }
 }

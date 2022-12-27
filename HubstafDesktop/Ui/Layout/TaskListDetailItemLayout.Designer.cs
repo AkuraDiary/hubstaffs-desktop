@@ -83,7 +83,7 @@
             this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTaskName.Location = new System.Drawing.Point(33, 2);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(210, 45);
+            this.lblTaskName.Size = new System.Drawing.Size(280, 45);
             this.lblTaskName.TabIndex = 3;
             this.lblTaskName.Text = "Custome Interview";
             this.lblTaskName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

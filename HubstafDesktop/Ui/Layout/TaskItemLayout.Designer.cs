@@ -39,9 +39,9 @@ namespace HubstafDesktop.Ui.Layout
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
-            this.lblTaskName.Location = new System.Drawing.Point(3, -3);
+            this.lblTaskName.Location = new System.Drawing.Point(3, 3);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(176, 39);
+            this.lblTaskName.Size = new System.Drawing.Size(176, 33);
             this.lblTaskName.TabIndex = 5;
             this.lblTaskName.Text = "Customer";
             this.lblTaskName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;

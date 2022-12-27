@@ -31,10 +31,14 @@ namespace HubstafDesktop.Data.Remote
         #endregion
 
         #region endpoints region
-        public static string loginEndpoint = $"login";
+        
         public static string organizationEndpoint = $"organizations";
         public static string projectEndpoint = "{0}/projects";
-        public static string taskEndpoint = $"tasks";   
+        public static string taskEndpoint = $"tasks";
+
+        public static string loginEndpoint = $"login";
+        public static string uploadImageEndpoint = $"tasks";   
+        public static string taskDoneEndpoint = "tasks/{0}/task-done";   
         #endregion
 
         public static async Task<UserAuthResponse> loginUserAsync(string mUsername, string mPassword)
@@ -82,11 +86,16 @@ namespace HubstafDesktop.Data.Remote
             
         }
 
-        public static async Task<List<ProjectResponse>> getAllProjectAsync(int idUser) //FUCKING TODO
+        public static async Task<List<ProjectResponse>> getAllProjectAsync(int idUser, string bearerToken)
         {
             string endpointWithParam = string.Format(projectEndpoint, idUser);
+
+            // Set the Authorization header with the Bearer token
+            var client = getclient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
             // make and api call and receive HttpResponseMessage
-            var responseMessage = await getclient().GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
+            var responseMessage = await client.GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
@@ -94,11 +103,74 @@ namespace HubstafDesktop.Data.Remote
             GetProjectOfUserResponse responseResult = JsonConvert.DeserializeObject<GetProjectOfUserResponse>(resultArray);
             //Debug.WriteLine("user project list " + listData.Count);
             List<ProjectResponse> listData = responseResult.Project;
-            
+
             Debug.WriteLine("user project list " + resultArray);
 
             return listData;
         }
+
+        public static async void markProjectAsDoneAsync(int idUser, string bearerToken)
+        {
+
+            string endpointWithParam = string.Format(taskDoneEndpoint, idUser);
+
+            // Set the Authorization header with the Bearer token
+            var client = getclient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
+            // make and api call and receive HttpResponseMessage
+            var responseMessage = await client.PostAsync(endpointWithParam, new StringContent(""));// make a post request with empty content
+
+            //convert response message into string
+           var resultResponseMessage = await responseMessage.Content.ReadAsStringAsync();
+
+          
+            Debug.WriteLine("mark Project As Done : " + resultResponseMessage);
+
+        }
+
+        public static async void uploadImage(int idUser, string bearerToken, Byte[] imageData)
+        {
+
+            string endpointWithParam = string.Format(uploadImageEndpoint, idUser);
+
+            // Set the Authorization header with the Bearer token
+            var client = getclient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
+            // Create the content for the request
+            var content = new ByteArrayContent(imageData);
+
+            // Set the content type header
+            content.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
+
+            // Call the POST method
+            var responseMessage = await client.PostAsync(endpointWithParam, content);
+
+            // Read the response message
+            var resultResponseMessage = await responseMessage.Content.ReadAsStringAsync();
+
+            Debug.WriteLine("mark Upload The Image : " + resultResponseMessage);
+
+        }
+
+        //public static async Task<List<ProjectResponse>> getAllProjectAsync(int idUser) //FUCKING TODO
+        //{
+        //    string endpointWithParam = string.Format(projectEndpoint, idUser);
+        //    // make and api call and receive HttpResponseMessage
+        //    var responseMessage = await getclient().GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
+
+        //    //convert response message into string
+        //    var resultArray = await responseMessage.Content.ReadAsStringAsync();
+
+        //    GetProjectOfUserResponse responseResult = JsonConvert.DeserializeObject<GetProjectOfUserResponse>(resultArray);
+        //    //Debug.WriteLine("user project list " + listData.Count);
+        //    List<ProjectResponse> listData = responseResult.Project;
+
+        //    Debug.WriteLine("user project list " + resultArray);
+
+        //    return listData;
+        //}
 
 
 

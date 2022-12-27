@@ -74,7 +74,7 @@ namespace HubstafDesktop.Ui.Pages
                 }
                 else
                 {
-                    if (!taskItem.Status.Equals("done"))
+                    if (!taskItem.Status.Equals("Done"))
                     {
                         TaskListDetailItemLayout taskItemLayout = new TaskListDetailItemLayout(this);
                         taskItemLayout.TaskData = taskItem;

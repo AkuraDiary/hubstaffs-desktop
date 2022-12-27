@@ -40,7 +40,8 @@ namespace HubstafDesktop.Data
             try
             {
                 int currentUserId = Repository.loggedInUser.Id;
-                projectListResponse = Task.Run(() => ApiService.getAllProjectAsync(currentUserId)).Result;
+                string userToken = Repository.loggedInUser.Token;
+                projectListResponse = Task.Run(() => ApiService.getAllProjectAsync(currentUserId, userToken)).Result;
 
                 if (projectListResponse.Count >0)
                 {

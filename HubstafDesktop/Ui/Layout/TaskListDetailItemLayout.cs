@@ -37,7 +37,7 @@ namespace HubstafDesktop.Ui.Layout
                 lblTaskDesc.Text = value.TaskDesc;
                 lblDateCreated.Text = value.DateCreated;
 
-                if (TaskData.Status.Equals("done"))
+                if (TaskData.Status.Equals("Done"))
                 {
                     BackColor = Color.PaleGreen;
                     //taskPanel.BackColor = Color.PaleGreen;
@@ -84,7 +84,7 @@ namespace HubstafDesktop.Ui.Layout
 
         private void TaskItemLayout_MouseEnter(object sender, EventArgs e)
         {
-            if (!TaskData.Status.Equals("done"))
+            if (!TaskData.Status.Equals("Done"))
             {
                 setState(true);
             }
@@ -100,7 +100,7 @@ namespace HubstafDesktop.Ui.Layout
         private void TaskItemLayout_MouseLeave(object sender, EventArgs e)
         {
 
-            if (!TaskData.Status.Equals("done"))
+            if (!TaskData.Status.Equals("Done"))
             {
                 if (!IsSelected)
                 {

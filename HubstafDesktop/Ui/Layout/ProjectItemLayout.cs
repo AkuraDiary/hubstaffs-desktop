@@ -73,7 +73,7 @@ namespace HubstafDesktop.Ui.Layout
                     break;
                 }
 
-                if (!taskItem.Status.Equals("done"))
+                if (!taskItem.Status.Equals("Done"))
                 {
                     TaskItemLayout taskItemLayout = new TaskItemLayout(this);
                     taskItemLayout.TaskData = taskItem;
