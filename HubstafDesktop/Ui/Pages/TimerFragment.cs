@@ -66,7 +66,7 @@ namespace HubstafDesktop.Ui.Pages
             {
                 startTimerCountdown();
                 btnFormMode.PerformClick();
-                //parentContext.focusMode(true);
+                parentContext.focusMode(true);
                 //parentContext.miniMode();
             }
             else
@@ -80,9 +80,9 @@ namespace HubstafDesktop.Ui.Pages
         {
             countdownTimer.Enabled = true;
 
-            if (TimerUtil.getHourOf(timerCountdownValue) > 1)
+            if (TimerUtil.getHourOf(timerCountdownValue) >= 1)
             {
-                btnPause.Visible = true; //enable pause when time needed is more than 1 hour
+                btnPause.Visible = true; //enable pause when time needed is or more than 1 hour
             }
 
             //halfTheTime = timerCountdownValue / 2;

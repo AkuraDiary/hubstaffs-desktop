@@ -233,7 +233,7 @@ namespace HubstafDesktop
             projectListFragmentContainer.Enabled = !state;
             btnExit.Visible = !state;
             btnMinimze.Visible = state;
-            btnFormMode.PerformClick();
+            //btnFormMode.PerformClick();
             this.BringToFront();
         }
 
