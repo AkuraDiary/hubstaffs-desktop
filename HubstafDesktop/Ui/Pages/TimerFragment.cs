@@ -1,4 +1,5 @@
-﻿using HubstafDesktop.Data.Images;
+﻿using HubstafDesktop.Data;
+using HubstafDesktop.Data.Images;
 using HubstafDesktop.Data.Model;
 using HubstafDesktop.Util;
 using System;
@@ -132,21 +133,23 @@ namespace HubstafDesktop.Ui.Pages
         }
 
 
-        void onFinishedTimer()
+         void onFinishedTimer()
         {
             parentContext.takeAndShowScreenshot(); //finishing screenshoot
 
             parentContext.focusMode(false);
             //todo update task status
-            choosedTask.Status = "done";
-            var now = DateTime.Now;
-            MessageBox.Show("DONE at : " + now);
+            choosedTask.Status = "Done";
+           
+           // var now = DateTime.Now;
+           // MessageBox.Show("DONE at : " + now);
+
             choosedTask.FinishedTime = now;
             parentContext.SelectedTask = choosedTask;
 
-
             //UPDATE THE FINISHED TASK HERE
-
+            Repository.setTakAsDone(choosedTask.IdTask);
+            
             parentContext.syncSelectedTask(choosedTask); // sync the status and view
 
             //parentContext.; //TODO UPDATE TASK STATUS HERE
@@ -164,14 +167,16 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTimerCountDown.Text = TimerUtil.formatTime(timerCountdownValue);
         }
 
-        #endregion
-
-
         internal void clearBinding()
         {
             lblCurrentProjectName.Text = "";
             lblTaskName.Text = "";
         }
+
+        #endregion
+
+
+
 
 
 

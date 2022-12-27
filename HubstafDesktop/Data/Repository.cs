@@ -57,5 +57,22 @@ namespace HubstafDesktop.Data
                 throw;
             }
         }
+
+        public static void setTakAsDone(int taskId)
+        {
+            try
+            {
+                string userToken = Repository.loggedInUser.Token;
+                Task.Run(() => ApiService.markTaskAsDoneAsync(taskId, userToken));
+                
+            }
+            catch (Exception ex)
+            {
+                //TODO handle the exception
+                Debug.WriteLine("error " + ex.Message);
+                MessageBox.Show("error " + ex.Message);
+                throw;
+            }
+        }
     }
 }

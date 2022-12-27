@@ -109,10 +109,10 @@ namespace HubstafDesktop.Data.Remote
             return listData;
         }
 
-        public static async void markProjectAsDoneAsync(int idUser, string bearerToken)
+        public static async void markTaskAsDoneAsync(int taskId, string bearerToken)
         {
 
-            string endpointWithParam = string.Format(taskDoneEndpoint, idUser);
+            string endpointWithParam = string.Format(taskDoneEndpoint, taskId);
 
             // Set the Authorization header with the Bearer token
             var client = getclient();
@@ -126,6 +126,8 @@ namespace HubstafDesktop.Data.Remote
 
           
             Debug.WriteLine("mark Project As Done : " + resultResponseMessage);
+
+            //MessageBox.Show(resultResponseMessage);
 
         }
 

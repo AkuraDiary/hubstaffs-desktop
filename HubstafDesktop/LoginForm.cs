@@ -34,7 +34,7 @@ namespace HubstafDesktop
 
                 //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
                 btnLogin.Enabled =  false;
-                MessageBox.Show("Loging In Please Wait");
+                //MessageBox.Show("Loging In Please Wait");
                 await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
 
                 btnLogin.Enabled = true;
