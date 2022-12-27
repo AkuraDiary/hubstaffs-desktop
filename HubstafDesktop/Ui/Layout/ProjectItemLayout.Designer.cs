@@ -37,7 +37,7 @@ namespace HubstafDesktop.Ui.Layout
             // 
             // pnl_txt
             // 
-            this.pnl_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
+            this.pnl_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.pnl_txt.Controls.Add(this.lblProjectName);
             this.pnl_txt.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_txt.Location = new System.Drawing.Point(0, 0);
@@ -51,7 +51,7 @@ namespace HubstafDesktop.Ui.Layout
             this.lblProjectName.AutoSize = false;
             this.lblProjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblProjectName.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Bold);
-            this.lblProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblProjectName.ForeColor = System.Drawing.Color.White;
             this.lblProjectName.Location = new System.Drawing.Point(4, 3);
             this.lblProjectName.Margin = new System.Windows.Forms.Padding(4, 3, 3, 3);
             this.lblProjectName.Name = "lblProjectName";
