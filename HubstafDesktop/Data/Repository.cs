@@ -13,10 +13,10 @@ namespace HubstafDesktop.Data
 {
     public static class Repository
     {
-        public static UserAuthResponse loggedInUser; //= new UserAuthResponse();
+        public static UserAuthResponse loggedInUser; 
         public static List<ProjectResponse> projectListResponse;
 
-        public static List<UserProject> listProjectUser;
+        public static List<UserProject> listProjectUser = new List<UserProject>();
 
         //public static List<TaskResponse> tasksListResponse;
 
@@ -43,9 +43,9 @@ namespace HubstafDesktop.Data
                 string userToken = Repository.loggedInUser.Token;
                 projectListResponse = Task.Run(() => ApiService.getAllProjectAsync(currentUserId, userToken)).Result;
 
-                if (projectListResponse.Count >0)
+                if (projectListResponse.Count > 0)
                 {
-                    Repository.listProjectUser = DataMapper.MapListProjectResponseToListUserProject(projectListResponse);
+                   Repository.listProjectUser = DataMapper.MapListProjectResponseToListUserProject(projectListResponse);
                 }
                 Debug.WriteLine("Project List Response : " + projectListResponse.ToString());
             }

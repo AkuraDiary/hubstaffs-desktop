@@ -12,6 +12,7 @@ using System.Diagnostics;
 using Simple.ImageResizer;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.IO.Compression;
 
 namespace HubstafDesktop.Data.Images
 {
@@ -123,6 +124,58 @@ namespace HubstafDesktop.Data.Images
             var screenshotForm = new SsForm(imageData);
             screenshotForm.Show();
         }
-    }
 
+        public static Byte[] deCompressImage(Byte[] imageData)
+        {
+            // Create a memory stream for the input data
+            using (MemoryStream inputStream = new MemoryStream(imageData))
+            {
+                // Use the GZipStream to decompress the data
+                using (GZipStream decompressor = new GZipStream(inputStream, CompressionMode.Decompress))
+                {
+                    // Create a memory stream for the output data
+                    using (MemoryStream outputStream = new MemoryStream())
+                    {
+                        // Copy the data from the decompressor to the output stream
+                        decompressor.CopyTo(outputStream);
+
+                        // The decompressed data is now in the output stream
+                        byte[] output = outputStream.ToArray();
+                        return output;
+                    }
+                }
+            }
+        }
+        public static Byte[] compressImage(Byte[] imageData)
+        {
+            // Create a memory stream for the output data
+            using (MemoryStream outputStream = new MemoryStream())
+            {
+                // Use the GZipStream to compress the data
+                using (GZipStream compressor = new GZipStream(outputStream, CompressionMode.Compress))
+                {
+                    // Create a memory stream for the input data
+                    using (MemoryStream inputStream = new MemoryStream(imageData))
+                    {
+                        // Copy the data from the input stream to the compressor
+                        inputStream.CopyTo(compressor);
+                    }
+                }
+
+                // The compressed data is now in the output stream
+                return outputStream.ToArray();
+
+                //MemoryStream imgStream = new MemoryStream(imageData);
+                //MemoryStream outputStream = new MemoryStream();
+
+                //GZipStream compressor = new GZipStream(outputStream, CompressionMode.Compress);
+
+                //imgStream.CopyTo(compressor);
+
+                //return outputStream.ToArray();
+
+            }
+        }
+
+    }
 }

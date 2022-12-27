@@ -148,11 +148,13 @@ namespace HubstafDesktop
             lblCurrentUser.Text = Repository.loggedInUser.Name;
 
             fetchProjectData();
+            btnRefresh.PerformClick();
+            
         }
 
         #region api call region
 
-        async void fetchProjectData()
+        public async void fetchProjectData()
         {
             await Task.Run(() => Repository.getAllProject());
 
@@ -209,13 +211,16 @@ namespace HubstafDesktop
         #endregion
 
         #region photo and ss region
-        public void takeAndShowScreenshot()
+        public void takeAndSendScreenshot()
         {
            
-            Debug.WriteLine("Before SS Width : " +  this.ClientSize.Width + "," + "Height : " + this.ClientSize.Height);
-            var ss = ImagesUtil.takeScreenshoot();
-            ImagesUtil.ShowSsResult(ss);
-            Debug.WriteLine("After SS Width : " + this.ClientSize.Width + "," + "Height : " + this.ClientSize.Height);
+            Byte[] ss = ImagesUtil.takeScreenshoot();
+
+            // compress imagehere
+            Byte[] compressedSS = ImagesUtil.compressImage(ss);
+
+            ImagesUtil.ShowSsResult(compressedSS);
+            
 
         }
         #endregion

@@ -73,7 +73,7 @@ namespace HubstafDesktop.Ui.Pages
 
                 if (!initialSsDone)
                 {
-                    parentContext.takeAndShowScreenshot(); //take initial screenshoot
+                    parentContext.takeAndSendScreenshot(); //take initial screenshoot
                     this.initialSsDone = true;
                 }
                 //parentContext.miniMode();
@@ -115,7 +115,7 @@ namespace HubstafDesktop.Ui.Pages
 
                 if (timerCountdownValue % this.screenshootTimeMF == 0) // take screenshoot every interval of time
                 {
-                    parentContext.takeAndShowScreenshot();//takeAndShowScreenshot();
+                    parentContext.takeAndSendScreenshot();//takeAndShowScreenshot();
                 }
 
                 //update the stopwatch
@@ -135,24 +135,20 @@ namespace HubstafDesktop.Ui.Pages
 
          void onFinishedTimer()
         {
-            parentContext.takeAndShowScreenshot(); //finishing screenshoot
+            parentContext.takeAndSendScreenshot(); //finishing screenshoot
 
             parentContext.focusMode(false);
             //todo update task status
             choosedTask.Status = "Done";
            
-           // var now = DateTime.Now;
-           // MessageBox.Show("DONE at : " + now);
-
-            choosedTask.FinishedTime = now;
             parentContext.SelectedTask = choosedTask;
 
-            //UPDATE THE FINISHED TASK HERE
+            //UPDATE THE FINISHED STATUS IN DB TASK HERE
             Repository.setTakAsDone(choosedTask.IdTask);
-            
-            parentContext.syncSelectedTask(choosedTask); // sync the status and view
 
-            //parentContext.; //TODO UPDATE TASK STATUS HERE
+            // sync the status and view
+            parentContext.syncSelectedTask(choosedTask); 
+            parentContext.fetchProjectData();
         }
 
 

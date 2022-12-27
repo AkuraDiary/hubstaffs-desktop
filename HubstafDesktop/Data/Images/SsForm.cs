@@ -17,7 +17,9 @@ namespace HubstafDesktop.Data.Images
         {
             InitializeComponent();
 
-            MemoryStream imgStream = new MemoryStream(imageData);
+            Byte[] decompressedImg = ImagesUtil.deCompressImage(imageData);
+
+            MemoryStream imgStream = new MemoryStream(decompressedImg);
             picBoxSsContainer.Image = Image.FromStream(imgStream);
             picBoxSsContainer.SizeMode = PictureBoxSizeMode.Zoom;
         }
