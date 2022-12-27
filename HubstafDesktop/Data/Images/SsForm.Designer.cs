@@ -38,7 +38,7 @@ namespace HubstafDesktop.Data.Images
             this.picBoxSsContainer.ImageRotate = 0F;
             this.picBoxSsContainer.Location = new System.Drawing.Point(12, 12);
             this.picBoxSsContainer.Name = "picBoxSsContainer";
-            this.picBoxSsContainer.Size = new System.Drawing.Size(1556, 884);
+            this.picBoxSsContainer.Size = new System.Drawing.Size(670, 676);
             this.picBoxSsContainer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSsContainer.TabIndex = 0;
             this.picBoxSsContainer.TabStop = false;
@@ -46,7 +46,7 @@ namespace HubstafDesktop.Data.Images
             // SsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.ClientSize = new System.Drawing.Size(694, 700);
             this.Controls.Add(this.picBoxSsContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SsForm";

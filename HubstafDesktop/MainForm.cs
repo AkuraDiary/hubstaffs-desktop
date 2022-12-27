@@ -143,9 +143,10 @@ namespace HubstafDesktop
             FormOriginalHeight = this.ClientSize.Height;
             FormOriginalWidth = this.ClientSize.Width;
 
-            Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
+            //Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
 
-           // fetchProjectData();
+            // fetchProjectData();
+            setupProjectList(DummyDataSource.dummyListProject);
 
             lblCurrentUser.Text = Repository.loggedInUser.Name;
         }
@@ -206,11 +207,11 @@ namespace HubstafDesktop
         #region photo and ss region
         public void takeAndShowScreenshot()
         {
-            bringBackTheFuckingOriginalSizeOfForm();
-            Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
+           
+            Debug.WriteLine("Before SS Width : " +  this.ClientSize.Width + "," + "Height : " + this.ClientSize.Height);
             var ss = ImagesUtil.takeScreenshoot();
             ImagesUtil.ShowSsResult(ss);
-           
+            Debug.WriteLine("After SS Width : " + this.ClientSize.Width + "," + "Height : " + this.ClientSize.Height);
 
         }
         #endregion
@@ -244,7 +245,8 @@ namespace HubstafDesktop
             else
             {
                 bringBackTheFuckingOriginalSizeOfForm();
-                //this.StartPosition = FormStartPosition.CenterScreen;
+                this.CenterToScreen();
+               
             }
         }
 
@@ -261,7 +263,8 @@ namespace HubstafDesktop
             else
             {
                 bringBackTheFuckingOriginalSizeOfForm();
-                //this.StartPosition = FormStartPosition.CenterScreen;
+                this.CenterToScreen();
+                
             }
         }
 
@@ -269,6 +272,7 @@ namespace HubstafDesktop
         {
             this.Width = FormOriginalWidth;
             this.Height = FormOriginalHeight;
+            //isSmall = isMini = false;
         }
 
 

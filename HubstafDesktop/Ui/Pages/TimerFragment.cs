@@ -22,7 +22,7 @@ namespace HubstafDesktop.Ui.Pages
         private UserTask choosedTask;
         private string projectName = "";
 
-        private int halfTheTime = 0;
+        private int screenshootTimeMF = 0;
 
         //        private UserTask choosedTask;
 
@@ -43,6 +43,7 @@ namespace HubstafDesktop.Ui.Pages
                 {
                     lblTaskName.Text = choosedTask.TaskName;
                     timerCountdownValue = choosedTask.TimeNeeded;
+                    screenshootTimeMF = timerCountdownValue/2;
                     bindSecondAndMinute();
                 }
                 
@@ -64,8 +65,9 @@ namespace HubstafDesktop.Ui.Pages
             if(choosedTask != null)
             {
                 startTimerCountdown();
-                parentContext.miniMode();
-                parentContext.focusMode(true);
+                btnFormMode.PerformClick();
+                //parentContext.focusMode(true);
+                //parentContext.miniMode();
             }
             else
             {
@@ -77,8 +79,22 @@ namespace HubstafDesktop.Ui.Pages
         void startTimerCountdown()
         {
             countdownTimer.Enabled = true;
-            halfTheTime = timerCountdownValue / 2;
+
+            if (TimerUtil.getHourOf(timerCountdownValue) > 1)
+            {
+                btnPause.Visible = true; //enable pause when time needed is more than 1 hour
+            }
+
+            //halfTheTime = timerCountdownValue / 2;
             changePlayButtonState(false);
+        }
+
+        void pauseTimer()
+        {
+            countdownTimer.Enabled = false;
+            changePlayButtonState(true);
+            btnPause.Visible = false;
+            btnFormMode.PerformClick();
         }
 
         private void countdownTimer_Tick(object sender, EventArgs e)
@@ -88,7 +104,7 @@ namespace HubstafDesktop.Ui.Pages
                 //decrement the value
                 timerCountdownValue--;
 
-                if(timerCountdownValue == this.halfTheTime)
+                if(timerCountdownValue == this.screenshootTimeMF)
                 {
                     parentContext.takeAndShowScreenshot();//takeAndShowScreenshot();
                 }
@@ -100,7 +116,8 @@ namespace HubstafDesktop.Ui.Pages
             {
                 countdownTimer.Stop();
                 changePlayButtonState(true);
-                parentContext.focusMode(false);
+                btnFormMode.PerformClick();
+                //parentContext.focusMode(false);
                 onFinishedTimer();
                 //MessageBox.Show("Time's Up");
             }
@@ -176,6 +193,11 @@ namespace HubstafDesktop.Ui.Pages
         private void lblCurrentProjectName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            pauseTimer();
         }
     }
 }

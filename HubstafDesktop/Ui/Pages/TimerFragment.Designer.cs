@@ -42,6 +42,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.fuck = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPause = new Guna.UI2.WinForms.Guna2CircleButton();
             this.timerPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@ namespace HubstafDesktop.Ui.Pages
             // 
             this.lblTimerCountDown.AutoSize = false;
             this.lblTimerCountDown.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimerCountDown.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTimerCountDown.Font = new System.Drawing.Font("Poppins SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimerCountDown.ForeColor = System.Drawing.Color.White;
             this.lblTimerCountDown.Location = new System.Drawing.Point(3, 0);
             this.lblTimerCountDown.Name = "lblTimerCountDown";
@@ -152,10 +153,30 @@ namespace HubstafDesktop.Ui.Pages
             this.fuck.Size = new System.Drawing.Size(210, 2);
             this.fuck.TabIndex = 48;
             // 
+            // btnPause
+            // 
+            this.btnPause.BorderThickness = 1;
+            this.btnPause.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPause.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPause.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPause.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPause.FillColor = System.Drawing.Color.Transparent;
+            this.btnPause.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPause.ForeColor = System.Drawing.Color.Black;
+            this.btnPause.Location = new System.Drawing.Point(126, 152);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnPause.Size = new System.Drawing.Size(60, 60);
+            this.btnPause.TabIndex = 49;
+            this.btnPause.Text = "||";
+            this.btnPause.Visible = false;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            // 
             // TimerFragment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnFormMode);
             this.Controls.Add(this.lblCurrentProjectName);
             this.Controls.Add(this.btnStartTimer);
@@ -181,5 +202,6 @@ namespace HubstafDesktop.Ui.Pages
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTimerCountDown;
         private Guna.UI2.WinForms.Guna2Button btnFormMode;
         private Guna.UI2.WinForms.Guna2Panel fuck;
+        private Guna.UI2.WinForms.Guna2CircleButton btnPause;
     }
 }
