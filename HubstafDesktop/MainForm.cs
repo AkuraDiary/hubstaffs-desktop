@@ -143,9 +143,6 @@ namespace HubstafDesktop
             FormOriginalHeight = this.ClientSize.Height;
             FormOriginalWidth = this.ClientSize.Width;
 
-            //Debug.WriteLine("Width : " + FormOriginalWidth + "," + "Height : " + FormOriginalHeight);
-
-            // fetchProjectData();
             setupProjectList(DummyDataSource.dummyListProject);
 
             lblCurrentUser.Text = Repository.loggedInUser.Name;
@@ -159,11 +156,8 @@ namespace HubstafDesktop
         {
             await Task.Run(() => Repository.getAllProject());
 
-            setupProjectList(Repository.listProjectUser);//DummyDataSource.dummyListProject); //update the project list here
+            setupProjectList(Repository.listProjectUser);
         }
-
-        //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
-        //await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
 
         #endregion
 
