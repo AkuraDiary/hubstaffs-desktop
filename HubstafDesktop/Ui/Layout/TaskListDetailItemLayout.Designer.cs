@@ -41,7 +41,7 @@
             this.taskPanel.Controls.Add(this.lblDateCreated);
             this.taskPanel.Controls.Add(this.lblTaskDesc);
             this.taskPanel.Controls.Add(this.lblTaskName);
-            this.taskPanel.Location = new System.Drawing.Point(2, -2);
+            this.taskPanel.Location = new System.Drawing.Point(2, 0);
             this.taskPanel.Name = "taskPanel";
             this.taskPanel.Size = new System.Drawing.Size(894, 45);
             this.taskPanel.TabIndex = 14;
@@ -55,7 +55,7 @@
             this.lblDateCreated.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblDateCreated.Location = new System.Drawing.Point(745, 2);
             this.lblDateCreated.Name = "lblDateCreated";
-            this.lblDateCreated.Size = new System.Drawing.Size(130, 45);
+            this.lblDateCreated.Size = new System.Drawing.Size(130, 38);
             this.lblDateCreated.TabIndex = 5;
             this.lblDateCreated.Text = "12 January 2022";
             this.lblDateCreated.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -69,7 +69,7 @@
             this.lblTaskDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTaskDesc.Location = new System.Drawing.Point(335, 2);
             this.lblTaskDesc.Name = "lblTaskDesc";
-            this.lblTaskDesc.Size = new System.Drawing.Size(287, 45);
+            this.lblTaskDesc.Size = new System.Drawing.Size(287, 38);
             this.lblTaskDesc.TabIndex = 4;
             this.lblTaskDesc.Text = "Get owers in home more study and relax";
             this.lblTaskDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -81,9 +81,9 @@
             // 
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTaskName.Location = new System.Drawing.Point(33, 2);
+            this.lblTaskName.Location = new System.Drawing.Point(18, 2);
             this.lblTaskName.Name = "lblTaskName";
-            this.lblTaskName.Size = new System.Drawing.Size(280, 45);
+            this.lblTaskName.Size = new System.Drawing.Size(280, 38);
             this.lblTaskName.TabIndex = 3;
             this.lblTaskName.Text = "Custome Interview";
             this.lblTaskName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.taskPanel);
             this.Name = "TaskListDetailItemLayout";
-            this.Size = new System.Drawing.Size(898, 41);
+            this.Size = new System.Drawing.Size(898, 45);
             this.taskPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
