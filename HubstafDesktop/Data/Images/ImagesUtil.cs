@@ -17,33 +17,85 @@ namespace HubstafDesktop.Data.Images
 {
     public static class ImagesUtil
     {
-        public static Byte[] takeScreenshoot()
+
+        #region fuck you 125% scale
+        //public static Byte[] takeScreenshoot()
+        //{
+
+
+        //    // Create a list to hold the screenshots of all screens
+        //    List<Bitmap> screens = new List<Bitmap>();
+
+        //    // Get the bounds of all screens
+        //    Rectangle[] screenBounds = Screen.AllScreens.Select(s => s.Bounds).ToArray();
+
+        //    // Take a screenshot of each screen
+        //    foreach (Rectangle bounds in screenBounds)
+        //    {
+        //        // Create a bitmap to hold the screenshot
+        //        Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height);
+
+        //        // Create a Graphics object from the bitmap
+        //        using (Graphics g = Graphics.FromImage(screenshot))
+        //        {
+        //            // Copy the screen contents to the bitmap
+        //            g.CopyFromScreen(bounds.Location, Point.Empty, screenshot.Size);
+        //        }
+
+        //        // Add the screenshot to the list
+        //        screens.Add(screenshot);
+        //    }
+
+        //    // Combine the screenshots into a single image
+        //    Bitmap combined = CombineBitmaps(screens);
+
+        //    // Convert the combined image to a byte array
+        //    using (MemoryStream stream = new MemoryStream())
+        //    {
+        //        combined.Save(stream, ImageFormat.Png);
+        //        return stream.ToArray();
+        //    }
+        //    //ScreenshotOptions ssOption = new ScreenshotOptions()
+        //    //var screenshoot = Screenshot.CaptureRegion(ssOption.SelectionRectangleBorderBrush);
+        //    //return ConvertBitmapSourceToByteArray(screenshoot);
+        //}
+
+        private static Bitmap CombineBitmaps(List<Bitmap> images)
         {
-           
+            // Calculate the size of the combined image
+            int width = images.Max(i => i.Width);
+            int height = images.Sum(i => i.Height);
 
-            // Get the bounds of the primary screen
-            Rectangle screenBounds = Screen.PrimaryScreen.Bounds;
-
-            // Create a bitmap to hold the screenshot
-            Bitmap screenshot = new Bitmap(screenBounds.Width, screenBounds.Height);
+            // Create a bitmap to hold the combined image
+            Bitmap combined = new Bitmap(width, height);
 
             // Create a Graphics object from the bitmap
-            using (Graphics g = Graphics.FromImage(screenshot))
+            using (Graphics g = Graphics.FromImage(combined))
             {
-                // Copy the screen contents to the bitmap
-                g.CopyFromScreen(screenBounds.Location, Point.Empty, screenshot.Size);
+                // Set the background color to transparent
+                g.Clear(Color.Transparent);
+
+                // Draw each image on the combined image
+                int y = 0;
+                foreach (Bitmap image in images)
+                {
+                    g.DrawImage(image, 0, y);
+                    y += image.Height;
+                }
             }
 
-            // Convert the bitmap to a byte array
-            using (MemoryStream stream = new MemoryStream())
-            {
-                screenshot.Save(stream, ImageFormat.Png);
-                return stream.ToArray();
-            }
-
-            //var screenshoot = Screenshot.CaptureAllScreens();
-            //return ConvertBitmapSourceToByteArray(screenshoot);
+            return combined;
         }
+        #endregion
+
+        public static Byte[] takeScreenshoot()
+        {
+            var screenshoot = Screenshot.CaptureAllScreens();
+            return ConvertBitmapSourceToByteArray(screenshoot);
+        }
+
+
+
 
         public static byte[] ConvertBitmapSourceToByteArray(BitmapSource image)
         {

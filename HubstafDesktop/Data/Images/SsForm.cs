@@ -19,6 +19,7 @@ namespace HubstafDesktop.Data.Images
 
             MemoryStream imgStream = new MemoryStream(imageData);
             picBoxSsContainer.Image = Image.FromStream(imgStream);
+            picBoxSsContainer.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         private void SsForm_Load(object sender, EventArgs e)
