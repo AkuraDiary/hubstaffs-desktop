@@ -1,5 +1,6 @@
 ﻿using HubstafDesktop.Data;
 using HubstafDesktop.Data.Remote;
+using HubstafDesktop.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,7 @@ namespace HubstafDesktop
         {
             InitializeComponent();
             this.KeyPreview = true;
+            Debug.WriteLine("PARSE TIME STRING INTO TOTAL INT : " + TimerUtil.parseStringTimeIntoAFuckingInteger("01:00:00"));
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)

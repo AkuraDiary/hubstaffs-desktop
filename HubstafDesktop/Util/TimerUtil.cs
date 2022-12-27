@@ -15,21 +15,21 @@ namespace HubstafDesktop.Util
         }
         public static int getMinuteOf(int value)
         {
-            return value / 60;
+            return value / 60 % 60;
         }
         public static int getSecondOf(int value)
         {
-            return value - (getMinuteOf(value) * 60);
+            return value % 60;//(getMinuteOf(value) * 60);
         }
 
         public static int parseStringTimeIntoAFuckingInteger(string dataTime)
         {
-            
             TimeSpan timeSpan = TimeSpan.Parse(dataTime);
             double totalSeconds = timeSpan.TotalSeconds;
             int seconds = (int)totalSeconds;
             return seconds;
         }
+
         public static string formatTime(int timeValue)
         {
             int hour = getHourOf(timeValue);
@@ -54,7 +54,7 @@ namespace HubstafDesktop.Util
                 mSecond = "0" + mSecond;
             }
 
-            return mHour + " : " + mMinute + " : " + mSecond;
+            return mHour + ":" + mMinute + ":" + mSecond;
         }
     }
 }
