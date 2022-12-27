@@ -301,5 +301,12 @@ namespace HubstafDesktop
 
         #endregion
 
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //make api call here
+
+            //update the status
+            lblLastUpdated.Text = "Last Updated : " + DateTime.Now;
+        }
     }
 }

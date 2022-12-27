@@ -125,6 +125,7 @@
       <DependentUpon>SsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\Model\Response\ProjectResponse.cs" />
+    <Compile Include="Data\Model\Response\TaskResponse.cs" />
     <Compile Include="Data\Model\Response\UserAuthResponse.cs" />
     <Compile Include="Data\Model\UserProject.cs" />
     <Compile Include="Data\Remote\ApiService.cs" />
@@ -201,6 +202,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Ui\Layout\ProjectItemLayout.resx">
       <DependentUpon>ProjectItemLayout.cs</DependentUpon>
@@ -249,6 +251,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_500px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

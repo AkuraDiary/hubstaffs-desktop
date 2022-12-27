@@ -49,6 +49,8 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalTimeSpent = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCurrentUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.lblLastUpdated = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
@@ -201,6 +203,28 @@
             this.lblCurrentUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCurrentUser.Name = "lblCurrentUser";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BorderColor = System.Drawing.Color.Bisque;
+            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.btnRefresh, "btnRefresh");
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRefresh.Image = global::HubstafDesktop.Properties.Resources.icons8_refresh_500px;
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // lblLastUpdated
+            // 
+            resources.ApplyResources(this.lblLastUpdated, "lblLastUpdated");
+            this.lblLastUpdated.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastUpdated.ForeColor = System.Drawing.Color.Black;
+            this.lblLastUpdated.Name = "lblLastUpdated";
+            this.lblLastUpdated.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // taskFragment
             // 
             this.taskFragment.BackColor = System.Drawing.Color.White;
@@ -222,6 +246,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.lblLastUpdated);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblCurrentUser);
             this.Controls.Add(this.lblTotalTimeSpent);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -269,6 +295,8 @@
         private System.Windows.Forms.Label lblSelectedTaskStatus;
         private Ui.Pages.TimerFragment mainTimer;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentUser;
+        private Guna.UI2.WinForms.Guna2Button btnRefresh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblLastUpdated;
     }
 }
 
