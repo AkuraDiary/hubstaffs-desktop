@@ -127,14 +127,12 @@ namespace HubstafDesktop.Data.Remote
           
             Debug.WriteLine("mark Project As Done : " + resultResponseMessage);
 
-            //MessageBox.Show(resultResponseMessage);
-
         }
 
-        public static async void uploadImage(int idUser, string bearerToken, Byte[] imageData)
+        public static async void uploadImage(int idTask, string bearerToken, Byte[] imageData)
         {
 
-            string endpointWithParam = string.Format(uploadImageEndpoint, idUser);
+            string endpointWithParam = string.Format(uploadImageEndpoint, idTask);
 
             // Set the Authorization header with the Bearer token
             var client = getclient();

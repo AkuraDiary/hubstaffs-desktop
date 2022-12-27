@@ -80,7 +80,7 @@ namespace HubstafDesktop.Ui.Pages
             }
             else
             {
-                MessageBox.Show("You haven't choosed any task MF");
+                MessageBox.Show("You haven't choosen any task");
             }
             
         }
@@ -123,18 +123,18 @@ namespace HubstafDesktop.Ui.Pages
             }
             else
             {
-                countdownTimer.Stop();
-                changePlayButtonState(true);
                 onFinishedTimer();
-
-                btnFormMode.PerformClick();
-                MessageBox.Show("Time's Up");
+                MessageBox.Show("Task Finished");
             }
         }
 
 
-         void onFinishedTimer()
+        public void onFinishedTimer()
         {
+
+            countdownTimer.Stop();
+            changePlayButtonState(true);
+
             parentContext.takeAndSendScreenshot(); //finishing screenshoot
 
             parentContext.focusMode(false);
@@ -149,6 +149,8 @@ namespace HubstafDesktop.Ui.Pages
             // sync the status and view
             parentContext.syncSelectedTask(choosedTask); 
             parentContext.fetchProjectData();
+
+            btnFormMode.PerformClick();
         }
 
 
@@ -170,10 +172,6 @@ namespace HubstafDesktop.Ui.Pages
         }
 
         #endregion
-
-
-
-
 
 
         private void btnFormMode_Click(object sender, EventArgs e)

@@ -43,7 +43,7 @@ namespace HubstafDesktop
                 if (Repository.loggedInUser != null)
                 {
                     Debug.WriteLine("user login response : " + Repository.loggedInUser.Name);
-                    MessageBox.Show("Succes Login!");
+                    MessageBox.Show(" Login Success! ");
                     moveToHomePage();
                 }
 

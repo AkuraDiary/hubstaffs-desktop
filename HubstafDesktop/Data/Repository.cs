@@ -74,5 +74,22 @@ namespace HubstafDesktop.Data
                 throw;
             }
         }
+
+        public static void sendImage(int taskId, Byte[] imgData)
+        {
+            try
+            {
+                string userToken = Repository.loggedInUser.Token;
+                Task.Run(() => ApiService.uploadImage(taskId, userToken, imgData));
+
+            }
+            catch (Exception ex)
+            {
+                //TODO handle the exception
+                Debug.WriteLine("error " + ex.Message);
+                MessageBox.Show("error " + ex.Message);
+                throw;
+            }
+        }
     }
 }

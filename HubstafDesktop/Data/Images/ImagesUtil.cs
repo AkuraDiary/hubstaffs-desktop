@@ -116,8 +116,6 @@ namespace HubstafDesktop.Data.Images
             return imgStream;
         }
 
-
-
         public static void ShowSsResult(byte[] imageData)
         {
             //byte[] imageData = TakeScreenshot();
