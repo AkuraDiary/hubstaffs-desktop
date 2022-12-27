@@ -100,6 +100,21 @@ namespace HubstafDesktop.Data.Remote
         }
 
 
+        public static async Task<List<TaskResponse>> getAllTaskAsync()
+        {
+
+            // make and api call and receive HttpResponseMessage
+            var responseMessage = await getclient().GetAsync(ApiService.taskEndpoint, HttpCompletionOption.ResponseContentRead);
+
+            //convert response message into string
+            var resultArray = await responseMessage.Content.ReadAsStringAsync();
+
+            var listData = JsonConvert.DeserializeObject<List<TaskResponse>>(resultArray);
+            Debug.WriteLine("project list " + listData.Count);
+            return listData;
+        }
+
+
         #region [notes] how to do fuckin request
 
         //public static async Task<List<HasilModel>> getAllHasilDataAsync()

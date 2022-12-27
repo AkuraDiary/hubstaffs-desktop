@@ -14,6 +14,7 @@ namespace HubstafDesktop.Data
     {
         public static UserAuthResponse loggedInUser; //= new UserAuthResponse();
         public static List<ProjectResponse> projectListResponse;
+        public static List<TaskResponse> tasksListResponse;
 
         public static void doLoginUser(string username, string password)
         {
@@ -36,6 +37,22 @@ namespace HubstafDesktop.Data
             {
                 projectListResponse = Task.Run(() => ApiService.getAllProjectAsync()).Result;
                 Debug.WriteLine("Project List Response : " + projectListResponse.ToString());
+            }
+            catch (Exception ex)
+            {
+                //TODO handle the exception
+                Debug.WriteLine("error " + ex.Message);
+                MessageBox.Show("error " + ex.Message);
+                throw;
+            }
+        }
+
+        public static void getAllTasks()
+        {
+            try
+            {
+                tasksListResponse = Task.Run(() => ApiService.getAllTaskAsync()).Result;
+                Debug.WriteLine("Task List Response : " + projectListResponse.ToString());
             }
             catch (Exception ex)
             {

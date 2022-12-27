@@ -95,8 +95,6 @@ namespace HubstafDesktop.Data.Images
         }
 
 
-
-
         public static byte[] ConvertBitmapSourceToByteArray(BitmapSource image)
         {
             byte[] data;
