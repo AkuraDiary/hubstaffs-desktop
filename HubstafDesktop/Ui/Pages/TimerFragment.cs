@@ -158,6 +158,14 @@ namespace HubstafDesktop.Ui.Pages
         void changePlayButtonState(bool isEnable)
         {
             btnStartTimer.Enabled = isEnable;
+            if (!isEnable)
+            {
+                timerPanelContainer.FillColor= Color.FromArgb(94, 148, 255);
+            }
+            else
+            {
+                timerPanelContainer.FillColor = Color.FromArgb(30,30,30);
+            }
         }
 
         void bindSecondAndMinute()
