@@ -26,7 +26,7 @@ namespace HubstafDesktop.Ui.Layout
                 {
                     lblProjectName.Text = value.ProjectName;
 
-                    bool hasUnfinishedTask = projectData.TaskList.Any(it => it.Status.Equals("todo"));
+                    bool hasUnfinishedTask = projectData.TaskList.Any(it => it.Status.Equals("Todo"));
                     this.Visible = hasUnfinishedTask;
                 }
 

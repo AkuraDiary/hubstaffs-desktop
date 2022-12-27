@@ -33,11 +33,8 @@ namespace HubstafDesktop.Data.Remote
         #region endpoints region
         public static string loginEndpoint = $"login";
         public static string organizationEndpoint = $"organizations";
-        public static string projectEndpoint = $"projects";
-        public static string taskEndpoint = $"tasks";
-
-        //public static string jadwalByIdEndpoint = "jadwal/{0}";
-        //public static string hasilByIdEndpoint = "hasil/{0}";
+        public static string projectEndpoint = "{0}/projects";
+        public static string taskEndpoint = $"tasks";   
         #endregion
 
         public static async Task<UserAuthResponse> loginUserAsync(string mUsername, string mPassword)
@@ -85,34 +82,40 @@ namespace HubstafDesktop.Data.Remote
             
         }
 
-        public static async Task<List<ProjectResponse>> getAllProjectAsync()
+        public static async Task<List<ProjectResponse>> getAllProjectAsync(int idUser) //FUCKING TODO
         {
-
+            string endpointWithParam = string.Format(projectEndpoint, idUser);
             // make and api call and receive HttpResponseMessage
-            var responseMessage = await getclient().GetAsync(ApiService.projectEndpoint, HttpCompletionOption.ResponseContentRead);
+            var responseMessage = await getclient().GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
 
             //convert response message into string
             var resultArray = await responseMessage.Content.ReadAsStringAsync();
 
-            var listData = JsonConvert.DeserializeObject<List<ProjectResponse>>(resultArray);
-            Debug.WriteLine("project list " + listData.Count);
+            GetProjectOfUserResponse responseResult = JsonConvert.DeserializeObject<GetProjectOfUserResponse>(resultArray);
+            //Debug.WriteLine("user project list " + listData.Count);
+            List<ProjectResponse> listData = responseResult.Project;
+            
+            Debug.WriteLine("user project list " + resultArray);
+
             return listData;
         }
 
 
-        public static async Task<List<TaskResponse>> getAllTaskAsync()
-        {
 
-            // make and api call and receive HttpResponseMessage
-            var responseMessage = await getclient().GetAsync(ApiService.taskEndpoint, HttpCompletionOption.ResponseContentRead);
 
-            //convert response message into string
-            var resultArray = await responseMessage.Content.ReadAsStringAsync();
+        //public static async Task<List<TaskResponse>> getAllTaskAsync()
+        //{
 
-            var listData = JsonConvert.DeserializeObject<List<TaskResponse>>(resultArray);
-            Debug.WriteLine("project list " + listData.Count);
-            return listData;
-        }
+        //    // make and api call and receive HttpResponseMessage
+        //    var responseMessage = await getclient().GetAsync(ApiService.taskEndpoint, HttpCompletionOption.ResponseContentRead);
+
+        //    //convert response message into string
+        //    var resultArray = await responseMessage.Content.ReadAsStringAsync();
+
+        //    var listData = JsonConvert.DeserializeObject<List<TaskResponse>>(resultArray);
+        //    Debug.WriteLine("project list " + listData.Count);
+        //    return listData;
+        //}
 
 
         #region [notes] how to do fuckin request
@@ -189,6 +192,23 @@ namespace HubstafDesktop.Data.Remote
         #endregion
 
         #region [notes]  get method
+
+        //public static async Task<TimModel> getTimById(int id)
+        //{
+
+        //    string endpointWithParam = string.Format(timByIdEndpoint, id);
+
+        //    // make and api call and receive HttpResponseMessage
+        //    var responseMessage = await getclient().GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
+
+        //    //convert response message into string
+        //    var resultArray = await responseMessage.Content.ReadAsStringAsync();
+
+        //    var timData = JsonConvert.DeserializeObject<TimModel>(resultArray);
+        //    Debug.WriteLine("hasildata by id tim :  " + timData.nama_tim);
+        //    return timData;
+        //}
+
         //public static async Task<List<HasilModel>> getAllHasilDataAsync()
         //{
 

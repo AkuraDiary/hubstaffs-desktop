@@ -104,7 +104,7 @@ namespace HubstafDesktop
             // 
             this.edtUsername.BorderRadius = 10;
             this.edtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edtUsername.DefaultText = "ms-jude-lakin-sr";
+            this.edtUsername.DefaultText = "travon-von-i";
             this.edtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.edtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.edtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

@@ -47,7 +47,7 @@ namespace HubstafDesktop
 
                     foreach (var item in selectedProject.TaskList)
                     {
-                        if (item.Status.Equals("done"))
+                        if (item.Status.Equals("Done"))
                         {
                             totalTime += item.TimeNeeded;
                         }
@@ -149,6 +149,8 @@ namespace HubstafDesktop
             setupProjectList(DummyDataSource.dummyListProject);
 
             lblCurrentUser.Text = Repository.loggedInUser.Name;
+
+            fetchProjectData();
         }
 
         #region api call region
@@ -156,9 +158,10 @@ namespace HubstafDesktop
         async void fetchProjectData()
         {
             await Task.Run(() => Repository.getAllProject());
-            
-            setupProjectList(DummyDataSource.dummyListProject); //update the project list here
+
+            setupProjectList(Repository.listProjectUser);//DummyDataSource.dummyListProject); //update the project list here
         }
+
         //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
         //await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));
 
@@ -169,7 +172,14 @@ namespace HubstafDesktop
         {
             Application.Exit();
         }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //make api call here
+            fetchProjectData();
+            //update the status
+            lblLastUpdated.Text = "Last Updated : " + DateTime.Now;
 
+        }
         private void btnMinimze_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -301,12 +311,6 @@ namespace HubstafDesktop
 
         #endregion
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            //make api call here
-
-            //update the status
-            lblLastUpdated.Text = "Last Updated : " + DateTime.Now;
-        }
+       
     }
 }

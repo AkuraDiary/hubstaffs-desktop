@@ -22,6 +22,14 @@ namespace HubstafDesktop.Util
             return value - (getMinuteOf(value) * 60);
         }
 
+        public static int parseStringTimeIntoAFuckingInteger(string dataTime)
+        {
+            
+            TimeSpan timeSpan = TimeSpan.Parse(dataTime);
+            double totalSeconds = timeSpan.TotalSeconds;
+            int seconds = (int)totalSeconds;
+            return seconds;
+        }
         public static string formatTime(int timeValue)
         {
             int hour = getHourOf(timeValue);

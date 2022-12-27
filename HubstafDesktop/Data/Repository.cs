@@ -1,4 +1,5 @@
-﻿using HubstafDesktop.Data.Model.Response;
+﻿using HubstafDesktop.Data.Model;
+using HubstafDesktop.Data.Model.Response;
 using HubstafDesktop.Data.Remote;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,10 @@ namespace HubstafDesktop.Data
     {
         public static UserAuthResponse loggedInUser; //= new UserAuthResponse();
         public static List<ProjectResponse> projectListResponse;
-        public static List<TaskResponse> tasksListResponse;
+
+        public static List<UserProject> listProjectUser;
+
+        //public static List<TaskResponse> tasksListResponse;
 
         public static void doLoginUser(string username, string password)
         {
@@ -35,7 +39,13 @@ namespace HubstafDesktop.Data
         {
             try
             {
-                projectListResponse = Task.Run(() => ApiService.getAllProjectAsync()).Result;
+                int currentUserId = Repository.loggedInUser.Id;
+                projectListResponse = Task.Run(() => ApiService.getAllProjectAsync(currentUserId)).Result;
+
+                if (projectListResponse.Count >0)
+                {
+                    Repository.listProjectUser = DataMapper.MapListProjectResponseToListUserProject(projectListResponse);
+                }
                 Debug.WriteLine("Project List Response : " + projectListResponse.ToString());
             }
             catch (Exception ex)
@@ -47,20 +57,20 @@ namespace HubstafDesktop.Data
             }
         }
 
-        public static void getAllTasks()
-        {
-            try
-            {
-                tasksListResponse = Task.Run(() => ApiService.getAllTaskAsync()).Result;
-                Debug.WriteLine("Task List Response : " + projectListResponse.ToString());
-            }
-            catch (Exception ex)
-            {
-                //TODO handle the exception
-                Debug.WriteLine("error " + ex.Message);
-                MessageBox.Show("error " + ex.Message);
-                throw;
-            }
-        }
+        //public static void getAllTasks()
+        //{
+        //    try
+        //    {
+        //        tasksListResponse = Task.Run(() => ApiService.getAllTaskAsync()).Result;
+        //        Debug.WriteLine("Task List Response : " + projectListResponse.ToString());
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //TODO handle the exception
+        //        Debug.WriteLine("error " + ex.Message);
+        //        MessageBox.Show("error " + ex.Message);
+        //        throw;
+        //    }
+        //}
     }
 }

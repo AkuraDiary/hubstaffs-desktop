@@ -124,7 +124,10 @@
     <Compile Include="Data\Images\SsForm.Designer.cs">
       <DependentUpon>SsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\Model\DataMapper.cs" />
+    <Compile Include="Data\Model\Response\GetProjectOfUserResponse.cs" />
     <Compile Include="Data\Model\Response\ProjectResponse.cs" />
+    <Compile Include="Data\Model\Response\Role.cs" />
     <Compile Include="Data\Model\Response\TaskResponse.cs" />
     <Compile Include="Data\Model\Response\UserAuthResponse.cs" />
     <Compile Include="Data\Model\UserProject.cs" />
