@@ -56,21 +56,5 @@ namespace HubstafDesktop.Data
                 throw;
             }
         }
-
-        //public static void getAllTasks()
-        //{
-        //    try
-        //    {
-        //        tasksListResponse = Task.Run(() => ApiService.getAllTaskAsync()).Result;
-        //        Debug.WriteLine("Task List Response : " + projectListResponse.ToString());
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        //TODO handle the exception
-        //        Debug.WriteLine("error " + ex.Message);
-        //        MessageBox.Show("error " + ex.Message);
-        //        throw;
-        //    }
-        //}
     }
 }

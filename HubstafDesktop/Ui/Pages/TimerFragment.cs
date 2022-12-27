@@ -23,6 +23,7 @@ namespace HubstafDesktop.Ui.Pages
         private string projectName = "";
 
         private int screenshootTimeMF = 0;
+        private bool initialSsDone = false;
 
         //        private UserTask choosedTask;
 
@@ -43,7 +44,7 @@ namespace HubstafDesktop.Ui.Pages
                     lblTaskName.Text = choosedTask.TaskName;
                     timerCountdownValue = choosedTask.TimeNeeded;
 
-                    screenshootTimeMF = timerCountdownValue/2;
+                    screenshootTimeMF = timerCountdownValue/3;
 
                     bindSecondAndMinute();
                 }
@@ -68,6 +69,12 @@ namespace HubstafDesktop.Ui.Pages
                 startTimerCountdown();
                 btnFormMode.PerformClick();
                 parentContext.focusMode(true);
+
+                if (!initialSsDone)
+                {
+                    parentContext.takeAndShowScreenshot(); //take initial screenshoot
+                    this.initialSsDone = true;
+                }
                 //parentContext.miniMode();
             }
             else
@@ -104,7 +111,8 @@ namespace HubstafDesktop.Ui.Pages
                 //decrement the value
                 timerCountdownValue--;
 
-                if(timerCountdownValue == this.screenshootTimeMF)
+
+                if (timerCountdownValue % this.screenshootTimeMF == 0) // take screenshoot every interval of time
                 {
                     parentContext.takeAndShowScreenshot();//takeAndShowScreenshot();
                 }
@@ -116,34 +124,33 @@ namespace HubstafDesktop.Ui.Pages
             {
                 countdownTimer.Stop();
                 changePlayButtonState(true);
-                btnFormMode.PerformClick();
-                //parentContext.focusMode(false);
                 onFinishedTimer();
-                //MessageBox.Show("Time's Up");
+
+                btnFormMode.PerformClick();
+                MessageBox.Show("Time's Up");
             }
         }
 
-        //void takeAndShowScreenshot()
-        //{
-        //    var ss = ImagesUtil.takeScreenshoot();
-        //    ImagesUtil.ShowSsResult(ss);
-        //}
 
         void onFinishedTimer()
         {
+            parentContext.takeAndShowScreenshot(); //finishing screenshoot
+
+            parentContext.focusMode(false);
             //todo update task status
             choosedTask.Status = "done";
             var now = DateTime.Now;
             MessageBox.Show("DONE at : " + now);
             choosedTask.FinishedTime = now;
             parentContext.SelectedTask = choosedTask;
-            parentContext.syncSelectedTask(choosedTask); // sync
 
+
+            //UPDATE THE FINISHED TASK HERE
+
+            parentContext.syncSelectedTask(choosedTask); // sync the status and view
 
             //parentContext.; //TODO UPDATE TASK STATUS HERE
         }
-
-
 
 
         #region helper method

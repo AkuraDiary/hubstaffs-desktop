@@ -227,6 +227,7 @@ namespace HubstafDesktop
             projectListFragmentContainer.Enabled = !state;
             btnExit.Visible = !state;
             btnMinimze.Visible = state;
+            moveFormToTopRight();
             //btnFormMode.PerformClick();
             this.BringToFront();
         }
@@ -236,7 +237,15 @@ namespace HubstafDesktop
         bool isMini = false;
         bool isSmall = true;
 
+        public void moveFormToTopRight()
+        {
+            // Get the current screen dimensions
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
+            // Set the form's location to the top right corner of the screen
+            this.Location = new Point(screenWidth - this.Width, 0);
+        }
        public void miniMode() {
 
             isMini = !isMini; // switch state
