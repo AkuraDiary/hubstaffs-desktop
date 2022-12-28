@@ -154,41 +154,6 @@ namespace HubstafDesktop.Data.Remote
 
         }
 
-        //public static async Task<List<ProjectResponse>> getAllProjectAsync(int idUser) //FUCKING TODO
-        //{
-        //    string endpointWithParam = string.Format(projectEndpoint, idUser);
-        //    // make and api call and receive HttpResponseMessage
-        //    var responseMessage = await getclient().GetAsync(endpointWithParam, HttpCompletionOption.ResponseContentRead);
-
-        //    //convert response message into string
-        //    var resultArray = await responseMessage.Content.ReadAsStringAsync();
-
-        //    GetProjectOfUserResponse responseResult = JsonConvert.DeserializeObject<GetProjectOfUserResponse>(resultArray);
-        //    //Debug.WriteLine("user project list " + listData.Count);
-        //    List<ProjectResponse> listData = responseResult.Project;
-
-        //    Debug.WriteLine("user project list " + resultArray);
-
-        //    return listData;
-        //}
-
-
-
-
-        //public static async Task<List<TaskResponse>> getAllTaskAsync()
-        //{
-
-        //    // make and api call and receive HttpResponseMessage
-        //    var responseMessage = await getclient().GetAsync(ApiService.taskEndpoint, HttpCompletionOption.ResponseContentRead);
-
-        //    //convert response message into string
-        //    var resultArray = await responseMessage.Content.ReadAsStringAsync();
-
-        //    var listData = JsonConvert.DeserializeObject<List<TaskResponse>>(resultArray);
-        //    Debug.WriteLine("project list " + listData.Count);
-        //    return listData;
-        //}
-
 
         #region [notes] how to do fuckin request
 

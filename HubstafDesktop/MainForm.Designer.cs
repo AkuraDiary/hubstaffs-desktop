@@ -34,7 +34,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
@@ -44,18 +43,21 @@
             this.lblSelectedTaskStatus = new System.Windows.Forms.Label();
             this.lblSelectedTaskDesc = new System.Windows.Forms.Label();
             this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTotalTimeSpent = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCurrentUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.lblLastUpdated = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.picBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
+            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
             this.mainTimerFragmentContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationImageList
@@ -89,13 +91,6 @@
             this.projectTaskDetailFragmentCOntainer.Controls.Add(this.guna2Panel23);
             resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
             this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
-            // 
-            // taskFragment
-            // 
-            this.taskFragment.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.taskFragment, "taskFragment");
-            this.taskFragment.Name = "taskFragment";
-            this.taskFragment.ShowDone = false;
             // 
             // guna2Panel23
             // 
@@ -164,15 +159,6 @@
             resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
             // 
-            // mainTimer
-            // 
-            this.mainTimer.BackColor = System.Drawing.Color.White;
-            this.mainTimer.ChoosedTask = null;
-            resources.ApplyResources(this.mainTimer, "mainTimer");
-            this.mainTimer.Name = "mainTimer";
-            this.mainTimer.ProjectName = "";
-            this.mainTimer.TimerCountdownValue = 0;
-            // 
             // projectListFragmentContainer
             // 
             resources.ApplyResources(this.projectListFragmentContainer, "projectListFragmentContainer");
@@ -219,6 +205,23 @@
             this.lblCurrentUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCurrentUser.Name = "lblCurrentUser";
             // 
+            // lblLastUpdated
+            // 
+            resources.ApplyResources(this.lblLastUpdated, "lblLastUpdated");
+            this.lblLastUpdated.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastUpdated.ForeColor = System.Drawing.Color.Black;
+            this.lblLastUpdated.Name = "lblLastUpdated";
+            this.lblLastUpdated.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picBoxLogo
+            // 
+            this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxLogo.FillColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
+            this.picBoxLogo.ImageRotate = 0F;
+            this.picBoxLogo.Name = "picBoxLogo";
+            this.picBoxLogo.TabStop = false;
+            // 
             // btnRefresh
             // 
             this.btnRefresh.BorderColor = System.Drawing.Color.Bisque;
@@ -233,19 +236,28 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // lblLastUpdated
+            // taskFragment
             // 
-            resources.ApplyResources(this.lblLastUpdated, "lblLastUpdated");
-            this.lblLastUpdated.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastUpdated.ForeColor = System.Drawing.Color.Black;
-            this.lblLastUpdated.Name = "lblLastUpdated";
-            this.lblLastUpdated.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.taskFragment.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.taskFragment, "taskFragment");
+            this.taskFragment.Name = "taskFragment";
+            this.taskFragment.ShowDone = false;
+            // 
+            // mainTimer
+            // 
+            this.mainTimer.BackColor = System.Drawing.Color.White;
+            this.mainTimer.ChoosedTask = null;
+            resources.ApplyResources(this.mainTimer, "mainTimer");
+            this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = "";
+            this.mainTimer.TimerCountdownValue = 0;
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.picBoxLogo);
             this.Controls.Add(this.lblLastUpdated);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblCurrentUser);
@@ -269,6 +281,7 @@
             this.taskDescriptionPanelContainer.ResumeLayout(false);
             this.taskDescriptionPanelContainer.PerformLayout();
             this.mainTimerFragmentContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +310,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCurrentUser;
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblLastUpdated;
+        private Guna.UI2.WinForms.Guna2PictureBox picBoxLogo;
     }
 }
 

@@ -258,5 +258,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_refresh_500px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo login.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
