@@ -135,12 +135,14 @@
             // lblSelectedTaskName
             // 
             resources.ApplyResources(this.lblSelectedTaskName, "lblSelectedTaskName");
-            this.lblSelectedTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSelectedTaskName.ForeColor = System.Drawing.Color.White;
             this.lblSelectedTaskName.Name = "lblSelectedTaskName";
             // 
             // taskDescriptionPanelContainer
             // 
-            this.taskDescriptionPanelContainer.BackColor = System.Drawing.Color.White;
+            this.taskDescriptionPanelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.taskDescriptionPanelContainer.BorderColor = System.Drawing.Color.Gray;
+            this.taskDescriptionPanelContainer.BorderRadius = 5;
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskStatus);
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskDesc);
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskName);
@@ -150,13 +152,13 @@
             // lblSelectedTaskStatus
             // 
             resources.ApplyResources(this.lblSelectedTaskStatus, "lblSelectedTaskStatus");
-            this.lblSelectedTaskStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSelectedTaskStatus.ForeColor = System.Drawing.Color.White;
             this.lblSelectedTaskStatus.Name = "lblSelectedTaskStatus";
             // 
             // lblSelectedTaskDesc
             // 
             resources.ApplyResources(this.lblSelectedTaskDesc, "lblSelectedTaskDesc");
-            this.lblSelectedTaskDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSelectedTaskDesc.ForeColor = System.Drawing.Color.White;
             this.lblSelectedTaskDesc.Name = "lblSelectedTaskDesc";
             // 
             // mainTimerFragmentContainer

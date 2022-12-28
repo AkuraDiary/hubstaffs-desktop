@@ -458,6 +458,30 @@
   <data name="&gt;&gt;btnMinimze.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <metadata name="taskDescriptionPanelContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblSelectedTaskStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt, style=Bold</value>
+  </data>
+  <data name="lblSelectedTaskStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSelectedTaskStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>795, 7</value>
+  </data>
+  <data name="lblSelectedTaskStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="lblSelectedTaskStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblSelectedTaskStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblSelectedTaskStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;lblSelectedTaskStatus.Name" xml:space="preserve">
     <value>lblSelectedTaskStatus</value>
   </data>
@@ -470,6 +494,21 @@
   <data name="&gt;&gt;lblSelectedTaskStatus.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lblSelectedTaskDesc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt</value>
+  </data>
+  <data name="lblSelectedTaskDesc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSelectedTaskDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 29</value>
+  </data>
+  <data name="lblSelectedTaskDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>898, 112</value>
+  </data>
+  <data name="lblSelectedTaskDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
   <data name="&gt;&gt;lblSelectedTaskDesc.Name" xml:space="preserve">
     <value>lblSelectedTaskDesc</value>
   </data>
@@ -481,6 +520,30 @@
   </data>
   <data name="&gt;&gt;lblSelectedTaskDesc.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="lblSelectedTaskName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSelectedTaskName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9pt, style=Bold</value>
+  </data>
+  <data name="lblSelectedTaskName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSelectedTaskName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="lblSelectedTaskName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="lblSelectedTaskName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblSelectedTaskName.Text" xml:space="preserve">
+    <value>SELECTED TASK DETAIL</value>
+  </data>
+  <data name="lblSelectedTaskName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;lblSelectedTaskName.Name" xml:space="preserve">
     <value>lblSelectedTaskName</value>
@@ -495,10 +558,10 @@
     <value>2</value>
   </data>
   <data name="taskDescriptionPanelContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 564</value>
+    <value>353, 564</value>
   </data>
   <data name="taskDescriptionPanelContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>939, 180</value>
+    <value>936, 180</value>
   </data>
   <data name="taskDescriptionPanelContainer.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -575,6 +638,15 @@
   <data name="&gt;&gt;lblCurrentProjectName.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="taskFragment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="taskFragment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>936, 496</value>
+  </data>
+  <data name="taskFragment.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;taskFragment.Name" xml:space="preserve">
     <value>taskFragment</value>
   </data>
@@ -586,6 +658,15 @@
   </data>
   <data name="&gt;&gt;taskFragment.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="guna2Panel23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 505</value>
+  </data>
+  <data name="guna2Panel23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1135, 1</value>
+  </data>
+  <data name="guna2Panel23.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
     <value>guna2Panel23</value>
@@ -623,6 +704,15 @@
   <metadata name="mainTimerFragmentContainer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 274</value>
+  </data>
+  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
     <value>mainTimer</value>
   </data>
@@ -712,164 +802,5 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="taskFragment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="taskFragment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>939, 496</value>
-  </data>
-  <data name="taskFragment.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;taskFragment.Name" xml:space="preserve">
-    <value>taskFragment</value>
-  </data>
-  <data name="&gt;&gt;taskFragment.Type" xml:space="preserve">
-    <value>HubstafDesktop.Ui.Pages.TaskFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;taskFragment.Parent" xml:space="preserve">
-    <value>projectTaskDetailFragmentCOntainer</value>
-  </data>
-  <data name="&gt;&gt;taskFragment.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="guna2Panel23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 505</value>
-  </data>
-  <data name="guna2Panel23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1135, 1</value>
-  </data>
-  <data name="guna2Panel23.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Name" xml:space="preserve">
-    <value>guna2Panel23</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.Parent" xml:space="preserve">
-    <value>projectTaskDetailFragmentCOntainer</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel23.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblSelectedTaskName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSelectedTaskName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9pt, style=Bold</value>
-  </data>
-  <data name="lblSelectedTaskName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblSelectedTaskName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="lblSelectedTaskName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
-  </data>
-  <data name="lblSelectedTaskName.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblSelectedTaskName.Text" xml:space="preserve">
-    <value>SELECTED TASK DETAIL</value>
-  </data>
-  <data name="lblSelectedTaskName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Name" xml:space="preserve">
-    <value>lblSelectedTaskName</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.Parent" xml:space="preserve">
-    <value>taskDescriptionPanelContainer</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskName.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblSelectedTaskStatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9pt, style=Bold</value>
-  </data>
-  <data name="lblSelectedTaskStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblSelectedTaskStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>795, 7</value>
-  </data>
-  <data name="lblSelectedTaskStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="lblSelectedTaskStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblSelectedTaskStatus.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="lblSelectedTaskStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskStatus.Name" xml:space="preserve">
-    <value>lblSelectedTaskStatus</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskStatus.Parent" xml:space="preserve">
-    <value>taskDescriptionPanelContainer</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblSelectedTaskDesc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9pt</value>
-  </data>
-  <data name="lblSelectedTaskDesc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblSelectedTaskDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 29</value>
-  </data>
-  <data name="lblSelectedTaskDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>898, 112</value>
-  </data>
-  <data name="lblSelectedTaskDesc.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskDesc.Name" xml:space="preserve">
-    <value>lblSelectedTaskDesc</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskDesc.Parent" xml:space="preserve">
-    <value>taskDescriptionPanelContainer</value>
-  </data>
-  <data name="&gt;&gt;lblSelectedTaskDesc.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mainTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="mainTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 274</value>
-  </data>
-  <data name="mainTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Name" xml:space="preserve">
-    <value>mainTimer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Type" xml:space="preserve">
-    <value>HubstafDesktop.Ui.Pages.TimerFragment, HubstafDesktop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.Parent" xml:space="preserve">
-    <value>mainTimerFragmentContainer</value>
-  </data>
-  <data name="&gt;&gt;mainTimer.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
 </root>
