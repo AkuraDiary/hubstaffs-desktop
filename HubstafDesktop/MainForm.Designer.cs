@@ -52,9 +52,9 @@
             this.lblLastUpdated = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.picBoxLogo = new System.Windows.Forms.PictureBox();
             this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
-            this.picBoxLogo = new System.Windows.Forms.PictureBox();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
             this.mainTimerFragmentContainer.SuspendLayout();
@@ -256,6 +256,15 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // picBoxLogo
+            // 
+            this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxLogo.Image = global::HubstafDesktop.Properties.Resources.Group_1;
+            resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
+            this.picBoxLogo.Name = "picBoxLogo";
+            this.picBoxLogo.TabStop = false;
+            this.picBoxLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            // 
             // taskFragment
             // 
             this.taskFragment.BackColor = System.Drawing.Color.White;
@@ -272,15 +281,6 @@
             this.mainTimer.ProjectName = "";
             this.mainTimer.TimerCountdownValue = 0;
             this.mainTimer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
-            // 
-            // picBoxLogo
-            // 
-            this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picBoxLogo.Image = global::HubstafDesktop.Properties.Resources.logo_login;
-            resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
-            this.picBoxLogo.Name = "picBoxLogo";
-            this.picBoxLogo.TabStop = false;
-            this.picBoxLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // MainForm
             // 
