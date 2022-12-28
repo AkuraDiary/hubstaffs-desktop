@@ -22,7 +22,7 @@ namespace HubstafDesktop
         {
             InitializeComponent();
             this.KeyPreview = true;
-            Debug.WriteLine("PARSE TIME STRING INTO TOTAL INT : " + TimerUtil.parseStringTimeIntoAFuckingInteger("01:00:00"));
+            
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -31,8 +31,6 @@ namespace HubstafDesktop
             {
 
                 //todo do login here
-
-                //Repository.loggedInUser = Task.Run(() => ApiService.loginUserAsync(edtUsername.Text, edtPassword.Text)).Result;
                 btnLogin.Enabled =  false;
                 //MessageBox.Show("Loging In Please Wait");
                 await Task.Run(() => Repository.doLoginUser(edtUsername.Text, edtPassword.Text));

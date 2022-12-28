@@ -38,12 +38,12 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTimerCountDown = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnStartTimer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblCurrentProjectName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
             this.fuck = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPause = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnFinishNow = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStartTimer = new Guna.UI2.WinForms.Guna2CircleButton();
             this.timerPanelContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@ namespace HubstafDesktop.Ui.Pages
             this.timerPanelContainer.BorderRadius = 10;
             this.timerPanelContainer.Controls.Add(this.lblTimerCountDown);
             this.timerPanelContainer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.timerPanelContainer.Location = new System.Drawing.Point(51, 17);
+            this.timerPanelContainer.Location = new System.Drawing.Point(51, 42);
             this.timerPanelContainer.Name = "timerPanelContainer";
             this.timerPanelContainer.Size = new System.Drawing.Size(210, 39);
             this.timerPanelContainer.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace HubstafDesktop.Ui.Pages
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
             this.lblTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTaskName.Location = new System.Drawing.Point(-8, 109);
+            this.lblTaskName.Location = new System.Drawing.Point(-8, 113);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(326, 33);
             this.lblTaskName.TabIndex = 4;
@@ -95,30 +95,13 @@ namespace HubstafDesktop.Ui.Pages
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "play-128.png");
             // 
-            // btnStartTimer
-            // 
-            this.btnStartTimer.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnStartTimer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnStartTimer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnStartTimer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnStartTimer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStartTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStartTimer.ForeColor = System.Drawing.Color.White;
-            this.btnStartTimer.Image = ((System.Drawing.Image)(resources.GetObject("btnStartTimer.Image")));
-            this.btnStartTimer.Location = new System.Drawing.Point(126, 152);
-            this.btnStartTimer.Name = "btnStartTimer";
-            this.btnStartTimer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnStartTimer.Size = new System.Drawing.Size(60, 60);
-            this.btnStartTimer.TabIndex = 6;
-            this.btnStartTimer.Click += new System.EventHandler(this.startTimerButton_Click);
-            // 
             // lblCurrentProjectName
             // 
             this.lblCurrentProjectName.AutoSize = false;
             this.lblCurrentProjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentProjectName.Font = new System.Drawing.Font("Poppins", 13F, System.Drawing.FontStyle.Bold);
             this.lblCurrentProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCurrentProjectName.Location = new System.Drawing.Point(-8, 83);
+            this.lblCurrentProjectName.Location = new System.Drawing.Point(-8, 87);
             this.lblCurrentProjectName.Name = "lblCurrentProjectName";
             this.lblCurrentProjectName.Size = new System.Drawing.Size(326, 36);
             this.lblCurrentProjectName.TabIndex = 7;
@@ -188,6 +171,23 @@ namespace HubstafDesktop.Ui.Pages
             this.btnFinishNow.Text = "Finish Now";
             this.btnFinishNow.Visible = false;
             this.btnFinishNow.Click += new System.EventHandler(this.btnFinishNow_Click);
+            // 
+            // btnStartTimer
+            // 
+            this.btnStartTimer.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnStartTimer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStartTimer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStartTimer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStartTimer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStartTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStartTimer.ForeColor = System.Drawing.Color.White;
+            this.btnStartTimer.Image = ((System.Drawing.Image)(resources.GetObject("btnStartTimer.Image")));
+            this.btnStartTimer.Location = new System.Drawing.Point(126, 152);
+            this.btnStartTimer.Name = "btnStartTimer";
+            this.btnStartTimer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnStartTimer.Size = new System.Drawing.Size(60, 60);
+            this.btnStartTimer.TabIndex = 6;
+            this.btnStartTimer.Click += new System.EventHandler(this.startTimerButton_Click);
             // 
             // TimerFragment
             // 
