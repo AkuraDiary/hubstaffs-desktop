@@ -68,34 +68,35 @@ namespace HubstafDesktop.Ui.Pages
             if(choosedTask != null)
             {
 
-                // Display a confirmation message box with Yes and No buttons
-                DialogResult result = MessageBox.Show(
-                    @"You're about to start working on this task, the system will automatically screenshoot your works and you won't be able to pause the timer unless the time needed for this task is more than an hour. 
-
-Do you wish to proceed?", 
-                    "Start Working On Task", 
-                    MessageBoxButtons.YesNo
-                    );
-
-                // Check the result of the message box
-                if (result == DialogResult.Yes)
+                if (!initialSsDone) //only show the message when timer is first started
                 {
-                    
-                    startTimerCountdown();
-                    btnFormMode.PerformClick();
-                    parentContext.focusMode(true);
+                    // Display a confirmation message box with Yes and No buttons
+                    DialogResult result = MessageBox.Show(
+                        @"You're about to start working on this task, the system will automatically screenshoot your works and you won't be able to pause the timer unless the time needed for this task is more than an hour. 
 
-                    if (!initialSsDone)
+Do you wish to proceed?",
+                        "Start Working On Task",
+                        MessageBoxButtons.YesNo
+                        );
+
+                    // Check the result of the message box
+                    if (result == DialogResult.Yes)
                     {
+                        onStartTimer();
                         parentContext.takeAndSendScreenshot(); //take initial screenshoot
                         this.initialSsDone = true;
                     }
-                    //parentContext.miniMode();
+
+                    else
+                    {
+                        // The user clicked No or closed the message box, so cancel the operation
+                        // ...
+                    }
+
                 }
                 else
                 {
-                    // The user clicked No or closed the message box, so cancel the operation
-                    // ...
+                    onStartTimer();
                 }
 
                 
@@ -105,6 +106,19 @@ Do you wish to proceed?",
                 MessageBox.Show("You haven't choosen any task");
             }
             
+        }
+
+        void onStartTimer()
+        {
+                startTimerCountdown();
+                btnFormMode.PerformClick();
+                parentContext.focusMode(true);
+
+                //if (!initialSsDone)
+                //{
+                //    parentContext.takeAndSendScreenshot(); //take initial screenshoot
+                //    this.initialSsDone = true;
+                //}
         }
 
         void startTimerCountdown()
@@ -187,7 +201,7 @@ Do you wish to proceed?",
             btnFinishNow.Visible = !isEnable;
             if (!isEnable)
             {
-                timerPanelContainer.FillColor= Color.FromArgb(94, 148, 255);
+                timerPanelContainer.FillColor= Color.FromArgb(70, 120, 255);
             }
             else
             {

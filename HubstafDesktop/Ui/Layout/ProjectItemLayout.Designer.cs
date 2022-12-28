@@ -37,7 +37,7 @@ namespace HubstafDesktop.Ui.Layout
             // 
             // pnl_txt
             // 
-            this.pnl_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pnl_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(255)))));
             this.pnl_txt.Controls.Add(this.lblProjectName);
             this.pnl_txt.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_txt.Location = new System.Drawing.Point(0, 0);

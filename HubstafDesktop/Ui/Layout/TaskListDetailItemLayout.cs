@@ -64,8 +64,8 @@ namespace HubstafDesktop.Ui.Layout
         {
             if (isActive)
             {
-                BackColor = Color.FromArgb(94, 148, 255);
-                taskPanel.BackColor = Color.FromArgb(94, 148, 255);
+                BackColor = Color.FromArgb(70, 120, 255);
+                taskPanel.BackColor = Color.FromArgb(70, 120, 255);
 
                 lblTaskName.ForeColor = Color.White;
                 lblTaskDesc.ForeColor = Color.White;

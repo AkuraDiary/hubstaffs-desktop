@@ -92,12 +92,12 @@ namespace HubstafDesktop.Ui.Pages
             // checkBoxShowDone
             // 
             this.checkBoxShowDone.AutoSize = true;
-            this.checkBoxShowDone.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxShowDone.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(255)))));
             this.checkBoxShowDone.CheckedState.BorderRadius = 0;
             this.checkBoxShowDone.CheckedState.BorderThickness = 0;
-            this.checkBoxShowDone.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.checkBoxShowDone.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(255)))));
             this.checkBoxShowDone.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxShowDone.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.checkBoxShowDone.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.checkBoxShowDone.Location = new System.Drawing.Point(13, 3);
             this.checkBoxShowDone.Name = "checkBoxShowDone";
             this.checkBoxShowDone.Size = new System.Drawing.Size(89, 23);

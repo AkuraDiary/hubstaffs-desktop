@@ -179,6 +179,7 @@ namespace HubstafDesktop.Ui.Pages
             this.btnStartTimer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnStartTimer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStartTimer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStartTimer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(120)))), ((int)(((byte)(255)))));
             this.btnStartTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStartTimer.ForeColor = System.Drawing.Color.White;
             this.btnStartTimer.Image = ((System.Drawing.Image)(resources.GetObject("btnStartTimer.Image")));
