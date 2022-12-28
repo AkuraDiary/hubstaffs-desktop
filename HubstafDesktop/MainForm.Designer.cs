@@ -217,8 +217,9 @@
             // 
             this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.picBoxLogo.FillColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
+            this.picBoxLogo.Image = global::HubstafDesktop.Properties.Resources.logo_login;
             this.picBoxLogo.ImageRotate = 0F;
+            resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
             this.picBoxLogo.Name = "picBoxLogo";
             this.picBoxLogo.TabStop = false;
             // 
