@@ -219,7 +219,7 @@ namespace HubstafDesktop
             // compress imagehere
             Byte[] compressedSS = ImagesUtil.compressImage(ss);
 
-            //ImagesUtil.ShowSsResult(compressedSS);
+            ImagesUtil.ShowSsResult(compressedSS);
 
             Repository.sendImage(selectedTask.IdTask, compressedSS); //send image to the api
             

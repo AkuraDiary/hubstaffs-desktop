@@ -67,16 +67,38 @@ namespace HubstafDesktop.Ui.Pages
         {
             if(choosedTask != null)
             {
-                startTimerCountdown();
-                btnFormMode.PerformClick();
-                parentContext.focusMode(true);
 
-                if (!initialSsDone)
+                // Display a confirmation message box with Yes and No buttons
+                DialogResult result = MessageBox.Show(
+                    @"You're about to start working on this task, the system will automatically screenshoot your works and you won't be able to pause the timer unless the time needed for this task is more than an hour. 
+
+Do you wish to proceed?", 
+                    "Start Working On Task", 
+                    MessageBoxButtons.YesNo
+                    );
+
+                // Check the result of the message box
+                if (result == DialogResult.Yes)
                 {
-                    parentContext.takeAndSendScreenshot(); //take initial screenshoot
-                    this.initialSsDone = true;
+                    
+                    startTimerCountdown();
+                    btnFormMode.PerformClick();
+                    parentContext.focusMode(true);
+
+                    if (!initialSsDone)
+                    {
+                        parentContext.takeAndSendScreenshot(); //take initial screenshoot
+                        this.initialSsDone = true;
+                    }
+                    //parentContext.miniMode();
                 }
-                //parentContext.miniMode();
+                else
+                {
+                    // The user clicked No or closed the message box, so cancel the operation
+                    // ...
+                }
+
+                
             }
             else
             {
@@ -207,7 +229,7 @@ namespace HubstafDesktop.Ui.Pages
             // Check the result of the message box
             if (result == DialogResult.Yes)
             {
-                // The user clicked Yes, so perform the delete operation
+                // The user clicked Yes, so perform the operation
                 // ...
                 onFinishedTimer();
             }
