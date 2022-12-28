@@ -163,9 +163,7 @@ namespace HubstafDesktop.Data.Remote
 
             Debug.WriteLine("mark  Upload The Image Endpoint : " + url);
             Debug.WriteLine("Image Exist : " + File.Exists(filePath));
-            Debug.WriteLine("mark Upload The Image : " + resultResponseMessage);
-
-            
+            Debug.WriteLine("mark Upload The Image : " + resultResponseMessage);    
 
         }
 
