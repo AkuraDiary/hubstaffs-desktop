@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -35,9 +38,9 @@ namespace HubstafDesktop.Data.Remote
         public static string organizationEndpoint = $"organizations";
         public static string projectEndpoint = "{0}/projects";
         public static string taskEndpoint = $"tasks";
-
+        
         public static string loginEndpoint = $"login";
-        public static string uploadImageEndpoint = $"tasks";   
+        public static string uploadImageEndpoint = "tasks/{0}/upload-image";   
         public static string taskDoneEndpoint = "tasks/{0}/task-done";   
         #endregion
 
@@ -104,6 +107,7 @@ namespace HubstafDesktop.Data.Remote
             //Debug.WriteLine("user project list " + listData.Count);
             List<ProjectResponse> listData = responseResult.Project;
 
+            Debug.WriteLine("user project list endpoint : " + endpointWithParam);
             Debug.WriteLine("user project list " + resultArray);
 
             return listData;
@@ -125,32 +129,43 @@ namespace HubstafDesktop.Data.Remote
            var resultResponseMessage = await responseMessage.Content.ReadAsStringAsync();
 
           
+            
             Debug.WriteLine("mark Project As Done : " + resultResponseMessage);
 
         }
 
-        public static async void uploadImage(int idTask, string bearerToken, Byte[] imageData)
+        public static async void uploadImage(int idTask, string bearerToken, string filePath)
         {
-
-            string endpointWithParam = string.Format(uploadImageEndpoint, idTask);
+            // The URL of the REST API endpoint
+            string url = string.Format(uploadImageEndpoint, idTask);
 
             // Set the Authorization header with the Bearer token
             var client = getclient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
 
-            // Create the content for the request
-            var content = new ByteArrayContent(imageData);
+            // Create a boundary string
+            string boundary = "--" + DateTime.Now.Ticks.ToString("x");
 
-            // Set the content type header
-            content.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
+            // Create the content for the request
+            var content = new MultipartFormDataContent(boundary);
+
+            // Read the contents of the file
+            byte[] imageData = File.ReadAllBytes(filePath);
+
+            // Add the image file as a form data part
+            content.Add(new ByteArrayContent(imageData), "image", Path.GetFileName(filePath));
 
             // Call the POST method
-            var responseMessage = await client.PostAsync(endpointWithParam, content);
+            var responseMessage = client.PostAsync(url, content).Result;
 
             // Read the response message
             var resultResponseMessage = await responseMessage.Content.ReadAsStringAsync();
 
+            Debug.WriteLine("mark  Upload The Image Endpoint : " + url);
+            Debug.WriteLine("Image Exist : " + File.Exists(filePath));
             Debug.WriteLine("mark Upload The Image : " + resultResponseMessage);
+
+            
 
         }
 

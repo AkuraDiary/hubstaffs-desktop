@@ -186,6 +186,7 @@ Do you wish to proceed?",
 
             btnFormMode.PerformClick();
             MessageBox.Show("Task Finished");
+            this.initialSsDone = false;
         }
 
 

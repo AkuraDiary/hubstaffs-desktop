@@ -92,9 +92,29 @@ namespace HubstafDesktop.Data.Images
         public static Byte[] takeScreenshoot()
         {
             var screenshoot = Screenshot.CaptureAllScreens();
-            return ConvertBitmapSourceToByteArray(screenshoot);
+            Byte[] ss = ConvertBitmapSourceToByteArray(screenshoot);
+            
+            return ss;
         }
 
+        public static string saveSS(Byte[] imageData)
+        {
+            string directory = "images/ss";
+            string fileName = DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+            string filePath = Path.Combine(directory, fileName);
+
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                fileStream.Write(imageData, 0, imageData.Length);
+            }
+
+            return filePath;
+        }
 
         public static byte[] ConvertBitmapSourceToByteArray(BitmapSource image)
         {

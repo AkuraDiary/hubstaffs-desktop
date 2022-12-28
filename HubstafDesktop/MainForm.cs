@@ -216,12 +216,13 @@ namespace HubstafDesktop
            
             Byte[] ss = ImagesUtil.takeScreenshoot();
 
+            string filePath = ImagesUtil.saveSS(ss);
             // compress imagehere
-            Byte[] compressedSS = ImagesUtil.compressImage(ss);
+            //Byte[] compressedSS = ImagesUtil.compressImage(ss);
 
-            ImagesUtil.ShowSsResult(compressedSS);
+            //ImagesUtil.ShowSsResult(compressedSS);
 
-            Repository.sendImage(selectedTask.IdTask, compressedSS); //send image to the api
+            Repository.sendImage(selectedTask.IdTask, filePath); //send image to the api
             
 
         }

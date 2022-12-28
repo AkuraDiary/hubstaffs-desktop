@@ -1,25 +1,3 @@
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.LoginForm.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.ProjectItemLayout.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskItemLayout.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.aa.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.GenerateResource.cache
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CoreCompileInputs.cache
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe.config
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\aa\HubstafDesktop.resources.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Simple.ImageResizer.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\aa\HubstafDesktop.resources.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskListDetailItemLayout.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TimerFragment.resources
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe.config
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
@@ -44,10 +22,31 @@ C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\De
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
 C:\Users\RPL\source\repos\HubstafDesktop\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe.config
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\HubstafDesktop.pdb
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\aa\HubstafDesktop.resources.dll
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\GI.Screenshot.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Guna.UI2.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Newtonsoft.Json.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Simple.ImageResizer.dll
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\System.Drawing.Common.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Newtonsoft.Json.xml
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\System.Drawing.Common.xml
 D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Data.Images.SsForm.resources
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Newtonsoft.Json.dll
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\bin\Debug\Newtonsoft.Json.xml
-D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.AssemblyReference.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.LoginForm.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Properties.Resources.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.ProjectItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Layout.TaskListDetailItemLayout.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TimerFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.DashboardFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.Ui.Pages.TaskFragment.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.MainForm.aa.resources
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.GenerateResource.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CoreCompileInputs.cache
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\aa\HubstafDesktop.resources.dll
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.csproj.CopyComplete
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.exe
+D:\##LKS FILE\#LKS PROJECT\latihanUbig\hubstaff\hubstaffs-desktop\HubstafDesktop\obj\Debug\HubstafDesktop.pdb
