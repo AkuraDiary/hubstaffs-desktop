@@ -272,7 +272,7 @@ namespace HubstafDesktop
 
         private void btnFormMode_Click(object sender, EventArgs e)
         {
-            isSmall = !isSmall; // switch state
+         
             if (isSmall)
             {
                 this.Width = 340;
@@ -286,6 +286,8 @@ namespace HubstafDesktop
                 this.CenterToScreen();
                 
             }
+
+            isSmall = !isSmall; // switch state
         }
 
         public void bringBackTheFuckingOriginalSizeOfForm()

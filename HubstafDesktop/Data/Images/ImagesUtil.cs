@@ -163,14 +163,7 @@ namespace HubstafDesktop.Data.Images
                 // The compressed data is now in the output stream
                 return outputStream.ToArray();
 
-                //MemoryStream imgStream = new MemoryStream(imageData);
-                //MemoryStream outputStream = new MemoryStream();
-
-                //GZipStream compressor = new GZipStream(outputStream, CompressionMode.Compress);
-
-                //imgStream.CopyTo(compressor);
-
-                //return outputStream.ToArray();
+          
 
             }
         }

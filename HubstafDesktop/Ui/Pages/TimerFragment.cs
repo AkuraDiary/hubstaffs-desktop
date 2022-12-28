@@ -124,7 +124,7 @@ namespace HubstafDesktop.Ui.Pages
             else
             {
                 onFinishedTimer();
-                MessageBox.Show("Task Finished");
+                
             }
         }
 
@@ -140,6 +140,9 @@ namespace HubstafDesktop.Ui.Pages
             parentContext.focusMode(false);
             //todo update task status
             choosedTask.Status = "Done";
+
+            int timeNeeded = choosedTask.TimeNeeded - timerCountdownValue;
+            choosedTask.TimeNeeded = timeNeeded;
            
             parentContext.SelectedTask = choosedTask;
 
@@ -151,6 +154,7 @@ namespace HubstafDesktop.Ui.Pages
             parentContext.fetchProjectData();
 
             btnFormMode.PerformClick();
+            MessageBox.Show("Task Finished");
         }
 
 
@@ -158,6 +162,7 @@ namespace HubstafDesktop.Ui.Pages
         void changePlayButtonState(bool isEnable)
         {
             btnStartTimer.Enabled = isEnable;
+            btnFinishNow.Visible = !isEnable;
             if (!isEnable)
             {
                 timerPanelContainer.FillColor= Color.FromArgb(94, 148, 255);
@@ -192,6 +197,25 @@ namespace HubstafDesktop.Ui.Pages
         private void btnPause_Click(object sender, EventArgs e)
         {
             pauseTimer();
+        }
+
+        private void btnFinishNow_Click(object sender, EventArgs e)
+        {
+            // Display a confirmation message box with Yes and No buttons
+            DialogResult result = MessageBox.Show("Are You Sure Want to Finish Task Now?", "Finish Task", MessageBoxButtons.YesNo);
+
+            // Check the result of the message box
+            if (result == DialogResult.Yes)
+            {
+                // The user clicked Yes, so perform the delete operation
+                // ...
+                onFinishedTimer();
+            }
+            else
+            {
+                // The user clicked No or closed the message box, so cancel the delete operation
+                // ...
+            }
         }
     }
 }
