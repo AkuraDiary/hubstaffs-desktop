@@ -73,6 +73,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BorderRadius = 4;
             this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -80,7 +81,7 @@
             this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExit.FillColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnExit, "btnExit");
-            this.btnExit.ForeColor = System.Drawing.Color.Crimson;
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
             this.btnExit.Name = "btnExit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -111,9 +112,11 @@
             this.lblTaskName.BackColor = System.Drawing.Color.Transparent;
             this.lblTaskName.ForeColor = System.Drawing.Color.Black;
             this.lblTaskName.Name = "lblTaskName";
+            this.lblTaskName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // btnMinimze
             // 
+            this.btnMinimze.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimze.BorderRadius = 4;
             this.btnMinimze.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnMinimze.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -131,16 +134,17 @@
             this.lblCurrentProjectName.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentProjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCurrentProjectName.Name = "lblCurrentProjectName";
+            this.lblCurrentProjectName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // lblSelectedTaskName
             // 
             resources.ApplyResources(this.lblSelectedTaskName, "lblSelectedTaskName");
-            this.lblSelectedTaskName.ForeColor = System.Drawing.Color.White;
+            this.lblSelectedTaskName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.lblSelectedTaskName.Name = "lblSelectedTaskName";
             // 
             // taskDescriptionPanelContainer
             // 
-            this.taskDescriptionPanelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.taskDescriptionPanelContainer.BackColor = System.Drawing.Color.Transparent;
             this.taskDescriptionPanelContainer.BorderColor = System.Drawing.Color.Gray;
             this.taskDescriptionPanelContainer.BorderRadius = 5;
             this.taskDescriptionPanelContainer.Controls.Add(this.lblSelectedTaskStatus);
@@ -152,13 +156,14 @@
             // lblSelectedTaskStatus
             // 
             resources.ApplyResources(this.lblSelectedTaskStatus, "lblSelectedTaskStatus");
-            this.lblSelectedTaskStatus.ForeColor = System.Drawing.Color.White;
+            this.lblSelectedTaskStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.lblSelectedTaskStatus.Name = "lblSelectedTaskStatus";
             // 
             // lblSelectedTaskDesc
             // 
+            this.lblSelectedTaskDesc.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.lblSelectedTaskDesc, "lblSelectedTaskDesc");
-            this.lblSelectedTaskDesc.ForeColor = System.Drawing.Color.White;
+            this.lblSelectedTaskDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.lblSelectedTaskDesc.Name = "lblSelectedTaskDesc";
             // 
             // mainTimerFragmentContainer
@@ -167,6 +172,7 @@
             this.mainTimerFragmentContainer.Controls.Add(this.mainTimer);
             resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
+            this.mainTimerFragmentContainer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // mainTimer
             // 
@@ -176,6 +182,7 @@
             this.mainTimer.Name = "mainTimer";
             this.mainTimer.ProjectName = "";
             this.mainTimer.TimerCountdownValue = 0;
+            this.mainTimer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // projectListFragmentContainer
             // 
@@ -208,6 +215,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // lblTotalTimeSpent
             // 
@@ -215,6 +223,7 @@
             this.lblTotalTimeSpent.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalTimeSpent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblTotalTimeSpent.Name = "lblTotalTimeSpent";
+            this.lblTotalTimeSpent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // lblCurrentUser
             // 
@@ -222,6 +231,7 @@
             this.lblCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCurrentUser.Name = "lblCurrentUser";
+            this.lblCurrentUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // lblLastUpdated
             // 
@@ -242,6 +252,7 @@
             this.picBoxLogo.InitialImage = global::HubstafDesktop.Properties.Resources.Group_1;
             this.picBoxLogo.Name = "picBoxLogo";
             this.picBoxLogo.TabStop = false;
+            this.picBoxLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // btnRefresh
             // 
@@ -260,8 +271,9 @@
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             resources.ApplyResources(this, "$this");
+            this.ControlBox = false;
             this.Controls.Add(this.picBoxLogo);
             this.Controls.Add(this.lblLastUpdated);
             this.Controls.Add(this.btnRefresh);
