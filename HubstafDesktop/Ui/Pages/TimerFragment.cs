@@ -114,11 +114,6 @@ Do you wish to proceed?",
                 btnFormMode.PerformClick();
                 parentContext.focusMode(true);
 
-                //if (!initialSsDone)
-                //{
-                //    parentContext.takeAndSendScreenshot(); //take initial screenshoot
-                //    this.initialSsDone = true;
-                //}
         }
 
         void startTimerCountdown()
@@ -151,7 +146,7 @@ Do you wish to proceed?",
 
                 if (timerCountdownValue % this.screenshootTimeMF == 0) // take screenshoot every interval of time
                 {
-                    parentContext.takeAndSendScreenshot();//takeAndShowScreenshot();
+                    parentContext.takeAndSendScreenshot();//takeAndShowScreenshot ;
                 }
 
                 //update the stopwatch

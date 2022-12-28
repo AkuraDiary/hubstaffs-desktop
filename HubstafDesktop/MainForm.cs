@@ -321,8 +321,15 @@ namespace HubstafDesktop
         }
 
 
+
         #endregion
 
-       
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Repository.loggedInUser = null;
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+        }
     }
 }

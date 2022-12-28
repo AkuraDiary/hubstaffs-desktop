@@ -49,7 +49,7 @@ namespace HubstafDesktop.Ui.Pages
             // lblDateCreated
             // 
             this.lblDateCreated.Font = new System.Drawing.Font("Poppins", 9F);
-            this.lblDateCreated.ForeColor = System.Drawing.Color.Silver;
+            this.lblDateCreated.ForeColor = System.Drawing.Color.Gray;
             this.lblDateCreated.Location = new System.Drawing.Point(740, 16);
             this.lblDateCreated.Name = "lblDateCreated";
             this.lblDateCreated.Size = new System.Drawing.Size(144, 45);
@@ -60,7 +60,7 @@ namespace HubstafDesktop.Ui.Pages
             // lblTaskDesc
             // 
             this.lblTaskDesc.Font = new System.Drawing.Font("Poppins", 9F);
-            this.lblTaskDesc.ForeColor = System.Drawing.Color.Silver;
+            this.lblTaskDesc.ForeColor = System.Drawing.Color.Gray;
             this.lblTaskDesc.Location = new System.Drawing.Point(242, 16);
             this.lblTaskDesc.Name = "lblTaskDesc";
             this.lblTaskDesc.Size = new System.Drawing.Size(287, 45);
@@ -72,7 +72,7 @@ namespace HubstafDesktop.Ui.Pages
             // 
             this.lblTaskName.BackColor = System.Drawing.Color.White;
             this.lblTaskName.Font = new System.Drawing.Font("Poppins", 9F);
-            this.lblTaskName.ForeColor = System.Drawing.Color.Silver;
+            this.lblTaskName.ForeColor = System.Drawing.Color.Gray;
             this.lblTaskName.Location = new System.Drawing.Point(42, 16);
             this.lblTaskName.Name = "lblTaskName";
             this.lblTaskName.Size = new System.Drawing.Size(207, 45);
