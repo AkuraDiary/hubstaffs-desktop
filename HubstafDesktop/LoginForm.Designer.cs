@@ -65,25 +65,25 @@ namespace HubstafDesktop
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Poppins", 8F);
+            this.label6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(102, 435);
+            this.label6.Location = new System.Drawing.Point(42, 440);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 41);
+            this.label6.Size = new System.Drawing.Size(354, 59);
             this.label6.TabIndex = 8;
             this.label6.Text = "The all-in-one work time tracker for managing field or remote teams.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(133, 407);
+            this.label4.Location = new System.Drawing.Point(42, 385);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 28);
+            this.label4.Size = new System.Drawing.Size(354, 55);
             this.label4.TabIndex = 8;
             this.label4.Text = "Welcome to Hubstaff";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -150,16 +150,17 @@ namespace HubstafDesktop
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 14F);
-            this.label1.Location = new System.Drawing.Point(710, 180);
+            this.label1.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(692, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 34);
+            this.label1.Size = new System.Drawing.Size(159, 42);
             this.label1.TabIndex = 5;
             this.label1.Text = "Hello Again!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Poppins", 8F);
+            this.label3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
             this.label3.Location = new System.Drawing.Point(667, 214);
             this.label3.Name = "label3";
@@ -243,7 +244,6 @@ namespace HubstafDesktop
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
