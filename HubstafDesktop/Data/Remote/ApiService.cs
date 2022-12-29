@@ -40,6 +40,8 @@ namespace HubstafDesktop.Data.Remote
         public static string taskEndpoint = $"tasks";
         
         public static string loginEndpoint = $"login";
+        public static string logoutEndpoint = $"logout";
+
         public static string uploadImageEndpoint = "tasks/{0}/upload-image";   
         public static string taskDoneEndpoint = "tasks/{0}/task-done";   
         #endregion
@@ -131,6 +133,26 @@ namespace HubstafDesktop.Data.Remote
           
             
             Debug.WriteLine("mark Project As Done : " + resultResponseMessage);
+
+        }
+        public static async void logOutUserAsync( string bearerToken)
+        {
+
+            string endpointWithParam = string.Format(logoutEndpoint);
+
+            // Set the Authorization header with the Bearer token
+            var client = getclient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
+            // make and api call and receive HttpResponseMessage
+            var responseMessage = await client.PostAsync(endpointWithParam, new StringContent(""));// make a post request with empty content
+
+            //convert response message into string
+            var resultResponseMessage = await responseMessage.Content.ReadAsStringAsync();
+
+
+
+            Debug.WriteLine("Logout User : " + resultResponseMessage);
 
         }
 

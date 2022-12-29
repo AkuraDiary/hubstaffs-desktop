@@ -327,9 +327,11 @@ namespace HubstafDesktop
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            Repository.doLogoutUser();
             Repository.loggedInUser = null;
             this.Hide();
             LoginForm loginForm = new LoginForm();
+           
             loginForm.Show();
         }
     }

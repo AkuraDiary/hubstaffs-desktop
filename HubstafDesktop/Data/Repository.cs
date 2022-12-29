@@ -75,6 +75,23 @@ namespace HubstafDesktop.Data
             }
         }
 
+        public static void doLogoutUser()
+        {
+            try
+            {
+                string userToken = Repository.loggedInUser.Token;
+                Task.Run(() => ApiService.logOutUserAsync(userToken));
+
+            }
+            catch (Exception ex)
+            {
+                //TODO handle the exception
+                Debug.WriteLine("error " + ex.Message);
+                MessageBox.Show("error " + ex.Message);
+                throw;
+            }
+        }
+
         public static void sendImage(int taskId, string imageFilePath)//Byte[] imgData)
         {
             try
