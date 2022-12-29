@@ -24,8 +24,11 @@ namespace HubstafDesktop.Data.Model
 
         public static List<UserTask> MapListTaskResponseToListUserTask(List<TaskResponse> taskListResponse)
         {
+            int currentUserId = Repository.loggedInUser.Id;
             List<UserTask> userTaskList = new List<UserTask>();
-
+            taskListResponse.RemoveAll(
+                it => it.AssigneeId != currentUserId
+                );
             foreach (TaskResponse taskResponse in taskListResponse)
             {
                 UserTask userTask = MapTaskResponseToUserTask(taskResponse);
