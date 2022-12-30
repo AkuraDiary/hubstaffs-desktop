@@ -99,7 +99,7 @@ namespace HubstafDesktop.Data.Images
 
         public static string saveSS(Byte[] imageData)
         {
-            string directory = "images/ss";
+            string directory = @"images/screenshoot/" + DateTime.Now.ToString("dd-MMM-yyyy");
             string fileName = DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
             string filePath = Path.Combine(directory, fileName);
 
