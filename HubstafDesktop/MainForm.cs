@@ -234,6 +234,7 @@ namespace HubstafDesktop
             projectTaskDetailFragmentCOntainer.Enabled = !state;
             projectListFragmentContainer.Enabled = !state;
             btnExit.Visible = !state;
+            btnLogOut.Visible = !state;
             btnMinimze.Visible = state;
             moveFormToTopRight();
             //btnFormMode.PerformClick();

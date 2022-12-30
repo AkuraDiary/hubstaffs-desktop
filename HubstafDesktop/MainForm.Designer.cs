@@ -34,6 +34,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.projectTaskDetailFragmentCOntainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTaskName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnMinimze = new Guna.UI2.WinForms.Guna2Button();
@@ -43,6 +44,7 @@
             this.lblSelectedTaskStatus = new System.Windows.Forms.Label();
             this.lblSelectedTaskDesc = new System.Windows.Forms.Label();
             this.mainTimerFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectListFragmentContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFormMode = new Guna.UI2.WinForms.Guna2Button();
@@ -53,8 +55,6 @@
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.picBoxLogo = new System.Windows.Forms.PictureBox();
-            this.taskFragment = new HubstafDesktop.Ui.Pages.TaskFragment();
-            this.mainTimer = new HubstafDesktop.Ui.Pages.TimerFragment();
             this.projectTaskDetailFragmentCOntainer.SuspendLayout();
             this.taskDescriptionPanelContainer.SuspendLayout();
             this.mainTimerFragmentContainer.SuspendLayout();
@@ -93,6 +93,13 @@
             this.projectTaskDetailFragmentCOntainer.Controls.Add(this.guna2Panel23);
             resources.ApplyResources(this.projectTaskDetailFragmentCOntainer, "projectTaskDetailFragmentCOntainer");
             this.projectTaskDetailFragmentCOntainer.Name = "projectTaskDetailFragmentCOntainer";
+            // 
+            // taskFragment
+            // 
+            this.taskFragment.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.taskFragment, "taskFragment");
+            this.taskFragment.Name = "taskFragment";
+            this.taskFragment.ShowDone = false;
             // 
             // guna2Panel23
             // 
@@ -167,6 +174,16 @@
             resources.ApplyResources(this.mainTimerFragmentContainer, "mainTimerFragmentContainer");
             this.mainTimerFragmentContainer.Name = "mainTimerFragmentContainer";
             this.mainTimerFragmentContainer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            // 
+            // mainTimer
+            // 
+            this.mainTimer.BackColor = System.Drawing.Color.White;
+            this.mainTimer.ChoosedTask = null;
+            resources.ApplyResources(this.mainTimer, "mainTimer");
+            this.mainTimer.Name = "mainTimer";
+            this.mainTimer.ProjectName = "";
+            this.mainTimer.TimerCountdownValue = 0;
+            this.mainTimer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
             // projectListFragmentContainer
             // 
@@ -258,34 +275,17 @@
             // 
             // picBoxLogo
             // 
-            this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxLogo.BackColor = System.Drawing.Color.White;
             this.picBoxLogo.Image = global::HubstafDesktop.Properties.Resources.Group_1;
             resources.ApplyResources(this.picBoxLogo, "picBoxLogo");
             this.picBoxLogo.Name = "picBoxLogo";
             this.picBoxLogo.TabStop = false;
             this.picBoxLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             // 
-            // taskFragment
-            // 
-            this.taskFragment.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.taskFragment, "taskFragment");
-            this.taskFragment.Name = "taskFragment";
-            this.taskFragment.ShowDone = false;
-            // 
-            // mainTimer
-            // 
-            this.mainTimer.BackColor = System.Drawing.Color.White;
-            this.mainTimer.ChoosedTask = null;
-            resources.ApplyResources(this.mainTimer, "mainTimer");
-            this.mainTimer.Name = "mainTimer";
-            this.mainTimer.ProjectName = "";
-            this.mainTimer.TimerCountdownValue = 0;
-            this.mainTimer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.picBoxLogo);
