@@ -19,7 +19,7 @@ namespace HubstafDesktop.Data.Remote
     {
 
         #region config
-        public static string base_url = "http://localhost:8000/api/";
+        public static string base_url = "http://192.168.1.22:8080/api/";//"http://localhost:8000/api/";
         private static HttpClient api_client = new HttpClient
         {
             BaseAddress = new Uri(base_url)
